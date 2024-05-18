@@ -1,0 +1,172 @@
+name: Linux Docker Containers
+on: push
+
+jobs:
+  setup:
+    name: Gathering Pre-Build Info
+    runs-on: ubuntu-latest
+    outputs:
+      github-token-exists:  ${{ steps.check-gh-token.outputs.defined }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: check-gh-token
+        env:
+          GH_TOK: ${{ secrets.GITHUB_TOKEN }}
+        if: "${{ env.GH_TOK != '' }}"
+        run: echo "defined=true" >> $GITHUB_OUTPUT
+
+  docker_build_matrix:
+    needs: [setup]
+    name: Build Toolchain Containers
+    runs-on: [self-hosted, X64]
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { toolchain_profile: '9.3.0-legacy' }
+          - { toolchain_profile: '9.5.0-winxp' }
+          - { toolchain_profile: '10.5.0' }
+          - { toolchain_profile: '11.4.0' }
+          - { toolchain_profile: '12.3.0' }
+          - { toolchain_profile: 'stable' }
+          - { toolchain_profile: '13.3.0' }
+          - { toolchain_profile: '14.1.0' }
+          - { toolchain_profile: '13.3.1-dev' }
+          - { toolchain_profile: '14.1.1-dev' }
+          - { toolchain_profile: '15.0.0-dev' }
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: kos
+
+
+      - name: Fixup Repo for Container Builds
+        run: |
+          sed -i -e "s/##gitsha##/$(git describe --always)/g" kos/.github/workflows/make_banner.sh
+          cp kos/.github/workflows/make_banner.sh kos/kernel/arch/dreamcast/kernel/make_banner.sh
+
+      - name: Setup .dockerignore
+        run: |
+          echo "kos/.github"    >  .dockerignore
+          echo "kos/.git"       >> .dockerignore
+          echo "kos-ports/.git" >> .dockerignore
+          cat .dockerignore
+
+      - name: Fixup Repo for Container Builds
+        run: |
+          cp kos/.github/workflows/make_banner.sh kos/kernel/arch/dreamcast/kernel/make_banner.sh
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Login to Github Container Registry
+        uses: docker/login-action@v3
+        env:
+          GH_TOK: ${{ secrets.GITHUB_TOKEN }}
+        if: "${{ env.GH_TOK != '' }}"
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Toolchain Container Metadata
+        id: toolchain-meta
+        uses: docker/metadata-action@v5
+        env:
+          GH_TOK: ${{ secrets.GITHUB_TOKEN }}
+        if: "${{ env.GH_TOK != '' }}"
+        with:
+          images: ghcr.io/cepawiel/toolchain-kos-sh4
+          flavor: |
+            latest=false
+            suffix=-${{ matrix.toolchain_profile }}
+          tags: |
+            type=sha
+
+      - name: Build Toolchain Container
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: kos/.github/workflows/Dockerfile
+          target: toolchain
+          build-args: |
+            DCCHAIN_ARGS=toolchain_profile=${{ matrix.toolchain_profile }} gnu_mirror=mirrors.kernel.org
+          tags: ${{ steps.toolchain-meta.outputs.tags }}
+          labels: ${{ steps.toolchain-meta.outputs.labels }}
+          push: ${{ needs.setup.outputs.github-token-exists == 'true' }}
+          cache-from: type=gha,scope=${{ matrix.toolchain_profile }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.toolchain_profile }}
+
+      - name: Generate KOS Container Metadata
+        id: kos-meta
+        uses: docker/metadata-action@v5
+        env:
+          GH_TOK: ${{ secrets.GITHUB_TOKEN }}
+        if: "${{ env.GH_TOK != '' }}"
+        with:
+          images: ghcr.io/cepawiel/kos-dc
+          flavor: |
+            latest=false
+            suffix=-${{ matrix.toolchain_profile }}
+          tags: |
+            type=sha
+
+      - name: Build KOS Container
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: kos/.github/workflows/Dockerfile
+          target: kos
+          build-args: |
+            DCCHAIN_ARGS=toolchain_profile=${{ matrix.toolchain_profile }} gnu_mirror=mirrors.kernel.org
+          tags: ${{ steps.kos-meta.outputs.tags }}
+          labels: ${{ steps.kos-meta.outputs.labels }}
+          push: ${{ needs.setup.outputs.github-token-exists == 'true' }}
+          cache-from: type=gha,scope=${{ matrix.toolchain_profile }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.toolchain_profile }}
+
+      - uses: actions/checkout@v4
+        with:
+          repository: KallistiOS/kos-ports
+          path: ports
+
+      - name: Generate KOS-Ports Container Metadata
+        id: kos-ports-meta
+        uses: docker/metadata-action@v5
+        env:
+          GH_TOK: ${{ secrets.GITHUB_TOKEN }}
+        if: "${{ env.GH_TOK != '' }}"
+        with:
+          images: ghcr.io/cepawiel/kos-ports-dc
+          flavor: |
+            latest=false
+            suffix=-${{ matrix.toolchain_profile }}
+          tags: |
+            type=sha
+
+      - name: Build KOS-Ports Container
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: kos/.github/workflows/Dockerfile
+          target: kos-ports
+          build-args: |
+            DCCHAIN_ARGS=toolchain_profile=${{ matrix.toolchain_profile }} gnu_mirror=mirrors.kernel.org
+          tags: ${{ steps.kos-ports-meta.outputs.tags }}
+          labels: ${{ steps.kos-ports-meta.outputs.labels }}
+          push: ${{ needs.setup.outputs.github-token-exists == 'true' }}
+          cache-from: type=gha,scope=${{ matrix.toolchain_profile }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.toolchain_profile }}
+
+      - name: Build Examples
+        run: |
+          docker run --rm \
+            -v ${{ github.workspace }}/kos/examples/dreamcast:/examples \
+            -w /examples \
+            ${{ steps.kos-ports-meta.outputs.tags }} make -j$(nproc)
+
+      - name: Upload Dreamcast Examples
+        uses: actions/upload-artifact@v4
+        with:
+         name: dreamcast-examples-${{ matrix.toolchain_profile }}
+         path: ${{ github.workspace }}/kos/examples/dreamcast/**/*.elf

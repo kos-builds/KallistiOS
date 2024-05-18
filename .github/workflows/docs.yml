@@ -1,0 +1,28 @@
+name: Build KOS Documentation
+on: push
+
+jobs:
+  build-docs:
+    # use 24.04 for newer doxygen version (1.9.8)
+    runs-on: "ubuntu-24.04"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docs
+        run: |
+          sudo apt-get install -y doxygen
+          KOS_BASE=${{ github.workspace }} KOS_ARCH=dreamcast make docs
+
+      - name: Upload Dreamcast Examples
+        uses: actions/upload-artifact@v4
+        with:
+          name: dreamcast-kos-docs
+          path: ${{ github.workspace }}/doc/reference
+
+      - name: Disable Jekyll Processing
+        run: touch ${{ github.workspace }}/doc/reference/html/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ${{ github.workspace }}/doc/reference/html
