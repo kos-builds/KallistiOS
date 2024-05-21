@@ -49,7 +49,7 @@ __used void __stack_chk_fail(void) {
     exit(EXIT_SUCCESS);
 }
 
-/* Make sure the compiler doesn't complain about the bad thing 
+/* Make sure the compiler doesn't complain about the bad thing
 we are doing intentionally */
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wanalyzer-out-of-bounds"
