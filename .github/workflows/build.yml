@@ -76,7 +76,7 @@ jobs:
           GH_TOK: ${{ secrets.GITHUB_TOKEN }}
         if: "${{ env.GH_TOK != '' }}"
         with:
-          images: ghcr.io/cepawiel/toolchain-kos-sh4
+          images: ghcr.io/${{ github.repository_owner }}/toolchain-kos-sh4
           flavor: |
             latest=false
             suffix=-${{ matrix.toolchain_profile }}
@@ -104,7 +104,7 @@ jobs:
           GH_TOK: ${{ secrets.GITHUB_TOKEN }}
         if: "${{ env.GH_TOK != '' }}"
         with:
-          images: ghcr.io/cepawiel/kos-dc
+          images: ghcr.io/${{ github.repository_owner }}/kos-dc
           flavor: |
             latest=false
             suffix=-${{ matrix.toolchain_profile }}
@@ -137,7 +137,7 @@ jobs:
           GH_TOK: ${{ secrets.GITHUB_TOKEN }}
         if: "${{ env.GH_TOK != '' }}"
         with:
-          images: ghcr.io/cepawiel/kos-ports-dc
+          images: ghcr.io/${{ github.repository_owner }}/kos-ports-dc
           flavor: |
             latest=false
             suffix=-${{ matrix.toolchain_profile }}
