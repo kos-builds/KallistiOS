@@ -18,7 +18,7 @@ endif
 all:
 	@for dir in $(DIRS); do \
 		$(KOS_MAKE) check-dir DIR=$$dir; \
-	done;
+	done; \
 
 	@error_count=$$(cat error_count.txt 2>/dev/null || echo 0); \
 	if [ -f errors.txt ]; then \
