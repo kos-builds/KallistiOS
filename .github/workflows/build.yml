@@ -4,7 +4,8 @@ on: push
 jobs:
   docker_build_matrix:
     name: Build Toolchain Containers
-    runs-on: [self-hosted, X64]
+    # runs-on: [self-hosted, X64]
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
