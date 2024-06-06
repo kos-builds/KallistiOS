@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['basename_0',['basename',['../group__vfs__posix.html#ga79e1e7bdc4ab98aaa8347b172a07fe45',1,'libgen.h']]],
+  ['bba_5fget_5fmac_1',['bba_get_mac',['../group__bba.html#ga732a9c43b3c61b10cf8bb03bd2d1a473',1,'broadband_adapter.h']]],
+  ['bba_5fset_5frx_5fcallback_2',['bba_set_rx_callback',['../group__bba__rx.html#ga7efcf21b93e885209ef972356da23c38',1,'broadband_adapter.h']]],
+  ['bba_5ftx_3',['bba_tx',['../group__bba__tx.html#gab05a848390c23603f12ca7c04200c9bc',1,'broadband_adapter.h']]],
+  ['bfont_5fdraw_4',['bfont_draw',['../group__bfont.html#ga37485ebf829aadffb50f0539cac2ffbd',1,'biosfont.h']]],
+  ['bfont_5fdraw_5fex_5',['bfont_draw_ex',['../group__bfont.html#ga53f95a847cfb5bfaafd2241c44205f0a',1,'biosfont.h']]],
+  ['bfont_5fdraw_5fstr_6',['bfont_draw_str',['../group__bfont.html#gab7ae1766025b88b1f50b23ac3543e5ae',1,'biosfont.h']]],
+  ['bfont_5fdraw_5fstr_5fex_7',['bfont_draw_str_ex',['../group__bfont.html#ga9822806ceaf320e37b8d1457bd3cca67',1,'biosfont.h']]],
+  ['bfont_5fdraw_5fthin_8',['bfont_draw_thin',['../group__bfont.html#ga5e0e57f521e51f189dac274c97ed1c4e',1,'biosfont.h']]],
+  ['bfont_5fdraw_5fwide_9',['bfont_draw_wide',['../group__bfont.html#ga0748fec88fc3949ca95c55802af6b324',1,'biosfont.h']]],
+  ['bfont_5ffind_5fchar_10',['bfont_find_char',['../group__bfont.html#gaccfc69f816aed99d0dd96f8de98a0248',1,'biosfont.h']]],
+  ['bfont_5ffind_5fchar_5fjp_11',['bfont_find_char_jp',['../group__bfont.html#ga9881fbb66fec764fe7f8987752ea4737',1,'biosfont.h']]],
+  ['bfont_5ffind_5fchar_5fjp_5fhalf_12',['bfont_find_char_jp_half',['../group__bfont.html#gaeec1b94d1f382fd5510e09be49141498',1,'biosfont.h']]],
+  ['bfont_5ffind_5ficon_13',['bfont_find_icon',['../group__bfont.html#ga2076817e2c1f95ff830bf7f5ca2d0832',1,'biosfont.h']]],
+  ['bfont_5fset_5f32bit_5fmode_14',['bfont_set_32bit_mode',['../group__bfont.html#ga27700ee91abb3100a531c8a8a42a50d0',1,'biosfont.h']]],
+  ['bfont_5fset_5fbackground_5fcolor_15',['bfont_set_background_color',['../group__bfont.html#ga2b4259b8d3002a42d8e018e28d98c458',1,'biosfont.h']]],
+  ['bfont_5fset_5fencoding_16',['bfont_set_encoding',['../group__bfont.html#gaef6656176de92088991e140e6603ef21',1,'biosfont.h']]],
+  ['bfont_5fset_5fforeground_5fcolor_17',['bfont_set_foreground_color',['../group__bfont.html#ga57614b7769759fa0da7a33b3cb152509',1,'biosfont.h']]],
+  ['bind_18',['bind',['../group__networking__sockets.html#ga55b3c1572b4e86ca0702ecdeb7e43997',1,'socket.h']]],
+  ['bit_5freverse_19',['bit_reverse',['../group__math__general.html#ga61acd2dbafafb6b6c637a047f105ef66',1,'math.h']]],
+  ['bspline_5fcoeff_20',['bspline_coeff',['../bspline_8h.html#a4fc0b8c9758c60aa691fe1b0d25ff056',1,'bspline.h']]],
+  ['bspline_5fget_5fpoint_21',['bspline_get_point',['../bspline_8h.html#af5ed3ecd7f349b6fc5cb76e08e51dcad',1,'bspline.h']]]
+];
