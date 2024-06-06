@@ -20,10 +20,7 @@ var searchData=
   ['_5fflockfile_17',['_flockfile',['../stdio_8h.html#a63b4454508a597c902be0fb59c8d2529',1,'stdio.h']]],
   ['_5ffunlockfile_18',['_funlockfile',['../stdio_8h.html#a7cfd77e7ce63c195009aff479a844240',1,'stdio.h']]],
   ['_5fkos_5ffparg_19',['_KOS_FPARG',['../args_8h.html#abe5e29dea1de5a2e2ea4e0c45a6ab590',1,'args.h']]],
-  ['_5fposix_5fcputime_20',['_POSIX_CPUTIME',['../time_8h.html#a380ae2a1bebdfc37b19eabc2095602cd',1,'time.h']]],
-  ['_5fposix_5fmonotonic_5fclock_21',['_POSIX_MONOTONIC_CLOCK',['../time_8h.html#a634bd13ee7a978890e5d98f9108c0f00',1,'time.h']]],
-  ['_5fposix_5fthread_5fcputime_22',['_POSIX_THREAD_CPUTIME',['../time_8h.html#a890fd665f06cd74cebe4a9c274154faf',1,'time.h']]],
-  ['_5fposix_5fthreads_23',['_POSIX_THREADS',['../__pthread_8h.html#a5e89527a7c4b94907d559a975d5850ce',1,'_pthread.h']]],
-  ['_5fposix_5ftimeouts_24',['_POSIX_TIMEOUTS',['../__pthread_8h.html#a71b925a59ac03ebfed790866a9fe90b6',1,'_pthread.h']]],
-  ['_5fsys_5ftypes_5ffd_5fset_25',['_SYS_TYPES_FD_SET',['../select_8h.html#a2524adc67e986a0f4e0842aec9cc6c00',1,'select.h']]]
+  ['_5fposix_5fthreads_20',['_POSIX_THREADS',['../__pthread_8h.html#a5e89527a7c4b94907d559a975d5850ce',1,'_pthread.h']]],
+  ['_5fposix_5ftimeouts_21',['_POSIX_TIMEOUTS',['../__pthread_8h.html#a71b925a59ac03ebfed790866a9fe90b6',1,'_pthread.h']]],
+  ['_5fsys_5ftypes_5ffd_5fset_22',['_SYS_TYPES_FD_SET',['../select_8h.html#a2524adc67e986a0f4e0842aec9cc6c00',1,'select.h']]]
 ];

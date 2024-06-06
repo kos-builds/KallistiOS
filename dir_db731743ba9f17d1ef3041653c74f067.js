@@ -34,7 +34,7 @@ var dir_db731743ba9f17d1ef3041653c74f067 =
     [ "stdlib.h", "stdlib_8h.html", "stdlib_8h" ],
     [ "string.h", "string_8h.html", "string_8h" ],
     [ "thread.h", "thread_8h.html", "thread_8h" ],
-    [ "time.h", "time_8h.html", "time_8h" ],
+    [ "time.h", "time_8h.html", null ],
     [ "tls.h", "tls_8h.html", "tls_8h" ],
     [ "worker_thread.h", "worker__thread_8h.html", "worker__thread_8h" ]
 ];
