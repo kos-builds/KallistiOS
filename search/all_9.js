@@ -255,7 +255,7 @@ var searchData=
   ['count_5fblocks_252',['count_blocks',['../structkos__blockdev__t.html#a758a01cf5388b340246ff1d558016ab3',1,'kos_blockdev_t']]],
   ['counters_253',['Performance Counters',['../group__perf__counters.html',1,'']]],
   ['cpu_5fcache_5fblock_5fsize_254',['CPU_CACHE_BLOCK_SIZE',['../group__system__cache.html#ga15f39809331600b9944256e704e1ff35',1,'cache.h']]],
-  ['cpu_5ftime_255',['cpu_time',['../structkthread__t.html#aff0f8d86f3e02da78eff96fb3bb36db7',1,'kthread_t']]],
+  ['cpu_5ftime_255',['cpu_time',['../structkthread__t.html#adaf73c0138b0ca1b47f5eab41e64757e',1,'kthread_t']]],
   ['crc_256',['crc',['../structvmu__hdr__t.html#a02134d0050c236e623bb76c43747f80a',1,'vmu_hdr_t::crc'],['../group__networking__crc.html',1,'CRC']]],
   ['create_5fdetached_257',['create_detached',['../structkthread__attr__t.html#a79fdb0713dc44e6b1724f8a0ee129fa0',1,'kthread_attr_t']]],
   ['ct_5fany_258',['CT_ANY',['../group__vid__ctype.html#ga47ffaf53fd9826bed0b7014a8f4a2bdf',1,'video.h']]],
