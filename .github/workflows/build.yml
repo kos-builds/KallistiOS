@@ -10,17 +10,17 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - { toolchain_profile: '9.3.0-legacy' }
-          - { toolchain_profile: '9.5.0-winxp' }
-          - { toolchain_profile: '10.5.0' }
-          - { toolchain_profile: '11.4.0' }
-          - { toolchain_profile: '12.3.0' }
+          # - { toolchain_profile: '9.3.0-legacy' }
+          # - { toolchain_profile: '9.5.0-winxp' }
+          # - { toolchain_profile: '10.5.0' }
+          # - { toolchain_profile: '11.4.0' }
+          # - { toolchain_profile: '12.3.0' }
           - { toolchain_profile: 'stable' }
-          - { toolchain_profile: '13.3.0' }
-          - { toolchain_profile: '14.1.0' }
-          - { toolchain_profile: '13.3.1-dev' }
-          - { toolchain_profile: '14.1.1-dev' }
-          - { toolchain_profile: '15.0.0-dev' }
+          # - { toolchain_profile: '13.3.0' }
+          # - { toolchain_profile: '14.1.0' }
+          # - { toolchain_profile: '13.3.1-dev' }
+          # - { toolchain_profile: '14.1.1-dev' }
+          # - { toolchain_profile: '15.0.0-dev' }
 
     steps:
       - uses: actions/checkout@v4
@@ -149,3 +149,33 @@ jobs:
         with:
          name: dreamcast-examples-${{ matrix.toolchain_profile }}
          path: ${{ github.workspace }}/kos/examples/dreamcast/**/*.elf
+
+  example_tests_dc:
+    name: Test Dreamcast Examples
+    needs: docker_build_matrix
+    runs-on: [hw, dc]
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # - { toolchain_profile: '9.3.0-legacy' }
+          # - { toolchain_profile: '9.5.0-winxp' }
+          # - { toolchain_profile: '10.5.0' }
+          # - { toolchain_profile: '11.4.0' }
+          # - { toolchain_profile: '12.3.0' }
+          - { toolchain_profile: 'stable' }
+          # - { toolchain_profile: '13.3.0' }
+          # - { toolchain_profile: '14.1.0' }
+          # - { toolchain_profile: '13.3.1-dev' }
+          # - { toolchain_profile: '14.1.1-dev' }
+          # - { toolchain_profile: '15.0.0-dev' }
+
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dreamcast-examples-${{ matrix.toolchain_profile }}      
+      
+      - run: |
+          pwd
+          ls -la
+          /home/coltonp/dcload-serial/host-src/tool/dc-tool-ser
