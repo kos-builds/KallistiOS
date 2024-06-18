@@ -32,5 +32,5 @@ dist:
 
 else
   all $(TARGET) clean rm-elf run dist:
-	@echo "Skipping $(TARGET) build as current GCC version ($(KOS_GCCVER)) is less than $(KOS_GCCVER_MIN)."
+	$(KOS_GCCVER_MIN_WARNING)
 endif

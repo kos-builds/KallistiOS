@@ -91,3 +91,6 @@ $(shell \
 	}')
 endef
 
+define KOS_GCCVER_MIN_WARNING
+@echo "Skipping $(TARGET) build as current GCC version ($(KOS_GCCVER)) is less than $(KOS_GCCVER_MIN)."
+endef
