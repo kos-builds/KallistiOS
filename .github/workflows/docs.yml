@@ -1,6 +1,14 @@
 name: Build KOS Documentation
-on: push
-
+on: 
+  push:
+    branches:
+      - master
+    paths:
+      - 'doc/**'
+      - 'include/**'
+      - 'kernel/arch/dreamcast/include/**'
+      - 'addons/include/**'
+      - 'README.md'
 jobs:
   build-docs:
     # use 24.04 for newer doxygen version (1.9.8)
