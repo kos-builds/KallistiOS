@@ -147,7 +147,7 @@ jobs:
       - name: Upload Dreamcast Examples
         uses: actions/upload-artifact@v4
         with:
-         name: dreamcast-examples-${{ matrix.toolchain_profile }}
+         name: dc-examples-${{ matrix.toolchain_profile }}
          path: ${{ github.workspace }}/kos/examples/dreamcast/**/*.elf
 
   example_tests_dc:
@@ -157,13 +157,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:
+        toolchain_profile: [ 'stable' ]
+        example: [ 'hello', 'basic/memtest32', '2ndmix' ]
+        # include:
           # - { toolchain_profile: '9.3.0-legacy' }
           # - { toolchain_profile: '9.5.0-winxp' }
           # - { toolchain_profile: '10.5.0' }
           # - { toolchain_profile: '11.4.0' }
           # - { toolchain_profile: '12.3.0' }
-          - { toolchain_profile: 'stable' }
+          # - { toolchain_profile: 'stable' }
           # - { toolchain_profile: '13.3.0' }
           # - { toolchain_profile: '14.1.0' }
           # - { toolchain_profile: '13.3.1-dev' }
@@ -173,9 +175,36 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: dreamcast-examples-${{ matrix.toolchain_profile }}      
+          path: ${{ github.workspace }}/examples
+          name: dc-examples-${{ matrix.toolchain_profile }}
       
       - run: |
-          pwd
+          cd examples/${{ matrix.example }}
           ls -la
-          /home/coltonp/dcload-serial/host-src/tool/dc-tool-ser
+          ELF_FILE=$(find . -name "*.elf")
+          echo $ELF_FILE
+          FILE_NAME=$(basename $(realpath $ELF_FILE))
+          FILE_NAME=${{ matrix.toolchain_profile }}-${FILE_NAME%.*}
+          echo $FILE_NAME
+          python3 /opt/dc/hw/main.py --elf $ELF_FILE --timeout 60 --log $FILE_NAME.txt --video $FILE_NAME.mkv
+      
+      # Artifact name cannot have '/' in it
+      - name: Fix Name
+        env:
+            EXAMPLE_NAME: "${{ matrix.example }}"
+        run: |
+          EXAMPLE_NAME=${{ env.EXAMPLE_NAME }}
+          EXAMPLE_NAME=${EXAMPLE_NAME////_}
+          echo EXAMPLE_NAME=${EXAMPLE_NAME} >> $GITHUB_ENV
+
+      - name: Upload Example Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: dreamcast-examples-${{ matrix.toolchain_profile }}-${{ env.EXAMPLE_NAME }}
+          path: |
+            ${{ github.workspace }}/examples/${{ matrix.example }}/*.txt
+            ${{ github.workspace }}/examples/${{ matrix.example }}/*.mkv
+          retention-days: 2
+      
+      - run: |
+          rm -rf ${{ github.workspace }}/examples
