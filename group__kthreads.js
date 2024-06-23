@@ -75,6 +75,7 @@ var group__kthreads =
     [ "PRIO_MAX", "group__kthreads.html#ga66190d2aecfafef957fa492ce8a8c7f0", null ],
     [ "THD_DEFAULTS", "group__kthreads.html#gab7935df2c3df92dde6ccf3dd27a951ee", null ],
     [ "THD_DETACHED", "group__kthreads.html#ga1d01f45ac725636a40f06964c9478530", null ],
+    [ "THD_OWNS_STACK", "group__kthreads.html#gaf9726d158bce3dc5d589682fcaafb415", null ],
     [ "THD_QUEUED", "group__kthreads.html#ga3719aaf87bedc12f173345a58920a2f2", null ],
     [ "THD_USER", "group__kthreads.html#ga818485ada164ee2f9e9683fd0086484d", null ],
     [ "kthread_flags_t", "group__kthreads.html#gaa41caf9ffc4e969b9e6d1218b0f5b0a4", null ],

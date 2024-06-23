@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"group__networking__sockets.html#ga0c63bfe1c5681c844eb704d739e63c00":[8,5,10,31],
+"group__networking__sockets.html#ga19132cffa5b1c7762f0948417e616555":[8,5,10,9],
 "group__networking__sockets.html#ga249394484f9410a2e3f8eba24657feb9":[8,5,10,20],
 "group__networking__sockets.html#ga29c331fb36d757d993032ef83371c4e9":[8,5,10,25],
 "group__networking__sockets.html#ga313001ab5b0b2b81f4e90198d40f6c4a":[8,5,10,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "group__pvr__bitmasks.html#gaa227bf872ebe930fde6608fd59457c9f":[8,10,5,1,0,1,0,17],
 "group__pvr__bitmasks.html#gaadd14bffbfa182ef7ea0f2957f089f47":[8,10,5,1,0,1,0,28],
 "group__pvr__bitmasks.html#gaae9591fdd81899751081f50b7de0dd8f":[8,10,5,1,0,1,0,36],
-"group__pvr__bitmasks.html#gaaf8822018946eb113bcb7ca9b43f9bb0":[8,10,5,1,0,1,0,29],
-"group__pvr__bitmasks.html#gab5447cee0a343c70afaf915e9cc87902":[8,10,5,1,0,1,0,20],
-"group__pvr__bitmasks.html#gab5e635cddca8a6b6448e4c20f7da2988":[8,10,5,1,0,1,0,39]
+"group__pvr__bitmasks.html#gaaf8822018946eb113bcb7ca9b43f9bb0":[8,10,5,1,0,1,0,29]
 };

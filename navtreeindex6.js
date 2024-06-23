@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"group__logging.html#gae182f1c17f205b80995f5ed7eb0d77ca":[8,2,2,8],
+"group__logging.html#gaf0634dc5e4bcad9b19d5d362965ecf62":[8,2,2,11],
 "group__logging.html#gafa22665d922a6575cef2e81213dec72e":[8,2,2,17],
 "group__maple.html":[8,6,4],
 "group__maple.html#ga0105c280700f3830ba52b0fadb9d5809":[8,6,4,39],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "group__modem.html#ga4d46cb41b903f9f5bb02cf8f233bec26":[8,5,4,3,21],
 "group__modem.html#ga5d6c39e6edd511827a628dbbe20ba4a9":[8,5,4,3,24],
 "group__modem.html#ga8994ad3d18bf418a3b2b8677c53ddcbf":[8,5,4,3,19],
-"group__modem.html#ga9fbc9a9c7ad6cb2de2ac4241649ff540":[8,5,4,3,18],
-"group__modem.html#gab5559d0660a0c83d1de3e81abdf1dfd7":[8,5,4,3,16],
-"group__modem.html#gadf7bb3f70a8813a034fa91bd222e10e4":[8,5,4,3,17]
+"group__modem.html#ga9fbc9a9c7ad6cb2de2ac4241649ff540":[8,5,4,3,18]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"group__modem.html#gab5559d0660a0c83d1de3e81abdf1dfd7":[8,5,4,3,16],
+"group__modem.html#gadf7bb3f70a8813a034fa91bd222e10e4":[8,5,4,3,17],
 "group__modem.html#gae83013956239457e17da42e5558e2e1a":[8,5,4,3,22],
 "group__modem.html#gaea782f8e52666d37e4fb1591159e341e":[8,5,4,3,27],
 "group__modem.html#gaeeb6947da48494fe16f673882566b65e":[8,5,4,3,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "group__networking__sockets.html":[8,5,10],
 "group__networking__sockets.html#ga001a987f0cc1b04e5ebd01931028d45e":[8,5,10,6],
 "group__networking__sockets.html#ga03016e1f876d02247e91a9aca1ff4f01":[8,5,10,36],
-"group__networking__sockets.html#ga048a394e60b5bb89b8c3d8f9d2c4be38":[8,5,10,22],
-"group__networking__sockets.html#ga0c63bfe1c5681c844eb704d739e63c00":[8,5,10,31],
-"group__networking__sockets.html#ga19132cffa5b1c7762f0948417e616555":[8,5,10,9]
+"group__networking__sockets.html#ga048a394e60b5bb89b8c3d8f9d2c4be38":[8,5,10,22]
 };

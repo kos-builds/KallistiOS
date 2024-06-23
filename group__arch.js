@@ -33,6 +33,7 @@ var group__arch =
     [ "PAGEMASK", "group__arch.html#ga7ea47f1d83b44f13a2c9aa7077c400cb", null ],
     [ "PAGESIZE", "group__arch.html#ga519adc2af3ba06a8f0548b6690050a89", null ],
     [ "PAGESIZE_BITS", "group__arch.html#ga9f861df6c16db501f43f1a29e25a9b14", null ],
+    [ "THD_KERNEL_STACK_SIZE", "group__arch.html#ga802c5e7836d9e9305506ba75b1047770", null ],
     [ "THD_STACK_SIZE", "group__arch.html#ga04b8faf75e7af18de8afb988815ffe8a", null ],
     [ "arch_abort", "group__arch.html#gab6c7f1b9825d2d653566fd6d58b8afb7", null ],
     [ "arch_exit", "group__arch.html#gaa4e8f4af02fd811075795d898d12575e", null ],

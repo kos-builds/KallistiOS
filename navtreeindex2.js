@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"group__bba__cbits.html#ga349f469a7bffcb321222ed1c61a35340":[8,5,4,1,1,0,0,3],
 "group__bba__cbits.html#ga51dc16477da424b6eee06983ebf3b745":[8,5,4,1,1,0,0,0],
 "group__bba__cbits.html#ga66ae1dac11e38c0e6bb4038a08306da4":[8,5,4,1,1,0,0,2],
 "group__bba__cbits.html#ga7f4639daddf243ae7f96d11040df9e89":[8,5,4,1,1,0,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "group__cd__cmd__codes.html#gaa63c459c474e7580a224292fe646ab58":[8,3,4,10,19],
 "group__cd__cmd__codes.html#gaa9f70fc22d730356e62edd49023a7fb7":[8,3,4,10,15],
 "group__cd__cmd__codes.html#gaab1a0d6f90722c03ed6c8a9460d6e792":[8,3,4,10,11],
-"group__cd__cmd__codes.html#gab08c18e4b6ea58665d8743bd47182946":[8,3,4,10,26],
-"group__cd__cmd__codes.html#gab77f40f040fe6126b2e38a3114135fb3":[8,3,4,10,0]
+"group__cd__cmd__codes.html#gab08c18e4b6ea58665d8743bd47182946":[8,3,4,10,26]
 };

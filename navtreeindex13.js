@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"group__video__init.html#ga87896ed7578475ead0fa224c0f5a34d3":[8,10,3,0],
+"group__video__init.html#gaed55cb21cea34f75782d43ab552567f1":[8,10,3,1],
 "group__video__misc.html":[8,10,4],
 "group__video__misc.html#gae2c05ee774ad1e0604536984c804f55f":[8,10,4,0],
 "group__video__modes.html":[8,10,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "lock_8h.html":[10,0,2,3,3],
 "lock_8h_source.html":[10,0,2,3,3],
 "malloc_8h.html":[8,7,1,0],
-"maple_8h.html":[8,6,4,6],
-"math_8h.html":[8,4,0,0],
-"matrix3d_8h.html":[8,4,2,1]
+"maple_8h.html":[8,6,4,6]
 };
