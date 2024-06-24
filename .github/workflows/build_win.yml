@@ -1,0 +1,68 @@
+name: Build Toolchain on msys2
+on: 
+  push:
+
+jobs:
+  msys2-ucrt64:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        toolchain_profile:
+          # - '9.3.0-legacy'
+          # - '9.5.0-winxp'
+          # - '10.5.0'
+          # - '11.4.0'
+          # - '12.3.0'
+          - 'stable'
+          # - '13.3.0' 
+          # - '14.1.0'
+          # - '13.3.1-dev'
+          # - '14.1.1-dev'
+          # - '15.0.0-dev' 
+    steps:
+      - run: git config --global core.autocrlf input
+      - uses: actions/checkout@v4
+        with: 
+          path: kos
+      
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          update: true
+          install: >-
+            git 
+            base-devel 
+            mingw-w64-ucrt-x86_64-toolchain
+            mingw-w64-ucrt-x86_64-libpng 
+            mingw-w64-ucrt-x86_64-libjpeg 
+            mingw-w64-ucrt-x86_64-libelf
+      
+      - name: Build Toolchain
+        shell: msys2 {0}
+        run: |
+          cd kos/utils/dc-chain
+          nproc
+          make makejobs=$(nproc) toolchain_profile=stable gnu_mirror=mirrors.kernel.org verbose=1
+
+      - name: Upload Example Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: toolchain-kos-sh4-${{ matrix.toolchain_profile }}
+          path: |
+            ${{ github.workspace }}
+          retention-days: 1
+
+      - name: Build KOS
+        shell: msys2 {0}
+        run: |
+          cd kos
+          cp doc/environ.sh.sample environ.sh
+          source environ.sh
+          make -j$(nproc)
+      
+      - uses: actions/checkout@v4
+        with: 
+          repository: KallistiOS/kos-ports
+          path: ports
+
