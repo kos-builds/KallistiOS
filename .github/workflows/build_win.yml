@@ -52,21 +52,22 @@ jobs:
         with:
           name: toolchain-kos-sh4-${{ matrix.toolchain_profile }}
           path: |
-            ${{ github.workspace }}
+            ${{ github.workspace }}/sh-elf
           retention-days: 1
 
       - name: Build KOS
         shell: msys2 {0}
         run: |
+          START_DIR=$(pwd)
           export KOS_ARCH="dreamcast"
           export KOS_SUBARCH="pristine"
-          export KOS_BASE="${{ github.workspace }}/kos"
-          export KOS_PORTS="${{ github.workspace }}/kos-ports"
-          export KOS_CC_BASE="${{ github.workspace }}/sh-elf"
+          export KOS_BASE="$START_DIR/kos"
+          export KOS_PORTS="$START_DIR/kos-ports"
+          export KOS_CC_BASE="$START_DIR/sh-elf"
           export KOS_CC_PREFIX="sh-elf"
-          export DC_ARM_BASE="${{ github.workspace }}/arm-eabi"
+          export DC_ARM_BASE="$START_DIR/arm-eabi"
           export DC_ARM_PREFIX="arm-eabi"
-          export DC_TOOLS_BASE="${{ github.workspace }}/bin"
+          export DC_TOOLS_BASE="$START_DIR/bin"
           export KOS_CMAKE_TOOLCHAIN="${KOS_BASE}/utils/cmake/dreamcast.toolchain.cmake"
           export KOS_GENROMFS="${KOS_BASE}/utils/genromfs/genromfs"
           export KOS_MAKE="make"
