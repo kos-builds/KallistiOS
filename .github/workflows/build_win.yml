@@ -26,7 +26,8 @@ jobs:
         with: 
           path: kos
       
-      - uses: msys2/setup-msys2@v2
+      - name: Setup msys2
+        uses: msys2/setup-msys2@v2
         with:
           msystem: UCRT64
           update: true
@@ -37,13 +38,14 @@ jobs:
             mingw-w64-ucrt-x86_64-libpng 
             mingw-w64-ucrt-x86_64-libjpeg 
             mingw-w64-ucrt-x86_64-libelf
-      
+
       - name: Build Toolchain
         shell: msys2 {0}
         run: |
+          TMP_DIR=$(pwd)
           cd kos/utils/dc-chain
           nproc
-          make makejobs=$(nproc) toolchain_profile=stable gnu_mirror=mirrors.kernel.org verbose=1
+          make makejobs=$(nproc) toolchain_profile=${{ matrix.toolchain_profile }} gnu_mirror=mirrors.kernel.org verbose=1 sh_toolchain_path=$TMP_DIR/sh-elf arm_toolchain_path=$TMP_DIR/arm-eabi
 
       - name: Upload Example Results
         uses: actions/upload-artifact@v4
@@ -56,9 +58,34 @@ jobs:
       - name: Build KOS
         shell: msys2 {0}
         run: |
+          export KOS_ARCH="dreamcast"
+          export KOS_SUBARCH="pristine"
+          export KOS_BASE="${{ github.workspace }}/kos"
+          export KOS_PORTS="${{ github.workspace }}/kos-ports"
+          export KOS_CC_BASE="${{ github.workspace }}/sh-elf"
+          export KOS_CC_PREFIX="sh-elf"
+          export DC_ARM_BASE="${{ github.workspace }}/arm-eabi"
+          export DC_ARM_PREFIX="arm-eabi"
+          export DC_TOOLS_BASE="${{ github.workspace }}/bin"
+          export KOS_CMAKE_TOOLCHAIN="${KOS_BASE}/utils/cmake/dreamcast.toolchain.cmake"
+          export KOS_GENROMFS="${KOS_BASE}/utils/genromfs/genromfs"
+          export KOS_MAKE="make"
+          export KOS_LOADER="dc-tool -x"
+          export KOS_INC_PATHS=""
+          export KOS_CFLAGS=""
+          export KOS_CPPFLAGS=""
+          export KOS_LDFLAGS=""
+          export KOS_AFLAGS=""
+          export DC_ARM_LDFLAGS=""
+          export KOS_CFLAGS="${KOS_CFLAGS} -O2"
+          export KOS_CFLAGS="${KOS_CFLAGS} -fomit-frame-pointer"
+          export KOS_CFLAGS="${KOS_CFLAGS} -fno-builtin"
+          export KOS_SH4_PRECISION="-m4-single-only"
+          
+          echo $KOS_BASE
+
           cd kos
-          cp doc/environ.sh.sample environ.sh
-          source environ.sh
+          source environ_base.sh
           make -j$(nproc)
       
       - uses: actions/checkout@v4
