@@ -14,5 +14,5 @@ var init_8h =
     [ "KOS_INIT_FLAGS", "group__init__flags.html#ga1f7ff64af7286347346602a6cefeee71", null ],
     [ "KOS_INIT_ROMDISK", "init_8h.html#a109b0bdeef964d7a70a3e8112422648c", null ],
     [ "KOS_INIT_ROMDISK_NONE", "init_8h.html#aa120d87dd1dae1030094f38ced2cb30b", null ],
-    [ "__kos_romdisk", "init_8h.html#afe1c52d344989ff7b13678b9b85007aa", null ]
+    [ "__kos_romdisk", "init_8h.html#a22757f6eff2fba15244b3318ed03bf9b", null ]
 ];

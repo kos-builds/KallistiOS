@@ -199,14 +199,14 @@ $(document).ready(function(){initNavTree('init_8h_source.html',''); initResizabl
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">/** \brief  Deprecated and not useful anymore. */</span></div>
 <div class="foldopen" id="foldopen00098" data-start="" data-end="">
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="init_8h.html#a109b0bdeef964d7a70a3e8112422648c">   98</a></span><span class="preprocessor">#define KOS_INIT_ROMDISK(rd) \</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">    void *__kos_romdisk = (rd); \</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">    const void *__kos_romdisk = (rd); \</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">    extern void fs_romdisk_mount_builtin_legacy(void); \</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">    void (*fs_romdisk_mount_builtin_legacy_weak)(void) = fs_romdisk_mount_builtin_legacy</span></div>
 </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"></span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">/** \brief  Built-in romdisk. Do not modify this directly! */</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">extern</span> <span class="keywordtype">void</span> * <a class="code hl_variable" href="init_8h.html#afe1c52d344989ff7b13678b9b85007aa">__kos_romdisk</a>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">void</span> * <a class="code hl_variable" href="init_8h.html#a22757f6eff2fba15244b3318ed03bf9b">__kos_romdisk</a>;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"></span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">/** \brief  State that you don&#39;t want a romdisk. */</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="init_8h.html#aa120d87dd1dae1030094f38ced2cb30b">  108</a></span><span class="preprocessor">#define KOS_INIT_ROMDISK_NONE   NULL</span></div>
@@ -256,7 +256,7 @@ $(document).ready(function(){initNavTree('init_8h_source.html',''); initResizabl
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#endif </span><span class="comment">/* !__KOS_INIT_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="acdefs_8h_html"><div class="ttname"><a href="cdefs_8h.html">cdefs.h</a></div><div class="ttdoc">Definitions for builtin attributes and compiler directives.</div></div>
-<div class="ttc" id="ainit_8h_html_afe1c52d344989ff7b13678b9b85007aa"><div class="ttname"><a href="init_8h.html#afe1c52d344989ff7b13678b9b85007aa">__kos_romdisk</a></div><div class="ttdeci">void * __kos_romdisk</div><div class="ttdoc">Built-in romdisk. Do not modify this directly!</div></div>
+<div class="ttc" id="ainit_8h_html_a22757f6eff2fba15244b3318ed03bf9b"><div class="ttname"><a href="init_8h.html#a22757f6eff2fba15244b3318ed03bf9b">__kos_romdisk</a></div><div class="ttdeci">const void * __kos_romdisk</div><div class="ttdoc">Built-in romdisk. Do not modify this directly!</div></div>
 <div class="ttc" id="ainit__base_8h_html"><div class="ttname"><a href="init__base_8h.html">init_base.h</a></div><div class="ttdoc">Shared initialization macros and utilities.</div></div>
 <div class="ttc" id="ainit__flags_8h_html"><div class="ttname"><a href="init__flags_8h.html">init_flags.h</a></div><div class="ttdoc">Dreamcast-specific initialization-related flags and macros.</div></div>
 </div><!-- fragment --></div><!-- contents -->

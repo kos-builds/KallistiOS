@@ -37,7 +37,7 @@ var searchData=
   ['_5f_5fkos_5ffparg_5f6_5f1_34',['__KOS_FPARG_6_1',['../args_8h.html#a39f9ca5ecd76c9d9ed23cf456c081a3e',1,'args.h']]],
   ['_5f_5fkos_5ffparg_5f7_5f0_35',['__KOS_FPARG_7_0',['../args_8h.html#a7183d0ca04a00307a95c012fb6b53e1e',1,'args.h']]],
   ['_5f_5fkos_5ffparg_5f7_5f1_36',['__KOS_FPARG_7_1',['../args_8h.html#a66c89d4bb7e2814296d155cebdc5cbf7',1,'args.h']]],
-  ['_5f_5fkos_5fromdisk_37',['__kos_romdisk',['../init_8h.html#afe1c52d344989ff7b13678b9b85007aa',1,'init.h']]],
+  ['_5f_5fkos_5fromdisk_37',['__kos_romdisk',['../init_8h.html#a22757f6eff2fba15244b3318ed03bf9b',1,'init.h']]],
   ['_5f_5flikely_38',['__likely',['../group__system__macros.html#ga0cf22edd90b96bfd0bf650ed1c054822',1,'cdefs.h']]],
   ['_5f_5fmode_5ft_39',['__mode_t',['../group__system__types.html#ga318047ea84036ecf83cb4320e7e29b39',1,'_types.h']]],
   ['_5f_5fnlink_5ft_40',['__nlink_t',['../group__system__types.html#gac43b61ab9dbbe20c6560dee94f6b08d2',1,'_types.h']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['_5f_5fcount_0',['__count',['../struct__mbstate__t.html#a6261817a0f58d2907e29e39413049b6c',1,'_mbstate_t']]],
-  ['_5f_5fkos_5fromdisk_1',['__kos_romdisk',['../init_8h.html#afe1c52d344989ff7b13678b9b85007aa',1,'init.h']]],
+  ['_5f_5fkos_5fromdisk_1',['__kos_romdisk',['../init_8h.html#a22757f6eff2fba15244b3318ed03bf9b',1,'init.h']]],
   ['_5f_5fpad0_5f_5f_2',['__pad0__',['../structcont__state__t.html#a2657d1c6f9b74acdadbf65352ab85582',1,'cont_state_t']]],
   ['_5f_5fs6_5faddr_3',['__s6_addr',['../structin6__addr.html#a0fe8cd10d9497ec4548ca22ab7ac1971',1,'in6_addr']]],
   ['_5f_5fs6_5faddr16_4',['__s6_addr16',['../structin6__addr.html#a3db778b57f5786b54d5f507cbeaffeef',1,'in6_addr']]],
