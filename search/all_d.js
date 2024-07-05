@@ -81,7 +81,7 @@ var searchData=
   ['gethostbyname2_78',['gethostbyname2',['../group__network__db.html#ga79723285501c23f69098f7691a3882f1',1,'netdb.h']]],
   ['getsockname_79',['getsockname',['../group__networking__sockets.html#ga6c1fb9f8643c70bc0a61d85ce26be101',1,'getsockname():&#160;socket.h'],['../structfs__socket__proto__t.html#a1c41f9dcbcc863c483d1ffe526a584fe',1,'fs_socket_proto_t::getsockname']]],
   ['getsockopt_80',['getsockopt',['../group__networking__sockets.html#ga9198cc406a9153792eef1fcb0fa78b06',1,'getsockopt():&#160;socket.h'],['../structfs__socket__proto__t.html#a1c94550ad6d816d0e59a6b61cb2da174',1,'fs_socket_proto_t::getsockopt']]],
-  ['getting_20started_81',['Getting Started',['../index.html#autotoc_md6',1,'']]],
+  ['getting_20started_81',['Getting Started',['../index.html#autotoc_md10',1,'']]],
   ['global_20state_82',['Global State',['../group__pvr__global.html',1,'']]],
   ['groups_83',['Capability Groups',['../group__controller__caps__groups.html',1,'']]],
   ['gun_5fport_84',['gun_port',['../structmaple__state__t.html#afcc6fd1dfe40a95bc7ece47a8ed4d668',1,'maple_state_t']]],

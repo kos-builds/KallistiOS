@@ -29,5 +29,5 @@ var group__controller__inputs =
     ] ],
     [ "CONT_RESET_BUTTONS", "group__controller__inputs.html#ga5dc5d943a40b6b5f2076a6f634eb03df", null ],
     [ "cont_btn_callback_t", "group__controller__inputs.html#gabed41895f47836983b7fa1de6170c9e0", null ],
-    [ "cont_btn_callback", "group__controller__inputs.html#gae40b8916be4d95f0b5ee474b60426107", null ]
+    [ "cont_btn_callback", "group__controller__inputs.html#ga1e025524e5b7416ffdb801b1156c76c8", null ]
 ];

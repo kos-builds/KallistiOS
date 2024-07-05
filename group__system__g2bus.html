@@ -190,7 +190,8 @@ Functions</h2></td></tr>
 <tr class="separator:gafc4f13361cf418a44d67c28beb0c7dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">List of G2 Bus channels</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p>AICA (SPU) is channel 0, BBA uses channel 1. CH2_DMA_G2CHN and CH3_DMA_G2CHN are not currently tied to any specific device.</p>
+<tr><td class="ititle" colspan="2"><p>AICA (SPU) is channel 0, BBA uses channel 1.</p>
+<p>CH2_DMA_G2CHN and CH3_DMA_G2CHN are not currently tied to any specific device.</p>
 <dl class="section note"><dt>Note</dt><dd>A change in the implementation has rendered *_DMA_MODE and *_DMA_SHCHN obsolete.</dd></dl>
 <p>In the current implementation, *_DMA_MODE should always be set to zero (representing CPU_TRIGGER). There is also no involvement of SH4-DMA with G2-DMA; therefore, the *_DMA_SHCHN values have been deprecated. </p>
 </td></tr>

@@ -61,7 +61,7 @@ var controller_8h =
     [ "CONT_Y", "group__controller__input__masks.html#ga49399495074acb416d9217635829f40d", null ],
     [ "CONT_Z", "group__controller__input__masks.html#ga555a1b456b8dcfe27d637f10babc36f6", null ],
     [ "cont_btn_callback_t", "group__controller__inputs.html#gabed41895f47836983b7fa1de6170c9e0", null ],
-    [ "cont_btn_callback", "group__controller__inputs.html#gae40b8916be4d95f0b5ee474b60426107", null ],
+    [ "cont_btn_callback", "group__controller__inputs.html#ga1e025524e5b7416ffdb801b1156c76c8", null ],
     [ "cont_has_capabilities", "group__controller__query__caps.html#gab938a4e84fe1d66917e37c34f23944a2", null ],
     [ "cont_is_type", "group__controller__query__types.html#ga48b38680e80697abf73ef43d090417b1", null ]
 ];

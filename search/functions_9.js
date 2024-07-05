@@ -11,9 +11,16 @@ var searchData=
   ['kos_5fmd5_5ffinish_8',['kos_md5_finish',['../md5_8h.html#a8a0840f8cc655478554d9680be42ba7a',1,'md5.h']]],
   ['kos_5fmd5_5fhash_5fblock_9',['kos_md5_hash_block',['../md5_8h.html#a60674b3fd7d4bcfaeb0d3ce8ee21e175',1,'md5.h']]],
   ['kos_5fmd5_5fstart_10',['kos_md5_start',['../md5_8h.html#a36efe0262ab24cf9c31574596c5bf2f8',1,'md5.h']]],
-  ['kthread_5fgetspecific_11',['kthread_getspecific',['../tls_8h.html#a0e0d08cb7380729d96a282d2b8850013',1,'tls.h']]],
-  ['kthread_5fkey_5fcreate_12',['kthread_key_create',['../tls_8h.html#a2be12a09f6383f0bc89528a0a1c65dd6',1,'tls.h']]],
-  ['kthread_5fkey_5fdelete_13',['kthread_key_delete',['../tls_8h.html#a73594f1923b117541cdd3546b21d7cdc',1,'tls.h']]],
-  ['kthread_5fonce_14',['kthread_once',['../once_8h.html#ac2fa3cd7e3d71dfa7a70906491905015',1,'once.h']]],
-  ['kthread_5fsetspecific_15',['kthread_setspecific',['../tls_8h.html#aca4bf13c2fdf07cb727336e3ddce6877',1,'tls.h']]]
+  ['kos_5fversion_11',['kos_version',['../group__version__runtime__current.html#ga1a64d103abaa4daaa496891d55206d4c',1,'version.h']]],
+  ['kos_5fversion_5fabove_12',['kos_version_above',['../group__version__runtime__check.html#gaff8f0f4e6bdcc87c64c6e89bc8804f45',1,'version.h']]],
+  ['kos_5fversion_5fbelow_13',['kos_version_below',['../group__version__runtime__check.html#ga94d6462cebe2c62e561c04ee00fe862a',1,'version.h']]],
+  ['kos_5fversion_5fis_14',['kos_version_is',['../group__version__runtime__check.html#gaeffd825bf595c1eef8579e2d8da8860f',1,'version.h']]],
+  ['kos_5fversion_5fmax_15',['kos_version_max',['../group__version__runtime__check.html#gaa55d72344538cc97fbb94972d28cd0d2',1,'version.h']]],
+  ['kos_5fversion_5fmin_16',['kos_version_min',['../group__version__runtime__check.html#ga2afaa4b1371a63751a2a3eb42afd2365',1,'version.h']]],
+  ['kos_5fversion_5fstring_17',['kos_version_string',['../group__version__runtime__current.html#ga6207188dc8ac2ac850f241b4b821e2fd',1,'version.h']]],
+  ['kthread_5fgetspecific_18',['kthread_getspecific',['../tls_8h.html#a0e0d08cb7380729d96a282d2b8850013',1,'tls.h']]],
+  ['kthread_5fkey_5fcreate_19',['kthread_key_create',['../tls_8h.html#a2be12a09f6383f0bc89528a0a1c65dd6',1,'tls.h']]],
+  ['kthread_5fkey_5fdelete_20',['kthread_key_delete',['../tls_8h.html#a73594f1923b117541cdd3546b21d7cdc',1,'tls.h']]],
+  ['kthread_5fonce_21',['kthread_once',['../once_8h.html#ac2fa3cd7e3d71dfa7a70906491905015',1,'once.h']]],
+  ['kthread_5fsetspecific_22',['kthread_setspecific',['../tls_8h.html#aca4bf13c2fdf07cb727336e3ddce6877',1,'tls.h']]]
 ];

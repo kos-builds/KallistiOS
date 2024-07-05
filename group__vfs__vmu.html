@@ -156,7 +156,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gad571bb2a9143bee5ef408f9dbc86e8fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a selected VMU's root block, read its directory.  <br /></td></tr>
 <tr class="separator:gad571bb2a9143bee5ef408f9dbc86e8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4e16c369e8c01f10570a29235e5f269b" id="r_ga4e16c369e8c01f10570a29235e5f269b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vfs__vmu.html#ga4e16c369e8c01f10570a29235e5f269b">vmufs_dir_write</a> (<a class="el" href="structmaple__device__t.html">maple_device_t</a> *dev, <a class="el" href="structvmu__root__t.html">vmu_root_t</a> *root, <a class="el" href="structvmu__dir__t.html">vmu_dir_t</a> *dir_buf)</td></tr>
-<tr class="memdesc:ga4e16c369e8c01f10570a29235e5f269b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a selected VMU's root block and dir blocks, write the dirty dir blocks back to the VMU. Assumes the mutex is held.  <br /></td></tr>
+<tr class="memdesc:ga4e16c369e8c01f10570a29235e5f269b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a selected VMU's root block and dir blocks, write the dirty dir blocks back to the VMU.  <br /></td></tr>
 <tr class="separator:ga4e16c369e8c01f10570a29235e5f269b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c58d2d63a3a8ddfe8a1812f9493755a" id="r_ga5c58d2d63a3a8ddfe8a1812f9493755a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vfs__vmu.html#ga5c58d2d63a3a8ddfe8a1812f9493755a">vmufs_fat_read</a> (<a class="el" href="structmaple__device__t.html">maple_device_t</a> *dev, <a class="el" href="structvmu__root__t.html">vmu_root_t</a> *root, <a class="el" href="group__system__types.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> *fat_buf)</td></tr>
 <tr class="memdesc:ga5c58d2d63a3a8ddfe8a1812f9493755a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a selected VMU's root block, read its FAT.  <br /></td></tr>
@@ -566,7 +566,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Given a selected VMU's root block and dir blocks, write the dirty dir blocks back to the VMU. Assumes the mutex is held. </p>
+<p>Given a selected VMU's root block and dir blocks, write the dirty dir blocks back to the VMU. </p>
+<p>Assumes the mutex is held.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>The VMU to write to. </td></tr>

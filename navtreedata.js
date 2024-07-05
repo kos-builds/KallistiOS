@@ -25,16 +25,16 @@
 var NAVTREE =
 [
   [ "KallistiOS", "index.html", [
-    [ "Overview", "index.html#autotoc_md0", null ],
-    [ "Features", "index.html#autotoc_md1", [
-      [ "Core Functionality", "index.html#autotoc_md2", null ],
-      [ "Dreamcast Hardware Support", "index.html#autotoc_md3", null ],
-      [ "Peripherals and Accessory Support", "index.html#autotoc_md4", null ],
-      [ "Hardware Modification Support", "index.html#autotoc_md5", null ]
+    [ "Overview", "index.html#autotoc_md4", null ],
+    [ "Features", "index.html#autotoc_md5", [
+      [ "Core Functionality", "index.html#autotoc_md6", null ],
+      [ "Dreamcast Hardware Support", "index.html#autotoc_md7", null ],
+      [ "Peripherals and Accessory Support", "index.html#autotoc_md8", null ],
+      [ "Hardware Modification Support", "index.html#autotoc_md9", null ]
     ] ],
-    [ "Getting Started", "index.html#autotoc_md6", null ],
-    [ "Examples", "index.html#autotoc_md7", null ],
-    [ "Resources", "index.html#autotoc_md8", null ],
+    [ "Getting Started", "index.html#autotoc_md10", null ],
+    [ "Examples", "index.html#autotoc_md11", null ],
+    [ "Resources", "index.html#autotoc_md12", null ],
     [ "Source Code", "^https://github.com/KallistiOS/KallistiOS", null ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Todo List", "todo.html", null ],
@@ -78,12 +78,12 @@ var NAVTREEINDEX =
 "group__pvr__regs.html#gaa638a8979e970fc4027117f52a7d130e",
 "group__system__dmac.html#ga6361a41faa5b5f782163bfcd2750cd0a",
 "group__tmu__direct.html#gab74e595c1f0e9892f3bf14182cb507e0",
-"group__video__init.html#ga87896ed7578475ead0fa224c0f5a34d3",
-"math_8h.html",
-"structflashrom__ispcfg__t.html#a9d75fe37cca939cd91e7db131db3baef",
-"structmaple__state__t.html#a69a37bcab4f0c4b28e90ec5716491755",
-"structpvr__poly__ic__hdr__t.html#aaaef0b335fabbd069db6c3848b72d556",
-"structvid__mode__t.html#af5a487a910d34fc739e32774a1bd2b09"
+"group__vid__ctype.html#ga47ffaf53fd9826bed0b7014a8f4a2bdf",
+"ide_8h.html#a82fbefe80e9c926b97ee79b062635451",
+"structelf__rela__t.html#a245d123a76d6ec0405f965821c25cea0",
+"structmaple__devinfo__t.html#a27de7ecc2d334df672e16acb92374540",
+"structpvr__poly__cxt__t.html#a6afeae1b78e5996d552903bac088c3c7",
+"structvfs__handler__t.html#a056d2cdbba83c786545511386e39dad8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

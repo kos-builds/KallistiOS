@@ -123,7 +123,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ga5e686f87b492474749f40732af3be5af" id="r_ga5e686f87b492474749f40732af3be5af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__g2bus.html#ga5e686f87b492474749f40732af3be5af">G2_DMA_TO_SH4</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ga5e686f87b492474749f40732af3be5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">List of G2 Bus channels</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>AICA (SPU) is channel 0, BBA uses channel 1. CH2_DMA_G2CHN and CH3_DMA_G2CHN are not currently tied to any specific device.</p>
+<tr><td colspan="2"><div class="groupText"><p>AICA (SPU) is channel 0, BBA uses channel 1.</p>
+<p>CH2_DMA_G2CHN and CH3_DMA_G2CHN are not currently tied to any specific device.</p>
 <dl class="section note"><dt>Note</dt><dd>A change in the implementation has rendered *_DMA_MODE and *_DMA_SHCHN obsolete.</dd></dl>
 <p>In the current implementation, *_DMA_MODE should always be set to zero (representing CPU_TRIGGER). There is also no involvement of SH4-DMA with G2-DMA; therefore, the *_DMA_SHCHN values have been deprecated. </p>
 </div></td></tr>

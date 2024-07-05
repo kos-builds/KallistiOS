@@ -98,6 +98,7 @@ var annotated_dup =
     [ "sockaddr_storage", "structsockaddr__storage.html", "structsockaddr__storage" ],
     [ "symtab_handler_t", "structsymtab__handler__t.html", "structsymtab__handler__t" ],
     [ "tcbhead_t", "structtcbhead__t.html", "structtcbhead__t" ],
+    [ "termios", "structtermios.html", "structtermios" ],
     [ "ubc_breakpoint_t", "structubc__breakpoint__t.html", "structubc__breakpoint__t" ],
     [ "utsname", "structutsname.html", "structutsname" ],
     [ "vec3f_t", "structvec3f__t.html", "structvec3f__t" ],

@@ -110,7 +110,8 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga3ee41b2252405cbee5fc5920a3e6cf82"><td class="mdescLeft">&#160;</td><td class="mdescRight">A register that dictates the overall operation of the DMAC.  <br /></td></tr>
 <tr class="separator:ga3ee41b2252405cbee5fc5920a3e6cf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">DMA Source Address Registers (SAR0-SAR3)</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>These registers designate the source address for DMA transfers. Currently we only support 32-byte boundary addresses. </p>
+<tr><td colspan="2"><div class="groupText"><p>These registers designate the source address for DMA transfers.</p>
+<p>Currently we only support 32-byte boundary addresses. </p>
 </div></td></tr>
 <tr class="memitem:ga4c11d8c48e5a974a8559d297f624bdcb" id="r_ga4c11d8c48e5a974a8559d297f624bdcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__dmac.html#ga4c11d8c48e5a974a8559d297f624bdcb">DMAC_SAR0</a>&#160;&#160;&#160;(*((<a class="el" href="group__system__types.html#ga922617de9890c61faf2354b09832141e">vuint32</a> *)(<a class="el" href="group__system__dmac.html#ga8064c4f3d53dd221f4c579350ac73e0c">DMAC_BASE</a> + 0x00)))</td></tr>
 <tr class="separator:ga4c11d8c48e5a974a8559d297f624bdcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,7 +122,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ga339005173defbd55d40bf9485324b7a4" id="r_ga339005173defbd55d40bf9485324b7a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__dmac.html#ga339005173defbd55d40bf9485324b7a4">DMAC_SAR3</a>&#160;&#160;&#160;(*((<a class="el" href="group__system__types.html#ga922617de9890c61faf2354b09832141e">vuint32</a> *)(<a class="el" href="group__system__dmac.html#ga8064c4f3d53dd221f4c579350ac73e0c">DMAC_BASE</a> + 0x30)))</td></tr>
 <tr class="separator:ga339005173defbd55d40bf9485324b7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">DMA Destination Address Registers (DAR0-DAR3)</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>These registers designate the destination address for DMA transfers. Currently we only support 32-byte boundary addresses. </p>
+<tr><td colspan="2"><div class="groupText"><p>These registers designate the destination address for DMA transfers.</p>
+<p>Currently we only support 32-byte boundary addresses. </p>
 </div></td></tr>
 <tr class="memitem:ga6211b4f63bdd09c74b3295e9b1da60f6" id="r_ga6211b4f63bdd09c74b3295e9b1da60f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__dmac.html#ga6211b4f63bdd09c74b3295e9b1da60f6">DMAC_DAR0</a>&#160;&#160;&#160;(*((<a class="el" href="group__system__types.html#ga922617de9890c61faf2354b09832141e">vuint32</a> *)(<a class="el" href="group__system__dmac.html#ga8064c4f3d53dd221f4c579350ac73e0c">DMAC_BASE</a> + 0x04)))</td></tr>
 <tr class="separator:ga6211b4f63bdd09c74b3295e9b1da60f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +134,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ga15fb094593ab612b0666cbf485b16ae0" id="r_ga15fb094593ab612b0666cbf485b16ae0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__dmac.html#ga15fb094593ab612b0666cbf485b16ae0">DMAC_DAR3</a>&#160;&#160;&#160;(*((<a class="el" href="group__system__types.html#ga922617de9890c61faf2354b09832141e">vuint32</a> *)(<a class="el" href="group__system__dmac.html#ga8064c4f3d53dd221f4c579350ac73e0c">DMAC_BASE</a> + 0x34)))</td></tr>
 <tr class="separator:ga15fb094593ab612b0666cbf485b16ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">DMA Transfer Count Registers (DMATCR0-DMATCR3)</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>These registers define the transfer count for each DMA channel. The count is defined as: num_bytes_to_transfer/32 </p>
+<tr><td colspan="2"><div class="groupText"><p>These registers define the transfer count for each DMA channel.</p>
+<p>The count is defined as: num_bytes_to_transfer/32 </p>
 </div></td></tr>
 <tr class="memitem:ga64919d17edf8825ea3216eeca64801e4" id="r_ga64919d17edf8825ea3216eeca64801e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__dmac.html#ga64919d17edf8825ea3216eeca64801e4">DMAC_DMATCR0</a>&#160;&#160;&#160;(*((<a class="el" href="group__system__types.html#ga922617de9890c61faf2354b09832141e">vuint32</a> *)(<a class="el" href="group__system__dmac.html#ga8064c4f3d53dd221f4c579350ac73e0c">DMAC_BASE</a> + 0x08)))</td></tr>
 <tr class="separator:ga64919d17edf8825ea3216eeca64801e4"><td class="memSeparator" colspan="2">&#160;</td></tr>

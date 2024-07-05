@@ -36,5 +36,6 @@ var dir_db731743ba9f17d1ef3041653c74f067 =
     [ "thread.h", "thread_8h.html", "thread_8h" ],
     [ "time.h", "time_8h.html", null ],
     [ "tls.h", "tls_8h.html", "tls_8h" ],
+    [ "version.h", "version_8h.html", "version_8h" ],
     [ "worker_thread.h", "worker__thread_8h.html", "worker__thread_8h" ]
 ];

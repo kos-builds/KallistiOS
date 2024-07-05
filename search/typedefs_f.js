@@ -7,6 +7,7 @@ var searchData=
   ['snd_5fstream_5ffilter_5ft_4',['snd_stream_filter_t',['../group__audio__streaming.html#gaf4f096d8b4d50163e34aef9ac5dab1b4',1,'stream.h']]],
   ['snd_5fstream_5fhnd_5ft_5',['snd_stream_hnd_t',['../group__audio__streaming.html#ga8704696730ed041f865066831c029c8f',1,'stream.h']]],
   ['socklen_5ft_6',['socklen_t',['../group__networking__sockets.html#ga6e552de056211b018389ac6122675fb0',1,'socket.h']]],
-  ['spinlock_5ft_7',['spinlock_t',['../spinlock_8h.html#a7d562148dafb0dacf0ee876d482ed090',1,'spinlock.h']]],
-  ['spu_5fdma_5fcallback_5ft_8',['spu_dma_callback_t',['../group__audio__driver.html#ga1f5f4af52c45f1e2227d30cfde015ae5',1,'spu.h']]]
+  ['speed_5ft_7',['speed_t',['../termios_8h.html#a2382e7ab9e04d2ee3e5a2db0d7053ef6',1,'termios.h']]],
+  ['spinlock_5ft_8',['spinlock_t',['../spinlock_8h.html#a7d562148dafb0dacf0ee876d482ed090',1,'spinlock.h']]],
+  ['spu_5fdma_5fcallback_5ft_9',['spu_dma_callback_t',['../group__audio__driver.html#ga1f5f4af52c45f1e2227d30cfde015ae5',1,'spu.h']]]
 ];

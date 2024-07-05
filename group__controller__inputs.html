@@ -129,9 +129,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae40b8916be4d95f0b5ee474b60426107" id="r_gae40b8916be4d95f0b5ee474b60426107"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__controller__inputs.html#gae40b8916be4d95f0b5ee474b60426107">cont_btn_callback</a> (uint8_t addr, uint32_t btns, <a class="el" href="group__controller__inputs.html#gabed41895f47836983b7fa1de6170c9e0">cont_btn_callback_t</a> cb)</td></tr>
-<tr class="memdesc:gae40b8916be4d95f0b5ee474b60426107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an automatic button press callback.  <br /></td></tr>
-<tr class="separator:gae40b8916be4d95f0b5ee474b60426107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e025524e5b7416ffdb801b1156c76c8" id="r_ga1e025524e5b7416ffdb801b1156c76c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__controller__inputs.html#ga1e025524e5b7416ffdb801b1156c76c8">cont_btn_callback</a> (uint8_t addr, uint32_t btns, <a class="el" href="group__controller__inputs.html#gabed41895f47836983b7fa1de6170c9e0">cont_btn_callback_t</a> cb)</td></tr>
+<tr class="memdesc:ga1e025524e5b7416ffdb801b1156c76c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an automatic button press callback.  <br /></td></tr>
+<tr class="separator:ga1e025524e5b7416ffdb801b1156c76c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API used to query for input state. </p>
@@ -173,8 +173,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Controller automatic callback type. </p>
-<p>Functions of this type can be set with <a class="el" href="group__controller__inputs.html#gae40b8916be4d95f0b5ee474b60426107" title="Set an automatic button press callback.">cont_btn_callback()</a> to respond automatically to the specified set of buttons being pressed. This can be used, for instance, to implement the standard A+B+X+Y+Start method of ending the program running.</p>
-<dl class="section warning"><dt>Warning</dt><dd>Your callback will be invoked within a context with interrupts disabled. See cont_btn_callback for more information.</dd></dl>
+<p>Functions of this type can be set with <a class="el" href="group__controller__inputs.html#ga1e025524e5b7416ffdb801b1156c76c8" title="Set an automatic button press callback.">cont_btn_callback()</a> to respond automatically to the specified set of buttons being pressed. This can be used, for instance, to implement the standard A+B+X+Y+Start method of ending the program running.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">addr</td><td>Maple BUS address to poll for the button mask on, or 0 for all ports. </td></tr>
@@ -182,19 +181,19 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__controller__inputs.html#gae40b8916be4d95f0b5ee474b60426107" title="Set an automatic button press callback.">cont_btn_callback</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__controller__inputs.html#ga1e025524e5b7416ffdb801b1156c76c8" title="Set an automatic button press callback.">cont_btn_callback</a> </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae40b8916be4d95f0b5ee474b60426107" name="gae40b8916be4d95f0b5ee474b60426107"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae40b8916be4d95f0b5ee474b60426107">&#9670;&#160;</a></span>cont_btn_callback()</h2>
+<a id="ga1e025524e5b7416ffdb801b1156c76c8" name="ga1e025524e5b7416ffdb801b1156c76c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e025524e5b7416ffdb801b1156c76c8">&#9670;&#160;</a></span>cont_btn_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void cont_btn_callback </td>
+          <td class="memname">int cont_btn_callback </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
@@ -221,13 +220,12 @@ Functions</h2></td></tr>
 
 <p>Set an automatic button press callback. </p>
 <p>This function sets a callback function to be called when the specified controller has the set of buttons given pressed.</p>
-<dl class="section note"><dt>Note</dt><dd>The callback gets invoked for the given maple port; however, providing an address of '0' will cause it to be invoked for any port with a device pressing the given buttons. Since you are passed back the address of this device, You are free to implement your own filtering logic within your callback.</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>The provided callback function is invoked within a context which has interrupts disabled. This means that you should not do any sort of complex processing or make any API calls which depend on interrupts to complete, such as Maple or ethernet processing whichy rely on packet transmission, any sleeping or threading calls, blocking on any sort of file I/O, etc. This mechanism is typically used to quickly terminate the application and should be used with caution.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The callback gets invoked for the given maple port; however, providing an address of '0' will cause it to be invoked for any port with a device pressing the given buttons. Since you are passed back the address of this device, You are free to implement your own filtering logic within your callback. Any callback with addr==0 will be installed to the end of the list of callbacks and will run after callbacks with the same btns but a specified address.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">addr</td><td>The controller to listen on (or 0 for all ports). This value can be obtained by using <a class="el" href="group__maple.html#gaeeb347cfff439c4b67d6c9ac1b1f17d4" title="Return a &quot;maple address&quot; for a port, unit pair.">maple_addr()</a>. </td></tr>
     <tr><td class="paramname">btns</td><td>The buttons bitmask to match. </td></tr>
-    <tr><td class="paramname">cb</td><td>The callback to call when the buttons are pressed. </td></tr>
+    <tr><td class="paramname">cb</td><td>The callback to call when the buttons are pressed. Passing NULL will uninstall all callbacks on the addr/btns combination. </td></tr>
   </table>
   </dd>
 </dl>

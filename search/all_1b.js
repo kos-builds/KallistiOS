@@ -68,7 +68,7 @@ var searchData=
   ['user_20break_20controller_65',['User Break Controller',['../group__ubc.html',1,'']]],
   ['ushort_66',['ushort',['../group__system__types.html#gab95f123a6c9bcfee6a343170ef8c5f69',1,'types.h']]],
   ['usmblks_67',['usmblks',['../structmallinfo.html#a75928ca43d08035413bb25d7d489a039',1,'mallinfo']]],
-  ['utilities_68',['Utilities',['../group__networking__utils.html',1,'']]],
+  ['utilities_68',['utilities',['../group__version__utils.html',1,'Utilities'],['../group__networking__utils.html',1,'Utilities']]],
   ['utsname_69',['utsname',['../structutsname.html',1,'']]],
   ['utsname_2eh_70',['utsname.h',['../utsname_8h.html',1,'']]],
   ['uv_71',['uv',['../structpvr__poly__cxt__t.html#afedc235a4d48767186cf58e2eeee30ca',1,'pvr_poly_cxt_t']]],

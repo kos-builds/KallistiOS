@@ -113,10 +113,10 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a0143f8795f4bc8a9486d6bda0359a40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unit index (starts at zero and counts upwards for multiple network devices of the same type).  <br /></td></tr>
 <tr class="separator:a0143f8795f4bc8a9486d6bda0359a40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa42e807d29a4a8650445f64750f4d9c3" id="r_aa42e807d29a4a8650445f64750f4d9c3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structppp__device__t.html#aa42e807d29a4a8650445f64750f4d9c3">flags</a></td></tr>
-<tr class="memdesc:aa42e807d29a4a8650445f64750f4d9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device flags. The lowest 16 bits of this value are reserved for use by libppp. You are free to use the other 16 bits as you see fit in your driver.  <br /></td></tr>
+<tr class="memdesc:aa42e807d29a4a8650445f64750f4d9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device flags.  <br /></td></tr>
 <tr class="separator:aa42e807d29a4a8650445f64750f4d9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a210318f0aafe9e60563b960f90291284" id="r_a210318f0aafe9e60563b960f90291284"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structppp__device__t.html#a210318f0aafe9e60563b960f90291284">privdata</a></td></tr>
-<tr class="memdesc:a210318f0aafe9e60563b960f90291284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private, device-specific data. This can be used for whatever the driver deems fit. The PPP code won't touch this data at all. Set to NULL if you don't need anything here.  <br /></td></tr>
+<tr class="memdesc:a210318f0aafe9e60563b960f90291284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private, device-specific data.  <br /></td></tr>
 <tr class="separator:a210318f0aafe9e60563b960f90291284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b19240784edc96019bbab28f30b76e" id="r_ad3b19240784edc96019bbab28f30b76e"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structppp__device__t.html#ad3b19240784edc96019bbab28f30b76e">detect</a> )(struct ppp_device *self)</td></tr>
 <tr class="memdesc:ad3b19240784edc96019bbab28f30b76e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to detect the device.  <br /></td></tr>
@@ -190,7 +190,8 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Device flags. The lowest 16 bits of this value are reserved for use by libppp. You are free to use the other 16 bits as you see fit in your driver. </p>
+<p>Device flags. </p>
+<p>The lowest 16 bits of this value are reserved for use by libppp. You are free to use the other 16 bits as you see fit in your driver. </p>
 
 </div>
 </div>
@@ -261,7 +262,8 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Private, device-specific data. This can be used for whatever the driver deems fit. The PPP code won't touch this data at all. Set to NULL if you don't need anything here. </p>
+<p>Private, device-specific data. </p>
+<p>This can be used for whatever the driver deems fit. The PPP code won't touch this data at all. Set to NULL if you don't need anything here. </p>
 
 </div>
 </div>

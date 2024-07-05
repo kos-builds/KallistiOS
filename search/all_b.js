@@ -54,7 +54,7 @@ var searchData=
   ['event_20codes_51',['Event Codes',['../group__asic__events.html',1,'']]],
   ['events_52',['events',['../structpollfd.html#ac9b2f2c5b1f9a7487eb57e67cd4960ef',1,'pollfd::events'],['../group__asic.html',1,'Events']]],
   ['events_20for_20the_20poll_20function_53',['Events for the poll() function',['../group__poll__events.html',1,'']]],
-  ['examples_54',['Examples',['../index.html#autotoc_md7',1,'']]],
+  ['examples_54',['Examples',['../index.html#autotoc_md11',1,'']]],
   ['exc_5fdata_5faddress_5fread_55',['EXC_DATA_ADDRESS_READ',['../group__irq__reexec__codes.html#ga5f6168b7217371a15808fa76a44202dd',1,'irq.h']]],
   ['exc_5fdata_5faddress_5fwrite_56',['EXC_DATA_ADDRESS_WRITE',['../group__irq__reexec__codes.html#gaa8783e449b9545f8fb7dac267eea0b0b',1,'irq.h']]],
   ['exc_5fdma_5fdmae_57',['EXC_DMA_DMAE',['../group__irq__interrupt__codes.html#ga5b35b8a09a1a2bd41801869aeac692d1',1,'irq.h']]],

@@ -10,5 +10,6 @@ var topics =
     [ "System", "group__system.html", "group__system" ],
     [ "Threading", "group__threading.html", "group__threading" ],
     [ "Timing", "group__timing.html", "group__timing" ],
+    [ "Versioning", "group__version.html", "group__version" ],
     [ "Video", "group__video.html", "group__video" ]
 ];
