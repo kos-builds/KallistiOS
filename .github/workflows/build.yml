@@ -14,12 +14,12 @@ jobs:
           - { toolchain_profile: '9.5.0-winxp' }
           - { toolchain_profile: '10.5.0' }
           - { toolchain_profile: '11.4.0' }
-          - { toolchain_profile: '12.3.0' }
+          - { toolchain_profile: '12.4.0' }
           - { toolchain_profile: 'stable' }
           - { toolchain_profile: '13.3.0' }
           - { toolchain_profile: '14.1.0' }
-          - { toolchain_profile: '13.3.1-dev' }
-          - { toolchain_profile: '14.1.1-dev' }
+          # - { toolchain_profile: '13.3.1-dev' }
+          # - { toolchain_profile: '14.1.1-dev' }
           - { toolchain_profile: '15.0.0-dev' }
 
     steps:
@@ -62,9 +62,11 @@ jobs:
           images: ghcr.io/${{ github.repository_owner }}/toolchain-kos-sh4
           flavor: |
             latest=false
-            suffix=-${{ matrix.toolchain_profile }}
+            suffix=-${{ matrix.toolchain_profile }},onlatest=true
           tags: |
             type=sha
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
+            type=raw,value=latest,suffix=,enable=${{ (github.ref == format('refs/heads/{0}', 'master')) && (matrix.toolchain_profile == 'stable') }}
 
       - name: Build Toolchain Container
         uses: docker/build-push-action@v5
@@ -88,9 +90,11 @@ jobs:
           images: ghcr.io/${{ github.repository_owner }}/kos-dc
           flavor: |
             latest=false
-            suffix=-${{ matrix.toolchain_profile }}
+            suffix=-${{ matrix.toolchain_profile }},onlatest=true
           tags: |
             type=sha
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
+            type=raw,value=latest,suffix=,enable=${{ (github.ref == format('refs/heads/{0}', 'master')) && (matrix.toolchain_profile == 'stable') }}
 
       - name: Build KOS Container
         uses: docker/build-push-action@v5
@@ -119,9 +123,11 @@ jobs:
           images: ghcr.io/${{ github.repository_owner }}/kos-ports-dc
           flavor: |
             latest=false
-            suffix=-${{ matrix.toolchain_profile }}
+            suffix=-${{ matrix.toolchain_profile }},onlatest=true
           tags: |
             type=sha
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
+            type=raw,value=latest,suffix=,enable=${{ (github.ref == format('refs/heads/{0}', 'master')) && (matrix.toolchain_profile == 'stable') }}
 
       - name: Build KOS-Ports Container
         uses: docker/build-push-action@v5
@@ -166,8 +172,8 @@ jobs:
           - 'stable'
           - '13.3.0' 
           - '14.1.0'
-          - '13.3.1-dev'
-          - '14.1.1-dev'
+          # - '13.3.1-dev'
+          # - '14.1.1-dev'
           - '15.0.0-dev' 
         example: [ 'hello', 'basic/memtest32', '2ndmix', 'pvr/pvrmark' ]
         # include:
