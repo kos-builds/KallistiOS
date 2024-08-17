@@ -100,6 +100,7 @@ var annotated_dup =
     [ "tcbhead_t", "structtcbhead__t.html", "structtcbhead__t" ],
     [ "termios", "structtermios.html", "structtermios" ],
     [ "ubc_breakpoint_t", "structubc__breakpoint__t.html", "structubc__breakpoint__t" ],
+    [ "utimbuf", "structutimbuf.html", "structutimbuf" ],
     [ "utsname", "structutsname.html", "structutsname" ],
     [ "vec3f_t", "structvec3f__t.html", "structvec3f__t" ],
     [ "vector_t", "structvector__t.html", "structvector__t" ],

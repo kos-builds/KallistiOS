@@ -11,5 +11,6 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "netdb.h", "netdb_8h.html", "netdb_8h" ],
     [ "poll.h", "poll_8h.html", "poll_8h" ],
     [ "pthread.h", "pthread_8h.html", null ],
-    [ "threads.h", "threads_8h.html", "threads_8h" ]
+    [ "threads.h", "threads_8h.html", "threads_8h" ],
+    [ "utime.h", "utime_8h.html", "utime_8h" ]
 ];

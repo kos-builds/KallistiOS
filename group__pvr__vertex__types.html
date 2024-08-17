@@ -175,11 +175,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                                     ( \</div>
-<div class="line">                                     ( ((<a class="code hl_typedef" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a>)( a * 255 ) ) &lt;&lt; 24 ) | \</div>
-<div class="line">                                     ( ((<a class="code hl_typedef" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a>)( r * 255 ) ) &lt;&lt; 16 ) | \</div>
-<div class="line">                                     ( ((<a class="code hl_typedef" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a>)( g * 255 ) ) &lt;&lt; 8 ) | \</div>
-<div class="line">                                     ( ((<a class="code hl_typedef" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a>)( b * 255 ) ) &lt;&lt; 0 ) )</div>
-<div class="ttc" id="agroup__system__types_html_gadde6aaee8457bee49c2a92621fe22b79"><div class="ttname"><a href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a></div><div class="ttdeci">unsigned char uint8</div><div class="ttdoc">8-bit unsigned integer</div><div class="ttdef"><b>Definition</b> types.h:35</div></div>
+<div class="line">                                     ( ((uint8_t)( (a) * 255 ) ) &lt;&lt; 24 ) | \</div>
+<div class="line">                                     ( ((uint8_t)( (r) * 255 ) ) &lt;&lt; 16 ) | \</div>
+<div class="line">                                     ( ((uint8_t)( (g) * 255 ) ) &lt;&lt; 8 ) | \</div>
+<div class="line">                                     ( ((uint8_t)( (b) * 255 ) ) &lt;&lt; 0 ) )</div>
 </div><!-- fragment -->
 <p>Pack four floating point color values into a 32-bit integer form. </p>
 <p>All of the color values should be between 0 and 1.</p>
