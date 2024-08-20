@@ -1,5 +1,6 @@
 var group__arch =
 [
+    [ "Byte Order", "group__system__arch.html", "group__system__arch" ],
     [ "Console Types", "group__hw__consoles.html", "group__hw__consoles" ],
     [ "Exit Paths", "group__arch__retpaths.html", "group__arch__retpaths" ],
     [ "Memory Capacity", "group__hw__memsizes.html", "group__hw__memsizes" ],
@@ -10,15 +11,8 @@ var group__arch =
     [ "arch_fptr_ret_addr", "group__arch.html#ga382f88c6cc8d7ce7f1841e56e94d94d7", null ],
     [ "arch_get_fptr", "group__arch.html#ga4bf02fe7e5534d6fd8d67dc45f32f7b4", null ],
     [ "arch_get_ret_addr", "group__arch.html#ga918cbb6c3977d897b3c205407dda1891", null ],
-    [ "arch_htonl", "group__arch.html#ga7092d9cc2d2a985677eaa8a4967cc59f", null ],
-    [ "arch_htons", "group__arch.html#ga1d63b72b9cce5c377dac0f51c3dc10d8", null ],
-    [ "arch_ntohl", "group__arch.html#ga142e5a19a879ee15c519190ad2a9cecb", null ],
-    [ "arch_ntohs", "group__arch.html#ga112c17ddf1bd86d813b25aab4d8d782e", null ],
     [ "arch_sleep", "group__arch.html#ga8d9b1b29f325cb276f6c62dde830d702", null ],
-    [ "arch_swap16", "group__arch.html#ga8a7bcd4371a54574d0b183a62b75f9c3", null ],
-    [ "arch_swap32", "group__arch.html#ga1ef9bc8bd53f1096813435d5e8be8102", null ],
     [ "arch_valid_address", "group__arch.html#ga9f4ceb692456160c38e8cbf16702c60e", null ],
-    [ "BYTE_ORDER", "group__arch.html#ga1771b7fb65ee640524d0052f229768c3", null ],
     [ "DBL_MEM", "group__arch.html#ga4394a5304d7635437adcc7ed58262f2c", null ],
     [ "DEFAULT_PIXEL_MODE", "group__arch.html#ga94dcee097aaa5a33b1fc211b01611fbb", null ],
     [ "DEFAULT_SERIAL_BAUD", "group__arch.html#gaffcf2e02a44b0d07afa8f3e9524867d9", null ],

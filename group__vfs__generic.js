@@ -38,7 +38,6 @@ var group__vfs__generic =
       [ "unlink", "structvfs__handler__t.html#a8881a0c804ce35d9a06dd5eb4367c809", null ],
       [ "write", "structvfs__handler__t.html#ac24eccf4a8c4c5937038d5f1e52621c8", null ]
     ] ],
-    [ "FD_SETSIZE", "group__vfs__generic.html#ga86c5dbf5a99358e288f573d6a1e0873f", null ],
     [ "FILEHND_INVALID", "group__vfs__generic.html#ga0ab03ab30194317b0cd2846cf24fc14c", null ],
     [ "O_ASYNC", "group__vfs__generic.html#gac5d0c9848f853f8b026b1211b93f78b1", null ],
     [ "O_DIR", "group__vfs__generic.html#gad8aa83f74090afc7e57f871c9491ed95", null ],

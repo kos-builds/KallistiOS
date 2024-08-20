@@ -226,7 +226,7 @@ var searchData=
   ['mm_5finit_223',['mm_init',['../group__arch.html#ga59f9a3cd68e7a6e61c379ef6c0dd818a',1,'arch.h']]],
   ['mm_5fsbrk_224',['mm_sbrk',['../group__arch.html#ga73b779d8bd88a8f1d7a2077b88dff369',1,'arch.h']]],
   ['mmap_225',['mmap',['../structvfs__handler__t.html#a18e4b90dae2328e79e891ae8502ac04d',1,'vfs_handler_t']]],
-  ['mmu_226',['mmu',['../group__sh4__mmu__regs.html',1,'MMU'],['../group__mmu.html',1,'MMU']]],
+  ['mmu_226',['mmu',['../group__mmu.html',1,'MMU'],['../group__sh4__mmu__regs.html',1,'MMU']]],
   ['mmu_2eh_227',['mmu.h',['../mmu_8h.html',1,'']]],
   ['mmu_5fall_5frdonly_228',['MMU_ALL_RDONLY',['../group__mmu__prot__values.html#ga41bb197fa6677f3568b4d965c3b89379',1,'mmu.h']]],
   ['mmu_5fall_5frdwr_229',['MMU_ALL_RDWR',['../group__mmu__prot__values.html#gae62e749b994950ccb572af032eecf0c4',1,'mmu.h']]],

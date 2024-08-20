@@ -104,6 +104,9 @@ $(document).ready(function(){initNavTree('group__arch.html',''); initResizable()
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Modules</h2></td></tr>
+<tr class="memitem:group__system__arch" id="r_group__system__arch"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system__arch.html">Byte Order</a></td></tr>
+<tr class="memdesc:group__system__arch"><td class="mdescLeft">&#160;</td><td class="mdescRight">Byte-order management for the SH4 architecture. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__hw__consoles" id="r_group__hw__consoles"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hw__consoles.html">Console Types</a></td></tr>
 <tr class="memdesc:group__hw__consoles"><td class="mdescLeft">&#160;</td><td class="mdescRight">Byte values returned by <a class="el" href="group__arch.html#gafd8fcf4bf29661fe4a507a3868097d73" title="Retrieve the system mode of the console in use.">hardware_sys_mode()</a> <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,27 +197,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga9f4ceb692456160c38e8cbf16702c60e" id="r_ga9f4ceb692456160c38e8cbf16702c60e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga9f4ceb692456160c38e8cbf16702c60e">arch_valid_address</a>(ptr)&#160;&#160;&#160;((<a class="el" href="group__system__types.html#ga6c3e6bc5b006cba69f59a5c14cd2c8cd">ptr_t</a>)(ptr) &gt;= 0x8c010000 &amp;&amp; (<a class="el" href="group__system__types.html#ga6c3e6bc5b006cba69f59a5c14cd2c8cd">ptr_t</a>)(ptr) &lt; <a class="el" href="group__arch.html#ga77cc74c7207b1839793919978ac12b47">_arch_mem_top</a>)</td></tr>
 <tr class="memdesc:ga9f4ceb692456160c38e8cbf16702c60e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the passed address is likely to be valid.  <br /></td></tr>
 <tr class="separator:ga9f4ceb692456160c38e8cbf16702c60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1771b7fb65ee640524d0052f229768c3" id="r_ga1771b7fb65ee640524d0052f229768c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga1771b7fb65ee640524d0052f229768c3">BYTE_ORDER</a>&#160;&#160;&#160;<a class="el" href="group__system__types.html#ga8782a401fbf55261460863fc2f8df1ce">LITTLE_ENDIAN</a></td></tr>
-<tr class="memdesc:ga1771b7fb65ee640524d0052f229768c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the byte-order of the platform in use.  <br /></td></tr>
-<tr class="separator:ga1771b7fb65ee640524d0052f229768c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a7bcd4371a54574d0b183a62b75f9c3" id="r_ga8a7bcd4371a54574d0b183a62b75f9c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga8a7bcd4371a54574d0b183a62b75f9c3">arch_swap16</a>(x)</td></tr>
-<tr class="memdesc:ga8a7bcd4371a54574d0b183a62b75f9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the byte order of a 16-bit integer.  <br /></td></tr>
-<tr class="separator:ga8a7bcd4371a54574d0b183a62b75f9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ef9bc8bd53f1096813435d5e8be8102" id="r_ga1ef9bc8bd53f1096813435d5e8be8102"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga1ef9bc8bd53f1096813435d5e8be8102">arch_swap32</a>(x)</td></tr>
-<tr class="memdesc:ga1ef9bc8bd53f1096813435d5e8be8102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the byte order of a 32-bit integer.  <br /></td></tr>
-<tr class="separator:ga1ef9bc8bd53f1096813435d5e8be8102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga112c17ddf1bd86d813b25aab4d8d782e" id="r_ga112c17ddf1bd86d813b25aab4d8d782e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga112c17ddf1bd86d813b25aab4d8d782e">arch_ntohs</a>(x)&#160;&#160;&#160;<a class="el" href="group__arch.html#ga8a7bcd4371a54574d0b183a62b75f9c3">arch_swap16</a>(x)</td></tr>
-<tr class="memdesc:ga112c17ddf1bd86d813b25aab4d8d782e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert network-to-host short.  <br /></td></tr>
-<tr class="separator:ga112c17ddf1bd86d813b25aab4d8d782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga142e5a19a879ee15c519190ad2a9cecb" id="r_ga142e5a19a879ee15c519190ad2a9cecb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga142e5a19a879ee15c519190ad2a9cecb">arch_ntohl</a>(x)&#160;&#160;&#160;<a class="el" href="group__arch.html#ga1ef9bc8bd53f1096813435d5e8be8102">arch_swap32</a>(x)</td></tr>
-<tr class="memdesc:ga142e5a19a879ee15c519190ad2a9cecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert network-to-host long.  <br /></td></tr>
-<tr class="separator:ga142e5a19a879ee15c519190ad2a9cecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d63b72b9cce5c377dac0f51c3dc10d8" id="r_ga1d63b72b9cce5c377dac0f51c3dc10d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga1d63b72b9cce5c377dac0f51c3dc10d8">arch_htons</a>(x)&#160;&#160;&#160;<a class="el" href="group__arch.html#ga8a7bcd4371a54574d0b183a62b75f9c3">arch_swap16</a>(x)</td></tr>
-<tr class="memdesc:ga1d63b72b9cce5c377dac0f51c3dc10d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert host-to-network short.  <br /></td></tr>
-<tr class="separator:ga1d63b72b9cce5c377dac0f51c3dc10d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7092d9cc2d2a985677eaa8a4967cc59f" id="r_ga7092d9cc2d2a985677eaa8a4967cc59f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga7092d9cc2d2a985677eaa8a4967cc59f">arch_htonl</a>(x)&#160;&#160;&#160;<a class="el" href="group__arch.html#ga1ef9bc8bd53f1096813435d5e8be8102">arch_swap32</a>(x)</td></tr>
-<tr class="memdesc:ga7092d9cc2d2a985677eaa8a4967cc59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert host-to-network long.  <br /></td></tr>
-<tr class="separator:ga7092d9cc2d2a985677eaa8a4967cc59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -393,118 +375,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga7092d9cc2d2a985677eaa8a4967cc59f" name="ga7092d9cc2d2a985677eaa8a4967cc59f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7092d9cc2d2a985677eaa8a4967cc59f">&#9670;&#160;</a></span>arch_htonl</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define arch_htonl</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__arch.html#ga1ef9bc8bd53f1096813435d5e8be8102">arch_swap32</a>(x)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert host-to-network long. </p>
-<p>This macro converts a value in the host's native byte order to network byte order (big endian). On a little endian system (like the Dreamcast), this should just call <a class="el" href="group__arch.html#ga1ef9bc8bd53f1096813435d5e8be8102" title="Swap the byte order of a 32-bit integer.">arch_swap32()</a>. On a big endian system, this should be a no-op.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The value to be converted. This should be a uint32, or equivalent. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The converted value. </dd></dl>
-
-</div>
-</div>
-<a id="ga1d63b72b9cce5c377dac0f51c3dc10d8" name="ga1d63b72b9cce5c377dac0f51c3dc10d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1d63b72b9cce5c377dac0f51c3dc10d8">&#9670;&#160;</a></span>arch_htons</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define arch_htons</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__arch.html#ga8a7bcd4371a54574d0b183a62b75f9c3">arch_swap16</a>(x)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert host-to-network short. </p>
-<p>This macro converts a value in the host's native byte order to network byte order (big endian). On a little endian system (like the Dreamcast), this should just call <a class="el" href="group__arch.html#ga8a7bcd4371a54574d0b183a62b75f9c3" title="Swap the byte order of a 16-bit integer.">arch_swap16()</a>. On a big endian system, this should be a no-op.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The value to be converted. This should be a uint16, or equivalent. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The converted value. </dd></dl>
-
-</div>
-</div>
-<a id="ga142e5a19a879ee15c519190ad2a9cecb" name="ga142e5a19a879ee15c519190ad2a9cecb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga142e5a19a879ee15c519190ad2a9cecb">&#9670;&#160;</a></span>arch_ntohl</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define arch_ntohl</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__arch.html#ga1ef9bc8bd53f1096813435d5e8be8102">arch_swap32</a>(x)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert network-to-host long. </p>
-<p>This macro converts a network byte order (big endian) value to the host's native byte order. On a little endian system (like the Dreamcast), this should just call <a class="el" href="group__arch.html#ga1ef9bc8bd53f1096813435d5e8be8102" title="Swap the byte order of a 32-bit integer.">arch_swap32()</a>. On a big endian system, this should be a no-op.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The value to be converted. This should be a uint32, or equivalent. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The converted value. </dd></dl>
-
-</div>
-</div>
-<a id="ga112c17ddf1bd86d813b25aab4d8d782e" name="ga112c17ddf1bd86d813b25aab4d8d782e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga112c17ddf1bd86d813b25aab4d8d782e">&#9670;&#160;</a></span>arch_ntohs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define arch_ntohs</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="group__arch.html#ga8a7bcd4371a54574d0b183a62b75f9c3">arch_swap16</a>(x)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert network-to-host short. </p>
-<p>This macro converts a network byte order (big endian) value to the host's native byte order. On a little endian system (like the Dreamcast), this should just call <a class="el" href="group__arch.html#ga8a7bcd4371a54574d0b183a62b75f9c3" title="Swap the byte order of a 16-bit integer.">arch_swap16()</a>. On a big endian system, this should be a no-op.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The value to be converted. This should be a uint16, or equivalent. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The converted value. </dd></dl>
-
-</div>
-</div>
 <a id="ga8d9b1b29f325cb276f6c62dde830d702" name="ga8d9b1b29f325cb276f6c62dde830d702"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8d9b1b29f325cb276f6c62dde830d702">&#9670;&#160;</a></span>arch_sleep</h2>
 
@@ -527,75 +397,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8a7bcd4371a54574d0b183a62b75f9c3" name="ga8a7bcd4371a54574d0b183a62b75f9c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8a7bcd4371a54574d0b183a62b75f9c3">&#9670;&#160;</a></span>arch_swap16</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define arch_swap16</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    ({ \</div>
-<div class="line">    <a class="code hl_typedef" href="group__system__types.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> __x = (x); \</div>
-<div class="line">    __asm__ __volatile__(<span class="stringliteral">&quot;swap.b %0, %0&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (__x) : <span class="stringliteral">&quot;0&quot;</span> (__x)); \</div>
-<div class="line">    __x; \</div>
-<div class="line">})</div>
-<div class="ttc" id="agroup__system__types_html_ga05f6b0ae8f6a6e135b0e290c25fe0e4e"><div class="ttname"><a href="group__system__types.html#ga05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></div><div class="ttdeci">unsigned short uint16</div><div class="ttdoc">16-bit unsigned integer</div><div class="ttdef"><b>Definition</b> types.h:34</div></div>
-</div><!-- fragment -->
-<p>Swap the byte order of a 16-bit integer. </p>
-<p>This macro swaps the byte order of a 16-bit integer in an architecture- defined manner.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The value to be byte-swapped. This should be a uint16, or equivalent. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The swapped value. </dd></dl>
-
-</div>
-</div>
-<a id="ga1ef9bc8bd53f1096813435d5e8be8102" name="ga1ef9bc8bd53f1096813435d5e8be8102"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1ef9bc8bd53f1096813435d5e8be8102">&#9670;&#160;</a></span>arch_swap32</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define arch_swap32</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    ({ \</div>
-<div class="line">    <a class="code hl_typedef" href="group__system__types.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a> __x = (x); \</div>
-<div class="line">    __asm__ __volatile__(<span class="stringliteral">&quot;swap.b %0, %0\n\t&quot;</span> \</div>
-<div class="line">                         <span class="stringliteral">&quot;swap.w %0, %0\n\t&quot;</span> \</div>
-<div class="line">                         <span class="stringliteral">&quot;swap.b %0, %0\n\t&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span>(__x) : <span class="stringliteral">&quot;0&quot;</span> (__x)); \</div>
-<div class="line">    __x; \</div>
-<div class="line">})</div>
-</div><!-- fragment -->
-<p>Swap the byte order of a 32-bit integer. </p>
-<p>This macro swaps the byte order of a 32-bit integer in an architecture- defined manner.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The value to be byte-swapped. This should be a uint32, or equivalent. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The swapped value. </dd></dl>
-
-</div>
-</div>
 <a id="ga9f4ceb692456160c38e8cbf16702c60e" name="ga9f4ceb692456160c38e8cbf16702c60e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9f4ceb692456160c38e8cbf16702c60e">&#9670;&#160;</a></span>arch_valid_address</h2>
 
@@ -615,22 +416,6 @@ Functions</h2></td></tr>
 <p>Returns true if the passed address is likely to be valid. </p>
 <p>Doesn't have to be exact, just a sort of general idea.</p>
 <dl class="section return"><dt>Returns</dt><dd>Whether the address is valid or not for normal memory access. </dd></dl>
-
-</div>
-</div>
-<a id="ga1771b7fb65ee640524d0052f229768c3" name="ga1771b7fb65ee640524d0052f229768c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1771b7fb65ee640524d0052f229768c3">&#9670;&#160;</a></span>BYTE_ORDER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BYTE_ORDER&#160;&#160;&#160;<a class="el" href="group__system__types.html#ga8782a401fbf55261460863fc2f8df1ce">LITTLE_ENDIAN</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Define the byte-order of the platform in use. </p>
 
 </div>
 </div>

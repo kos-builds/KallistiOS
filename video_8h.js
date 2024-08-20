@@ -44,7 +44,7 @@ var video_8h =
     [ "vid_border_color", "group__video__display.html#ga15b6e3cb3709d18036e5bc8c94117247", null ],
     [ "vid_check_cable", "group__video__cables.html#gaf68fd2b4add935fde69cbf6303126d20", null ],
     [ "vid_clear", "group__video__fb.html#ga5315c41603283cfdb6486db9d6b17f8b", null ],
-    [ "vid_empty", "video_8h.html#add6c0c1dfd3b6b902b0b1bb7d0e6d4af", null ],
+    [ "vid_empty", "group__video__fb.html#gadd6c0c1dfd3b6b902b0b1bb7d0e6d4af", null ],
     [ "vid_flip", "group__video__fb.html#gae4e27344871e94bf414ca537ba965a5b", null ],
     [ "vid_get_enabled", "group__video__display.html#ga424f8d61a3268e64f1897715be5fb771", null ],
     [ "vid_get_start", "group__video__fb.html#ga921309b4dc670cf6a7d6420cf68b8240", null ],

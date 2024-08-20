@@ -12,7 +12,7 @@ var searchData=
   ['perf_5fcntr_5ftimer_5fenable_9',['perf_cntr_timer_enable',['../group__perf__counters__timer.html#ga3ee50187ccc93ee4d357c15963294db8',1,'perfctr.h']]],
   ['perf_5fcntr_5ftimer_5fenabled_10',['perf_cntr_timer_enabled',['../group__perf__counters__timer.html#gaf7016a0952e1313c909f57706869e629',1,'perfctr.h']]],
   ['perf_5fcntr_5ftimer_5fns_11',['perf_cntr_timer_ns',['../group__perf__counters__timer.html#ga358fcfefcb2d36710d6cfeb7c97ff77f',1,'perfctr.h']]],
-  ['poll_12',['poll',['../group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f',1,'poll.h']]],
+  ['poll_12',['poll',['../group__threading__polling.html#gab7fc0f6be5f13c81de180c1288ba3b6f',1,'poll.h']]],
   ['posix_5fmemalign_13',['posix_memalign',['../stdlib_8h.html#aed1e9c27ea92f5ae3a480059bf45c311',1,'stdlib.h']]],
   ['ppp_5fadd_5fprotocol_14',['ppp_add_protocol',['../group__networking__ppp.html#gafb38c6a2878f2d073dbbac6c28aca41c',1,'ppp.h']]],
   ['ppp_5fconnect_15',['ppp_connect',['../group__networking__ppp.html#ga48e726f48244416e365dcf047b09740f',1,'ppp.h']]],

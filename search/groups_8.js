@@ -23,7 +23,7 @@ var searchData=
   ['clipping_20modes_20',['Clipping Modes',['../group__pvr__clip__modes.html',1,'']]],
   ['clock_21',['Real-Time Clock',['../group__rtc.html',1,'']]],
   ['clock_20function_22',['Clock Function',['../group__maple__clock.html',1,'']]],
-  ['codes_23',['codes',['../group__networking__icmpv6__unreachable.html',1,'Destination Unreachable Codes'],['../group__asic__events.html',1,'Event Codes'],['../group__irq__exception__codes.html',1,'Exception Codes'],['../group__maple__functions.html',1,'Function Codes'],['../group__networking__icmpv6__param__problem.html',1,'Parameter Problem Codes'],['../group__hw__regions.html',1,'Region Codes'],['../group__kbd__regions.html',1,'Region Codes'],['../group__cd__cmd__codes.html',1,'Syscall Command Codes'],['../group__networking__icmpv6__time__exceeded.html',1,'Time Exceeded Codes']]],
+  ['codes_23',['codes',['../group__networking__icmpv6__unreachable.html',1,'Destination Unreachable Codes'],['../group__asic__events.html',1,'Event Codes'],['../group__irq__exception__codes.html',1,'Exception Codes'],['../group__maple__functions.html',1,'Function Codes'],['../group__networking__icmpv6__param__problem.html',1,'Parameter Problem Codes'],['../group__kbd__regions.html',1,'Region Codes'],['../group__hw__regions.html',1,'Region Codes'],['../group__cd__cmd__codes.html',1,'Syscall Command Codes'],['../group__networking__icmpv6__time__exceeded.html',1,'Time Exceeded Codes']]],
   ['color_24',['Color',['../group__pvr__ctx__color.html',1,'']]],
   ['color_20calculation_20modes_25',['Color Calculation Modes',['../group__pvr__txrenv__modes.html',1,'']]],
   ['command_20bits_26',['Command Bits',['../group__bba__cbits.html',1,'']]],
@@ -56,5 +56,5 @@ var searchData=
   ['counters_53',['Performance Counters',['../group__perf__counters.html',1,'']]],
   ['crc_54',['CRC',['../group__networking__crc.html',1,'']]],
   ['culling_20modes_55',['Culling Modes',['../group__pvr__cull__modes.html',1,'']]],
-  ['current_56',['current',['../group__version__runtime__current.html',1,'Current'],['../group__version__comptime__current.html',1,'Current']]]
+  ['current_56',['current',['../group__version__comptime__current.html',1,'Current'],['../group__version__runtime__current.html',1,'Current']]]
 ];

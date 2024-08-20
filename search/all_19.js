@@ -244,7 +244,7 @@ var searchData=
   ['sockaddr_5fstorage_241',['sockaddr_storage',['../structsockaddr__storage.html',1,'']]],
   ['socket_242',['socket',['../group__networking__sockets.html#gaf4e0711877c45a41168ac677b0670ccd',1,'socket():&#160;socket.h'],['../structfs__socket__proto__t.html#ab8a86898f23d85f6eb9b9a61ff12a71e',1,'fs_socket_proto_t::socket']]],
   ['socket_2eh_243',['socket.h',['../socket_8h.html',1,'']]],
-  ['sockets_244',['sockets',['../group__networking__sockets.html',1,'Sockets'],['../group__vfs__sockets.html',1,'Sockets']]],
+  ['sockets_244',['sockets',['../group__vfs__sockets.html',1,'Sockets'],['../group__networking__sockets.html',1,'Sockets']]],
   ['socklen_5ft_245',['socklen_t',['../group__networking__sockets.html#ga6e552de056211b018389ac6122675fb0',1,'socket.h']]],
   ['sol_5fsocket_246',['SOL_SOCKET',['../group__networking__sockets.html#ga92d045f6ee2f343d6b28830a9fec082e',1,'socket.h']]],
   ['somaxconn_247',['SOMAXCONN',['../group__networking__sockets.html#ga048a394e60b5bb89b8c3d8f9d2c4be38',1,'socket.h']]],

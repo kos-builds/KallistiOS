@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('select_8h.html',''); initResizable(); 
 <div class="textblock"><code>#include &lt;sys/cdefs.h&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;newlib.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="opts_8h_source.html">kos/opts.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="time_8h_source.html">time.h</a>&gt;</code><br />
 <code>#include &lt;sys/time.h&gt;</code><br />
 </div>
@@ -118,8 +119,6 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a2524adc67e986a0f4e0842aec9cc6c00" id="r_a2524adc67e986a0f4e0842aec9cc6c00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="select_8h.html#a2524adc67e986a0f4e0842aec9cc6c00">_SYS_TYPES_FD_SET</a></td></tr>
 <tr class="separator:a2524adc67e986a0f4e0842aec9cc6c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86c5dbf5a99358e288f573d6a1e0873f" id="r_a86c5dbf5a99358e288f573d6a1e0873f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="select_8h.html#a86c5dbf5a99358e288f573d6a1e0873f">FD_SETSIZE</a>&#160;&#160;&#160;1024</td></tr>
-<tr class="separator:a86c5dbf5a99358e288f573d6a1e0873f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae469a6eb5d202973832adcb96074c20f" id="r_ae469a6eb5d202973832adcb96074c20f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="select_8h.html#ae469a6eb5d202973832adcb96074c20f">NFDBITS</a>&#160;&#160;&#160;32</td></tr>
 <tr class="separator:ae469a6eb5d202973832adcb96074c20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97013c4b9982b36a8308917d5c22c52" id="r_ad97013c4b9982b36a8308917d5c22c52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="select_8h.html#ad97013c4b9982b36a8308917d5c22c52">FD_SET</a>(n,  p)&#160;&#160;&#160;((p)-&gt;fds_bits[(n) / <a class="el" href="select_8h.html#ae469a6eb5d202973832adcb96074c20f">NFDBITS</a>] |= (1 &lt;&lt; ((n) % <a class="el" href="select_8h.html#ae469a6eb5d202973832adcb96074c20f">NFDBITS</a>)))</td></tr>
@@ -240,20 +239,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a86c5dbf5a99358e288f573d6a1e0873f" name="a86c5dbf5a99358e288f573d6a1e0873f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86c5dbf5a99358e288f573d6a1e0873f">&#9670;&#160;</a></span>FD_SETSIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FD_SETSIZE&#160;&#160;&#160;1024</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a23c97009457b26f0e96afc9d0e10876b" name="a23c97009457b26f0e96afc9d0e10876b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23c97009457b26f0e96afc9d0e10876b">&#9670;&#160;</a></span>FD_ZERO</h2>
 
@@ -271,12 +256,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        <span class="keywordtype">int</span> __i; \</div>
-<div class="line">        for(__i = 0; __i &lt; <a class="code hl_define" href="select_8h.html#a86c5dbf5a99358e288f573d6a1e0873f">FD_SETSIZE</a> / <a class="code hl_define" href="select_8h.html#ae469a6eb5d202973832adcb96074c20f">NFDBITS</a>; ++__i) { \</div>
+<div class="line">        for(__i = 0; __i &lt; <a class="code hl_define" href="group__debugging__options.html#ga86c5dbf5a99358e288f573d6a1e0873f">FD_SETSIZE</a> / <a class="code hl_define" href="select_8h.html#ae469a6eb5d202973832adcb96074c20f">NFDBITS</a>; ++__i) { \</div>
 <div class="line">            (p)-&gt;fds_bits[__i] = 0; \</div>
 <div class="line">        } \</div>
 <div class="line">    } <span class="keywordflow">while</span>(0)</div>
-<div class="ttc" id="aselect_8h_html_a86c5dbf5a99358e288f573d6a1e0873f"><div class="ttname"><a href="select_8h.html#a86c5dbf5a99358e288f573d6a1e0873f">FD_SETSIZE</a></div><div class="ttdeci">#define FD_SETSIZE</div><div class="ttdef"><b>Definition</b> select.h:46</div></div>
-<div class="ttc" id="aselect_8h_html_ae469a6eb5d202973832adcb96074c20f"><div class="ttname"><a href="select_8h.html#ae469a6eb5d202973832adcb96074c20f">NFDBITS</a></div><div class="ttdeci">#define NFDBITS</div><div class="ttdef"><b>Definition</b> select.h:49</div></div>
+<div class="ttc" id="agroup__debugging__options_html_ga86c5dbf5a99358e288f573d6a1e0873f"><div class="ttname"><a href="group__debugging__options.html#ga86c5dbf5a99358e288f573d6a1e0873f">FD_SETSIZE</a></div><div class="ttdeci">#define FD_SETSIZE</div><div class="ttdoc">The number of distinct file descriptors that can be in use at a time.</div><div class="ttdef"><b>Definition</b> opts.h:135</div></div>
+<div class="ttc" id="aselect_8h_html_ae469a6eb5d202973832adcb96074c20f"><div class="ttname"><a href="select_8h.html#ae469a6eb5d202973832adcb96074c20f">NFDBITS</a></div><div class="ttdeci">#define NFDBITS</div><div class="ttdef"><b>Definition</b> select.h:45</div></div>
 </div><!-- fragment -->
 </div>
 </div>

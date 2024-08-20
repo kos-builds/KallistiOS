@@ -1,6 +1,5 @@
 var fs_8h =
 [
-    [ "FD_SETSIZE", "group__vfs__generic.html#ga86c5dbf5a99358e288f573d6a1e0873f", null ],
     [ "FILEHND_INVALID", "group__vfs__generic.html#ga0ab03ab30194317b0cd2846cf24fc14c", null ],
     [ "O_ASYNC", "group__vfs__generic.html#gac5d0c9848f853f8b026b1211b93f78b1", null ],
     [ "O_DIR", "group__vfs__generic.html#gad8aa83f74090afc7e57f871c9491ed95", null ],

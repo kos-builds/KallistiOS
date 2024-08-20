@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"structelf__rel__t.html#aa4d80f7e9917b293af4f9e94844ec93b":[8,7,10,0,12,1],
+"structelf__rela__t.html":[8,7,10,0,11],
 "structelf__rela__t.html#a245d123a76d6ec0405f965821c25cea0":[8,7,10,0,11,0],
 "structelf__rela__t.html#a2c2369b288017dca75d8d946364d40d4":[8,7,10,0,11,1],
 "structelf__rela__t.html#a97d842896df11036c43ac66712f93086":[8,7,10,0,11,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "structmaple__device__t.html#abc39087c3626495f01169165605bfeac":[8,6,4,10,4],
 "structmaple__device__t.html#abe41d6a715a82882e39f21358e1c39c7":[8,6,4,10,8],
 "structmaple__device__t.html#afaabc3d676fa9a953c80cce04013f361":[8,6,4,10,1],
-"structmaple__devinfo__t.html":[8,6,4,8],
-"structmaple__devinfo__t.html#a07334397f07563e193e9d8441c6a104e":[8,6,4,8,5],
-"structmaple__devinfo__t.html#a27515113c7bc908302ea2278cc739eec":[8,6,4,8,6]
+"structmaple__devinfo__t.html":[8,6,4,8]
 };

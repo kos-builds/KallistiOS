@@ -2,6 +2,7 @@ var vmu__fb_8h =
 [
     [ "vmufb_t", "structvmufb__t.html", "structvmufb__t" ],
     [ "vmufb_font_t", "structvmufb__font__t.html", "structvmufb__font__t" ],
+    [ "vmu_printf", "vmu__fb_8h.html#a98c0626cd06489632030f645be799978", null ],
     [ "vmufb_clear", "vmu__fb_8h.html#ad0815aff12e764934e058a462fa275da", null ],
     [ "vmufb_clear_area", "vmu__fb_8h.html#a38fbea904fd455eef6d3c3c6ce2836a0", null ],
     [ "vmufb_paint_area", "vmu__fb_8h.html#a645de173434978730b95725d91b72f47", null ],

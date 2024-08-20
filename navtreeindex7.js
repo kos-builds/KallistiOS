@@ -1,12 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"group__modem.html#gab5559d0660a0c83d1de3e81abdf1dfd7":[8,5,4,3,16],
-"group__modem.html#gadf7bb3f70a8813a034fa91bd222e10e4":[8,5,4,3,17],
-"group__modem.html#gae83013956239457e17da42e5558e2e1a":[8,5,4,3,22],
-"group__modem.html#gaea782f8e52666d37e4fb1591159e341e":[8,5,4,3,27],
-"group__modem.html#gaeeb6947da48494fe16f673882566b65e":[8,5,4,3,15],
-"group__modem.html#ggaeeb6947da48494fe16f673882566b65ea3d9880d5f625a74b411d127e2342a317":[8,5,4,3,15,2],
-"group__modem.html#ggaeeb6947da48494fe16f673882566b65ea4a4f92b9ff8316897dc103c31f145770":[8,5,4,3,15,0],
 "group__modem.html#ggaeeb6947da48494fe16f673882566b65ea534cef95767454aa3558ce5191d46017":[8,5,4,3,15,3],
 "group__modem.html#ggaeeb6947da48494fe16f673882566b65ea8d5890764fc2f3879b5284e7d16e6a30":[8,5,4,3,15,4],
 "group__modem.html#ggaeeb6947da48494fe16f673882566b65eaf750569ef37a693c3c021b52483cfda7":[8,5,4,3,15,5],
@@ -183,11 +176,12 @@ var NAVTREEINDEX7 =
 "group__networking__icmpv6__unreachable.html#gaceda7d08602a7543303e4f8ce2ec6f3f":[8,5,5,1,0,5],
 "group__networking__icmpv6__unreachable.html#gae950169f908f66cae1a41371145504d1":[8,5,5,1,0,4],
 "group__networking__ip.html":[8,5,6],
-"group__networking__ip.html#ga76019e374e4b3301abea0090e9c5c0f6":[8,5,6,7],
-"group__networking__ip.html#ga94f83c72c1e5e6ef453e47cf59885fb5":[8,5,6,5],
-"group__networking__ip.html#ga979d51fa99f7145221b3ed1afff5b827":[8,5,6,8],
+"group__networking__ip.html#ga029fc3b9526146e54addf53ca297e629":[8,5,6,5],
+"group__networking__ip.html#ga76019e374e4b3301abea0090e9c5c0f6":[8,5,6,8],
+"group__networking__ip.html#ga94f83c72c1e5e6ef453e47cf59885fb5":[8,5,6,6],
+"group__networking__ip.html#ga979d51fa99f7145221b3ed1afff5b827":[8,5,6,9],
 "group__networking__ip.html#ga98edd0af28e1b5f97c806c9cae442339":[8,5,6,3],
-"group__networking__ip.html#gab332d40b15142f33a88d4fcb1d6a5920":[8,5,6,6],
+"group__networking__ip.html#gab332d40b15142f33a88d4fcb1d6a5920":[8,5,6,7],
 "group__networking__ip.html#gabf96615d54d7d81630efc2e8f1770223":[8,5,6,4],
 "group__networking__ipv4.html":[8,5,6,0],
 "group__networking__ipv4.html#ga3d2472d6cf31b73eeb829110dd0fffea":[8,5,6,0,7],
@@ -249,5 +243,11 @@ var NAVTREEINDEX7 =
 "group__networking__sockets.html":[8,5,10],
 "group__networking__sockets.html#ga001a987f0cc1b04e5ebd01931028d45e":[8,5,10,6],
 "group__networking__sockets.html#ga03016e1f876d02247e91a9aca1ff4f01":[8,5,10,36],
-"group__networking__sockets.html#ga048a394e60b5bb89b8c3d8f9d2c4be38":[8,5,10,22]
+"group__networking__sockets.html#ga048a394e60b5bb89b8c3d8f9d2c4be38":[8,5,10,22],
+"group__networking__sockets.html#ga0c63bfe1c5681c844eb704d739e63c00":[8,5,10,31],
+"group__networking__sockets.html#ga19132cffa5b1c7762f0948417e616555":[8,5,10,9],
+"group__networking__sockets.html#ga249394484f9410a2e3f8eba24657feb9":[8,5,10,20],
+"group__networking__sockets.html#ga29c331fb36d757d993032ef83371c4e9":[8,5,10,25],
+"group__networking__sockets.html#ga313001ab5b0b2b81f4e90198d40f6c4a":[8,5,10,7],
+"group__networking__sockets.html#ga323f2649198fc7e64b19881869265618":[8,5,10,14]
 };

@@ -95,11 +95,11 @@ $(document).ready(function(){initNavTree('poll_8h.html',''); initResizable(); })
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">poll.h File Reference<div class="ingroups"><a class="el" href="group__threading.html">Threading</a> &raquo; <a class="el" href="group__threading__posix.html">POSIX</a></div></div></div>
+  <div class="headertitle"><div class="title">poll.h File Reference<div class="ingroups"><a class="el" href="group__threading.html">Threading</a> &raquo; <a class="el" href="group__threading__posix.html">POSIX</a> &raquo; <a class="el" href="group__threading__polling.html">Polling</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Definitions for the <a class="el" href="group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a> function.  
+<p>Definitions for the <a class="el" href="group__threading__polling.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a> function.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;sys/cdefs.h&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('poll_8h.html',''); initResizable(); })
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpollfd.html">pollfd</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a single file descriptor used by <a class="el" href="group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a>.  <a href="structpollfd.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a single file descriptor used by <a class="el" href="group__threading__polling.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a>.  <a href="structpollfd.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -147,20 +147,20 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab43b61cce930cf70d766688ebaecd350" id="r_gab43b61cce930cf70d766688ebaecd350"><td class="memItemLeft" align="right" valign="top">typedef __uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading__posix.html#gab43b61cce930cf70d766688ebaecd350">nfds_t</a></td></tr>
+<tr class="memitem:gab43b61cce930cf70d766688ebaecd350" id="r_gab43b61cce930cf70d766688ebaecd350"><td class="memItemLeft" align="right" valign="top">typedef __uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading__polling.html#gab43b61cce930cf70d766688ebaecd350">nfds_t</a></td></tr>
 <tr class="memdesc:gab43b61cce930cf70d766688ebaecd350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type representing a number of file descriptors.  <br /></td></tr>
 <tr class="separator:gab43b61cce930cf70d766688ebaecd350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab7fc0f6be5f13c81de180c1288ba3b6f" id="r_gab7fc0f6be5f13c81de180c1288ba3b6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f">poll</a> (struct <a class="el" href="structpollfd.html">pollfd</a> fds[], <a class="el" href="group__threading__posix.html#gab43b61cce930cf70d766688ebaecd350">nfds_t</a> nfds, int timeout)</td></tr>
+<tr class="memitem:gab7fc0f6be5f13c81de180c1288ba3b6f" id="r_gab7fc0f6be5f13c81de180c1288ba3b6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading__polling.html#gab7fc0f6be5f13c81de180c1288ba3b6f">poll</a> (struct <a class="el" href="structpollfd.html">pollfd</a> fds[], <a class="el" href="group__threading__polling.html#gab43b61cce930cf70d766688ebaecd350">nfds_t</a> nfds, int timeout)</td></tr>
 <tr class="memdesc:gab7fc0f6be5f13c81de180c1288ba3b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll a group of file descriptors for activity.  <br /></td></tr>
 <tr class="separator:gab7fc0f6be5f13c81de180c1288ba3b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Definitions for the <a class="el" href="group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a> function. </p>
-<p>This file contains the definitions needed for using the <a class="el" href="group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a> function, as directed by the POSIX 2008 standard (aka The Open Group Base Specifications Issue 7). Currently the functionality defined herein only works for sockets, and that is likely how it will stay for some time.</p>
-<p>The <a class="el" href="group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a> function works quite similarly to the <a class="el" href="select_8h.html#a7ffa34f8c9a12e7fd43f5ef65bf889fa" title="Wait for activity on a group of file descriptors.">select()</a> function that it is quite likely that you'd be more familiar with.</p>
+<div class="textblock"><p>Definitions for the <a class="el" href="group__threading__polling.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a> function. </p>
+<p>This file contains the definitions needed for using the <a class="el" href="group__threading__polling.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a> function, as directed by the POSIX 2008 standard (aka The Open Group Base Specifications Issue 7). Currently the functionality defined herein only works for sockets, and that is likely how it will stay for some time.</p>
+<p>The <a class="el" href="group__threading__polling.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a> function works quite similarly to the <a class="el" href="select_8h.html#a7ffa34f8c9a12e7fd43f5ef65bf889fa" title="Wait for activity on a group of file descriptors.">select()</a> function that it is quite likely that you'd be more familiar with.</p>
 <dl class="section author"><dt>Author</dt><dd>Lawrence Sebald </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

@@ -101,7 +101,7 @@ var searchData=
   ['next_98',['next',['../structubc__breakpoint__t.html#a11b60b4b26dd3e02af98a9d3df1d5d52',1,'ubc_breakpoint_t']]],
   ['next_5fheader_99',['next_header',['../structipv6__hdr__t.html#a671d1732a3a8d99d7494a2368f8b7eb1',1,'ipv6_hdr_t']]],
   ['nfdbits_100',['NFDBITS',['../select_8h.html#ae469a6eb5d202973832adcb96074c20f',1,'select.h']]],
-  ['nfds_5ft_101',['nfds_t',['../group__threading__posix.html#gab43b61cce930cf70d766688ebaecd350',1,'poll.h']]],
+  ['nfds_5ft_101',['nfds_t',['../group__threading__polling.html#gab43b61cce930cf70d766688ebaecd350',1,'poll.h']]],
   ['nm_102',['nm',['../structflashrom__ispcfg__t.html#a16f0b7a7e1d2f0fbf2255861d24f9e6d',1,'flashrom_ispcfg_t']]],
   ['nmmgr_103',['nmmgr',['../structsymtab__handler__t.html#a75a283f20ab90c1cb78a102d638047d1',1,'symtab_handler_t::nmmgr'],['../structalias__handler__t.html#aaddb60d6720a24e31912d2a894d0cd3e',1,'alias_handler_t::nmmgr'],['../structvfs__handler__t.html#a94215a80713a1b0a505f8ddbc4fde6c9',1,'vfs_handler_t::nmmgr']]],
   ['nmmgr_2eh_104',['nmmgr.h',['../nmmgr_8h.html',1,'']]],

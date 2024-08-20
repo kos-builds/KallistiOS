@@ -92,10 +92,7 @@ $(document).ready(function(){initNavTree('group__threading__posix.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
-<a href="#files">Files</a> &#124;
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#files">Files</a>  </div>
   <div class="headertitle"><div class="title">POSIX<div class="ingroups"><a class="el" href="group__threading.html">Threading</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -105,104 +102,18 @@ $(document).ready(function(){initNavTree('group__threading__posix.html',''); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__poll__events" id="r_group__poll__events"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__poll__events.html">Events for the poll() function</a></td></tr>
-<tr class="memdesc:group__poll__events"><td class="mdescLeft">&#160;</td><td class="mdescRight">Masks representing event types for <a class="el" href="group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a> <br /></td></tr>
+<tr class="memitem:group__threading__polling" id="r_group__threading__polling"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading__polling.html">Polling</a></td></tr>
+<tr class="memdesc:group__threading__polling"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of POSIX polling. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
 Files</h2></td></tr>
-<tr class="memitem:poll_8h" id="r_poll_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="poll_8h.html">poll.h</a></td></tr>
-<tr class="memdesc:poll_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definitions for the <a class="el" href="group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a> function. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:pthread_8h" id="r_pthread_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pthread_8h.html">pthread.h</a></td></tr>
 <tr class="memdesc:pthread_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">POSIX-compatibile (sorta) threading support. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpollfd.html">pollfd</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a single file descriptor used by <a class="el" href="group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f" title="Poll a group of file descriptors for activity.">poll()</a>.  <a href="structpollfd.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gab43b61cce930cf70d766688ebaecd350" id="r_gab43b61cce930cf70d766688ebaecd350"><td class="memItemLeft" align="right" valign="top">typedef __uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading__posix.html#gab43b61cce930cf70d766688ebaecd350">nfds_t</a></td></tr>
-<tr class="memdesc:gab43b61cce930cf70d766688ebaecd350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type representing a number of file descriptors.  <br /></td></tr>
-<tr class="separator:gab43b61cce930cf70d766688ebaecd350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gab7fc0f6be5f13c81de180c1288ba3b6f" id="r_gab7fc0f6be5f13c81de180c1288ba3b6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f">poll</a> (struct <a class="el" href="structpollfd.html">pollfd</a> fds[], <a class="el" href="group__threading__posix.html#gab43b61cce930cf70d766688ebaecd350">nfds_t</a> nfds, int timeout)</td></tr>
-<tr class="memdesc:gab7fc0f6be5f13c81de180c1288ba3b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll a group of file descriptors for activity.  <br /></td></tr>
-<tr class="separator:gab7fc0f6be5f13c81de180c1288ba3b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>POSIX threading and concurrency APIs. </p>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="gab43b61cce930cf70d766688ebaecd350" name="gab43b61cce930cf70d766688ebaecd350"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab43b61cce930cf70d766688ebaecd350">&#9670;&#160;</a></span>nfds_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef __uint32_t <a class="el" href="group__threading__posix.html#gab43b61cce930cf70d766688ebaecd350">nfds_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Type representing a number of file descriptors. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="gab7fc0f6be5f13c81de180c1288ba3b6f" name="gab7fc0f6be5f13c81de180c1288ba3b6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab7fc0f6be5f13c81de180c1288ba3b6f">&#9670;&#160;</a></span>poll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int poll </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structpollfd.html">pollfd</a>&#160;</td>
-          <td class="paramname"><em>fds</em>[], </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__threading__posix.html#gab43b61cce930cf70d766688ebaecd350">nfds_t</a>&#160;</td>
-          <td class="paramname"><em>nfds</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Poll a group of file descriptors for activity. </p>
-<p>This function will poll a group of file descriptors to check for the events specified on them. The function shall block for the specified period of time (in milliseconds) waiting for an event to occur. The function shall return as soon as at least one fd matches the events specified (or one of the error conditions), or when timeout expires.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fds</td><td>The file descriptors to check, and what events to look for on each. </td></tr>
-    <tr><td class="paramname">nfds</td><td>Number of elements in fds. </td></tr>
-    <tr><td class="paramname">timeout</td><td>Maximum amount of time to block, in milliseconds. Pass 0 to ensure the function does not block and -1 to block for an "infinite" amount of time, until an event occurs.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>-1 on error (sets errno as appropriate), or the number of file descriptors that matched the event flags before the function returns.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__poll__events.html" title="Masks representing event types for poll()">Events for the poll() function</a> </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

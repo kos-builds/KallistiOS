@@ -1,6 +1,7 @@
 var group__video__fb =
 [
     [ "vid_clear", "group__video__fb.html#ga5315c41603283cfdb6486db9d6b17f8b", null ],
+    [ "vid_empty", "group__video__fb.html#gadd6c0c1dfd3b6b902b0b1bb7d0e6d4af", null ],
     [ "vid_flip", "group__video__fb.html#gae4e27344871e94bf414ca537ba965a5b", null ],
     [ "vid_get_start", "group__video__fb.html#ga921309b4dc670cf6a7d6420cf68b8240", null ],
     [ "vid_screen_shot", "group__video__fb.html#ga1dc58c2c16a8d3518d370a81bfb01c60", null ],

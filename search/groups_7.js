@@ -17,5 +17,6 @@ var searchData=
   ['builtin_20vmu_20icons_14',['Builtin VMU Icons',['../group__vmu__icons.html',1,'']]],
   ['bus_15',['bus',['../group__system__g2bus.html',1,'G2 Bus'],['../group__maple.html',1,'Maple Bus']]],
   ['bus_20dma_16',['G2 Bus DMA',['../group__asic__events__g2dma.html',1,'']]],
-  ['buttons_17',['buttons',['../group__mouse__buttons.html',1,'Buttons'],['../group__vmu__buttons.html',1,'VMU Buttons']]]
+  ['buttons_17',['buttons',['../group__mouse__buttons.html',1,'Buttons'],['../group__vmu__buttons.html',1,'VMU Buttons']]],
+  ['byte_20order_18',['Byte Order',['../group__system__arch.html',1,'']]]
 ];

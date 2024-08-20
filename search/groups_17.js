@@ -14,7 +14,7 @@ var searchData=
   ['shading_20modes_11',['Shading Modes',['../group__pvr__shading__types.html',1,'']]],
   ['sizes_12',['Primitive Bin Sizes',['../group__pvr__binsizes.html',1,'']]],
   ['sleeping_13',['Sleeping',['../group__tmu__sleep.html',1,'']]],
-  ['sockets_14',['sockets',['../group__networking__sockets.html',1,'Sockets'],['../group__vfs__sockets.html',1,'Sockets']]],
+  ['sockets_14',['sockets',['../group__vfs__sockets.html',1,'Sockets'],['../group__networking__sockets.html',1,'Sockets']]],
   ['sound_20effects_15',['Sound Effects',['../group__audio__sfx.html',1,'']]],
   ['sources_16',['Sources',['../group__netcfg__srcs.html',1,'']]],
   ['space_17',['Address Space',['../group__memory.html',1,'']]],

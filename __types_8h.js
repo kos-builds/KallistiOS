@@ -9,7 +9,6 @@ var __types_8h =
     [ "AT_SYMLINK_FOLLOW", "group__system__types.html#ga0517ad09fa61307dd14718334b60f36e", null ],
     [ "AT_SYMLINK_NOFOLLOW", "group__system__types.html#gad623014f05ffb83df42ba96900fcd62e", null ],
     [ "BIG_ENDIAN", "group__system__types.html#ga23eb5e058a210efdde3d64e69679fafa", null ],
-    [ "FD_SETSIZE", "group__system__types.html#ga86c5dbf5a99358e288f573d6a1e0873f", null ],
     [ "IOV_MAX", "group__system__types.html#ga25080e819a36fcf9aede01a6e7298ea4", null ],
     [ "LITTLE_ENDIAN", "group__system__types.html#ga8782a401fbf55261460863fc2f8df1ce", null ],
     [ "PDP_ENDIAN", "group__system__types.html#ga2026615c7441e0b093ff7389f46f7654", null ],

@@ -7,7 +7,7 @@ var searchData=
   ['images_4',['Images',['../group__video__img.html',1,'']]],
   ['indices_5',['Special Section Indices',['../group__elf__specsec.html',1,'']]],
   ['init_20start_20values_6',['Init/Start Values',['../group__pvr__go.html',1,'']]],
-  ['initialization_7',['initialization',['../group__pvr__init.html',1,'Initialization'],['../group__video__init.html',1,'Initialization'],['../group__init__flags.html',1,'Initialization'],['../group__pvr__ctx__init.html',1,'Initialization']]],
+  ['initialization_7',['initialization',['../group__video__init.html',1,'Initialization'],['../group__init__flags.html',1,'Initialization'],['../group__pvr__ctx__init.html',1,'Initialization'],['../group__pvr__init.html',1,'Initialization']]],
   ['inputs_8',['inputs',['../group__controller__input__masks.html',1,'Inputs'],['../group__controller__inputs.html',1,'Querying Inputs']]],
   ['interrupt_20completion_20type_9',['Interrupt (Completion Type)',['../group__irq__interrupt__codes.html',1,'']]],
   ['interrupt_20status_20bits_10',['Interrupt Status Bits',['../group__bba__ibits.html',1,'']]],

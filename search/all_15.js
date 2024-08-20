@@ -29,11 +29,12 @@ var searchData=
   ['opendir_26',['opendir',['../group__vfs__posix.html#ga4fcc7ee570eeaee1fe6264604b91257f',1,'dirent.h']]],
   ['operand_27',['operand',['../structubc__breakpoint__t.html#a0b4c521177c6b1700c3b7c25b3558b98',1,'ubc_breakpoint_t']]],
   ['operation_28',['Modes of Operation',['../group__modem__modes.html',1,'']]],
-  ['options_29',['options',['../group__debugging__options.html',1,'Options'],['../group__ipv6__opts.html',1,'Options'],['../group__tcp__opts.html',1,'Options'],['../group__so__opts.html',1,'Options'],['../group__ipv4__opts.html',1,'Options'],['../group__udp__opts.html',1,'UDP Options'],['../group__udplite__opts.html',1,'UDP-Lite Options']]],
+  ['options_29',['options',['../group__so__opts.html',1,'Options'],['../group__ipv4__opts.html',1,'Options'],['../group__ipv6__opts.html',1,'Options'],['../group__tcp__opts.html',1,'Options'],['../group__debugging__options.html',1,'Options'],['../group__udp__opts.html',1,'UDP Options'],['../group__udplite__opts.html',1,'UDP-Lite Options']]],
   ['opts_2eh_30',['opts.h',['../opts_8h.html',1,'']]],
   ['ordblks_31',['ordblks',['../structmallinfo.html#a84990d8dd9c37c99db036a981af8d921',1,'mallinfo']]],
-  ['other_32',['other',['../structelf__sym__t.html#aa58024a286770ee049751de3bb03662c',1,'elf_sym_t']]],
-  ['out_5fprefix_33',['out_prefix',['../structflashrom__ispcfg__t.html#a27c1c545a3b2d5a1779617b44ce3839e',1,'flashrom_ispcfg_t']]],
-  ['overlays_34',['Overlays',['../group__system__overlays.html',1,'']]],
-  ['overview_35',['Overview',['../index.html#autotoc_md4',1,'']]]
+  ['order_32',['Byte Order',['../group__system__arch.html',1,'']]],
+  ['other_33',['other',['../structelf__sym__t.html#aa58024a286770ee049751de3bb03662c',1,'elf_sym_t']]],
+  ['out_5fprefix_34',['out_prefix',['../structflashrom__ispcfg__t.html#a27c1c545a3b2d5a1779617b44ce3839e',1,'flashrom_ispcfg_t']]],
+  ['overlays_35',['Overlays',['../group__system__overlays.html',1,'']]],
+  ['overview_36',['Overview',['../index.html#autotoc_md4',1,'']]]
 ];

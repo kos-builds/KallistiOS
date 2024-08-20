@@ -66,24 +66,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "__pthread_8h.html",
-"group__addrinfo__errors.html#ga3f3b38f2ac6688612a0fd20f3e6210be",
-"group__bba__cbits.html#ga349f469a7bffcb321222ed1c61a35340",
-"group__cd__cmd__codes.html#gab77f40f040fe6126b2e38a3114135fb3",
-"group__fr__errs.html#ga134c97262a283edf5514893f8caa5d0d",
-"group__kbd__keys.html#ga15b54116fba53bbce8114f4b60857faf",
-"group__logging.html#gae182f1c17f205b80995f5ed7eb0d77ca",
-"group__modem.html#gab5559d0660a0c83d1de3e81abdf1dfd7",
-"group__networking__sockets.html#ga0c63bfe1c5681c844eb704d739e63c00",
-"group__pvr__bitmasks.html#gab5447cee0a343c70afaf915e9cc87902",
-"group__pvr__regs.html#gaa638a8979e970fc4027117f52a7d130e",
-"group__system__dmac.html#ga6361a41faa5b5f782163bfcd2750cd0a",
-"group__tmu__direct.html#gab74e595c1f0e9892f3bf14182cb507e0",
-"group__vid__ctype.html#ga47ffaf53fd9826bed0b7014a8f4a2bdf",
-"ide_8h.html#a82fbefe80e9c926b97ee79b062635451",
-"structelf__rela__t.html#a245d123a76d6ec0405f965821c25cea0",
-"structmaple__devinfo__t.html#a27de7ecc2d334df672e16acb92374540",
-"structpvr__poly__cxt__t.html#a6afeae1b78e5996d552903bac088c3c7",
-"structvector__t.html#afcfa5c744755eff60b45a6d887a2ba19"
+"group__addrinfo__errors.html#ga7a0f2f10f8778fe201a68932d18434e5",
+"group__bba__config1bits.html#gaa7583c4e706b6734dc4d00f60eaa2689",
+"group__cd__cmd__response.html#gad9f6cff569b8aaff581efed5a643f26a",
+"group__fr__errs.html#gac59c2c41a0002a8970f9bbf8ac1b1c12",
+"group__kbd__keys.html#ga28677d0dbbb29e91ee9fa5b2895366a8",
+"group__maple.html#ga1cc41b4e5dcf5eb978f1973ba41fd0fe",
+"group__modem.html#ggaeeb6947da48494fe16f673882566b65ea534cef95767454aa3558ce5191d46017",
+"group__networking__sockets.html#ga3f5da0b5be27fe31ec7cc11bfa8d1a25",
+"group__pvr__bitmasks.html#gae34b3aa0c0cd54e96316f2400f26af8f",
+"group__pvr__regs.html#gac578d8ce91052f9498855095d480d454",
+"group__system__dmac.html#ga4c11d8c48e5a974a8559d297f624bdcb",
+"group__tmu__direct.html#ga9398f1776d6ffe82e9cbf4b27bc708d4",
+"group__vid__ctype.html#ga2fb61c8f45ffeef9dffb4fb4cbc85060",
+"ide_8h.html#a0df38ba5c5cb3b360476afbe9571adb4",
+"structelf__rel__t.html#aa4d80f7e9917b293af4f9e94844ec93b",
+"structmaple__devinfo__t.html#a07334397f07563e193e9d8441c6a104e",
+"structpvr__poly__cxt__t.html#a54a3310eee4c329f0f0481399bf1049d",
+"structvector__t.html#a94cbfff1323348ea33d70842dc42b268"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

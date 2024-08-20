@@ -10,6 +10,6 @@ var poll_8h =
     [ "POLLRDNORM", "group__poll__events.html#ga8ca81f2b28be692732d3f0b601fd828d", null ],
     [ "POLLWRBAND", "group__poll__events.html#ga272636cc42f343281665cd1ba92f2f1e", null ],
     [ "POLLWRNORM", "group__poll__events.html#gab8f1f69608ba2430cd5fa629a87b5420", null ],
-    [ "nfds_t", "group__threading__posix.html#gab43b61cce930cf70d766688ebaecd350", null ],
-    [ "poll", "group__threading__posix.html#gab7fc0f6be5f13c81de180c1288ba3b6f", null ]
+    [ "nfds_t", "group__threading__polling.html#gab43b61cce930cf70d766688ebaecd350", null ],
+    [ "poll", "group__threading__polling.html#gab7fc0f6be5f13c81de180c1288ba3b6f", null ]
 ];

@@ -1,11 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"group__pvr__regs.html#gaa638a8979e970fc4027117f52a7d130e":[8,11,5,6,2,20],
-"group__pvr__regs.html#gaa77ead9333130672c8765ce6643030ea":[8,11,5,6,2,35],
-"group__pvr__regs.html#gaa7bb2b9a61d356a10a329716a8e92585":[8,11,5,6,2,8],
-"group__pvr__regs.html#gaa7ea1ac7c9bcfad1304a1d558578bc9f":[8,11,5,6,2,42],
-"group__pvr__regs.html#gab137e659199fac5c0682bdca7b1e1c80":[8,11,5,6,2,51],
-"group__pvr__regs.html#gab2bf6f1317f31d01030b367fc84598ab":[8,11,5,6,2,33],
 "group__pvr__regs.html#gac578d8ce91052f9498855095d480d454":[8,11,5,6,2,40],
 "group__pvr__regs.html#gac98494885a7c3c9fdb2a0a5ed4a7bb71":[8,11,5,6,2,66],
 "group__pvr__regs.html#gacec140a84f3c4b529f49fadeaaf0c5ed":[8,11,5,6,2,10],
@@ -196,6 +190,14 @@ var NAVTREEINDEX10 =
 "group__system__allocator.html#gae5e96ee9e20ef7cfcbbb690877fc9fb2":[8,7,1,11],
 "group__system__allocator.html#gaed027da2fe85e7618851151184d04f49":[8,7,1,6],
 "group__system__allocator.html#gafbedc913aa4651b3c3b4b3aecd9b4711":[8,7,1,14],
+"group__system__arch.html":[8,7,2,0],
+"group__system__arch.html#ga112c17ddf1bd86d813b25aab4d8d782e":[8,7,2,0,4],
+"group__system__arch.html#ga142e5a19a879ee15c519190ad2a9cecb":[8,7,2,0,3],
+"group__system__arch.html#ga1771b7fb65ee640524d0052f229768c3":[8,7,2,0,7],
+"group__system__arch.html#ga1d63b72b9cce5c377dac0f51c3dc10d8":[8,7,2,0,2],
+"group__system__arch.html#ga1ef9bc8bd53f1096813435d5e8be8102":[8,7,2,0,6],
+"group__system__arch.html#ga7092d9cc2d2a985677eaa8a4967cc59f":[8,7,2,0,1],
+"group__system__arch.html#ga8a7bcd4371a54574d0b183a62b75f9c3":[8,7,2,0,5],
 "group__system__cache.html":[8,7,3],
 "group__system__cache.html#ga15f39809331600b9944256e704e1ff35":[8,7,3,1],
 "group__system__cache.html#ga2366627f3bd0e0370e6395b4791d801b":[8,7,3,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "group__system__dmac.html#ga2341db43709365806e9548b90e8aa515":[8,7,4,4],
 "group__system__dmac.html#ga339005173defbd55d40bf9485324b7a4":[8,7,4,18],
 "group__system__dmac.html#ga3ee41b2252405cbee5fc5920a3e6cf82":[8,7,4,10],
-"group__system__dmac.html#ga4c1170f7f94e622c22c0bba2c26a2b07":[8,7,4,2],
-"group__system__dmac.html#ga4c11d8c48e5a974a8559d297f624bdcb":[8,7,4,15],
-"group__system__dmac.html#ga6211b4f63bdd09c74b3295e9b1da60f6":[8,7,4,6]
+"group__system__dmac.html#ga4c1170f7f94e622c22c0bba2c26a2b07":[8,7,4,2]
 };
