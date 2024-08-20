@@ -115,6 +115,11 @@ jobs:
           repository: KallistiOS/kos-ports
           path: ports
 
+      # Work around libjimtcl not building
+      - name: TEMP - Fixup jimtcl
+        run: |
+          rm -rf ports/libjimtcl
+
       - name: Generate KOS-Ports Container Metadata
         id: kos-ports-meta
         uses: docker/metadata-action@v5
