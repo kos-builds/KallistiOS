@@ -13,13 +13,13 @@ jobs:
           - { toolchain_profile: '9.3.0-legacy' }
           - { toolchain_profile: '9.5.0-winxp' }
           - { toolchain_profile: '10.5.0' }
-          - { toolchain_profile: '11.4.0' }
+          - { toolchain_profile: '11.5.0' }
           - { toolchain_profile: '12.4.0' }
           - { toolchain_profile: 'stable' }
           - { toolchain_profile: '13.3.0' }
-          - { toolchain_profile: '14.1.0' }
+          - { toolchain_profile: '14.2.0' }
           # - { toolchain_profile: '13.3.1-dev' }
-          # - { toolchain_profile: '14.1.1-dev' }
+          # - { toolchain_profile: '14.2.1-dev' }
           - { toolchain_profile: '15.0.0-dev' }
 
     steps:
