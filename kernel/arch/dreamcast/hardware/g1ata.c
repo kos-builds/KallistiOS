@@ -232,13 +232,14 @@ static void g1_ata_set_sector_and_count(uint64_t sector, uint32_t count, int lba
 }
 
 static void g1_dma_irq_hnd(uint32 code, void *data) {
+    int can_lba48 = CAN_USE_LBA48();
     unsigned int nb_sectors;
 
     /* XXXX: Probably should look at the code to make sure it isn't an error. */
     (void)code;
     (void)data;
 
-    if(dma_in_progress && dma_nb_sectors > 256) {
+    if(dma_in_progress && !can_lba48 && dma_nb_sectors > 256) {
         dma_sector += 256;
         dma_nb_sectors -= 256;
         nb_sectors = dma_nb_sectors <= 256 ? dma_nb_sectors : 256;
