@@ -125,6 +125,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gac5de88124b6cd04af8e4737b05c4b482" id="r_gac5de88124b6cd04af8e4737b05c4b482"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__audio__sfx.html#ga55343251375bf0ac822aaab24948922f">sfxhnd_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__sfx.html#gac5de88124b6cd04af8e4737b05c4b482">snd_sfx_load</a> (const char *fn)</td></tr>
 <tr class="memdesc:gac5de88124b6cd04af8e4737b05c4b482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a sound effect.  <br /></td></tr>
 <tr class="separator:gac5de88124b6cd04af8e4737b05c4b482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabeb15b22c58ef17e1677308aae1141ca" id="r_gabeb15b22c58ef17e1677308aae1141ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__audio__sfx.html#ga55343251375bf0ac822aaab24948922f">sfxhnd_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__sfx.html#gabeb15b22c58ef17e1677308aae1141ca">snd_sfx_load_ex</a> (const char *fn, uint32_t rate, uint16_t bitsize, uint16_t channels)</td></tr>
+<tr class="memdesc:gabeb15b22c58ef17e1677308aae1141ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a sound effect without wav header.  <br /></td></tr>
+<tr class="separator:gabeb15b22c58ef17e1677308aae1141ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25b621198f02cf572d01f3f070c1f506" id="r_ga25b621198f02cf572d01f3f070c1f506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__audio__sfx.html#ga55343251375bf0ac822aaab24948922f">sfxhnd_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__sfx.html#ga25b621198f02cf572d01f3f070c1f506">snd_sfx_load_fd</a> (<a class="el" href="group__vfs__generic.html#gacc1a13debc906d8d57e38e0ae5ad07b9">file_t</a> fd, size_t len, uint32_t rate, uint16_t bitsize, uint16_t channels)</td></tr>
+<tr class="memdesc:ga25b621198f02cf572d01f3f070c1f506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a sound effect without wav header by file handler.  <br /></td></tr>
+<tr class="separator:ga25b621198f02cf572d01f3f070c1f506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaaacbd4c0d4ae869f9a250f61417893" id="r_gafaaacbd4c0d4ae869f9a250f61417893"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__sfx.html#gafaaacbd4c0d4ae869f9a250f61417893">snd_sfx_unload</a> (<a class="el" href="group__audio__sfx.html#ga55343251375bf0ac822aaab24948922f">sfxhnd_t</a> idx)</td></tr>
 <tr class="memdesc:gafaaacbd4c0d4ae869f9a250f61417893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a sound effect.  <br /></td></tr>
 <tr class="separator:gafaaacbd4c0d4ae869f9a250f61417893"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,6 +266,121 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fn</td><td>The file to load. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A handle to the sound effect on success. On error, SFXHND_INVALID is returned. </dd></dl>
+
+</div>
+</div>
+<a id="gabeb15b22c58ef17e1677308aae1141ca" name="gabeb15b22c58ef17e1677308aae1141ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabeb15b22c58ef17e1677308aae1141ca">&#9670;&#160;</a></span>snd_sfx_load_ex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__audio__sfx.html#ga55343251375bf0ac822aaab24948922f">sfxhnd_t</a> snd_sfx_load_ex </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>bitsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a sound effect without wav header. </p>
+<p>This function loads a sound effect from a RAW file and returns a handle to it. The sound effect can be either stereo or mono, and must either be 8-bit or 16-bit uncompressed PCM samples, or 4-bit Yamaha ADPCM.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The sound effect you are loading must be at most 65534 samples in length and multiple by 32 bytes for each channel.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>The file to load. </td></tr>
+    <tr><td class="paramname">rate</td><td>The frequency of the sound. </td></tr>
+    <tr><td class="paramname">bitsize</td><td>The sample size (bits per sample). </td></tr>
+    <tr><td class="paramname">channels</td><td>Number of channels. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A handle to the sound effect on success. On error, SFXHND_INVALID is returned. </dd></dl>
+
+</div>
+</div>
+<a id="ga25b621198f02cf572d01f3f070c1f506" name="ga25b621198f02cf572d01f3f070c1f506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25b621198f02cf572d01f3f070c1f506">&#9670;&#160;</a></span>snd_sfx_load_fd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__audio__sfx.html#ga55343251375bf0ac822aaab24948922f">sfxhnd_t</a> snd_sfx_load_fd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__vfs__generic.html#gacc1a13debc906d8d57e38e0ae5ad07b9">file_t</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>bitsize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a sound effect without wav header by file handler. </p>
+<p>This function loads a sound effect from a RAW file and returns a handle to it. The sound effect can be either stereo or mono, and must either be 8-bit or 16-bit uncompressed PCM samples, or 4-bit Yamaha ADPCM.</p>
+<dl class="section warning"><dt>Warning</dt><dd>The sound effect you are loading must be at most 65534 samples in length and multiple by 32 bytes for each channel.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>The file handler. </td></tr>
+    <tr><td class="paramname">len</td><td>The file length. </td></tr>
+    <tr><td class="paramname">rate</td><td>The frequency of the sound. </td></tr>
+    <tr><td class="paramname">bitsize</td><td>The sample size (bits per sample). </td></tr>
+    <tr><td class="paramname">channels</td><td>Number of channels. </td></tr>
   </table>
   </dd>
 </dl>

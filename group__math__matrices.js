@@ -39,9 +39,9 @@ var group__math__matrices =
     [ "vec3f_sub_normalize", "group__math__matrices.html#ga9a6a5c0094b8a691e8d6622a0dee39d6", null ],
     [ "matrix_t", "group__math__matrices.html#ga8ecaa0194273075e004dba09f4ca0428", null ],
     [ "point_t", "group__math__matrices.html#gaa79262256077b5a9e0269a36fd48a663", null ],
-    [ "mat_apply", "group__math__matrices.html#gafef412f623b4ff57708af1c22abba2fa", null ],
+    [ "mat_apply", "group__math__matrices.html#ga26119e263528f047d9c73a6701c1b0ea", null ],
     [ "mat_identity", "group__math__matrices.html#ga1ff180bf67c0e8b88e38014472046031", null ],
-    [ "mat_load", "group__math__matrices.html#gaade67bb6ddb2fcb318f2246e5f9863b2", null ],
+    [ "mat_load", "group__math__matrices.html#ga47dc9daa4a52246793f47ea02464a3d6", null ],
     [ "mat_lookat", "group__math__matrices.html#ga7c7ab3fc1edb2a4925a8a0663cf9b622", null ],
     [ "mat_perspective", "group__math__matrices.html#ga57002d12954451d060419d752bdf9762", null ],
     [ "mat_rotate", "group__math__matrices.html#ga21ed325de27b24c9d7abbd8179c3bebf", null ],
@@ -50,7 +50,7 @@ var group__math__matrices =
     [ "mat_rotate_z", "group__math__matrices.html#gaa63428aae19c86ec0f9ee14857352ea2", null ],
     [ "mat_scale", "group__math__matrices.html#ga8cd902b302dbc0b43ddf425aa8aef70d", null ],
     [ "mat_store", "group__math__matrices.html#gac2f4867f117cb85159be2081a023bda9", null ],
-    [ "mat_transform", "group__math__matrices.html#gae7459f75b6becc3ba0157a3108716a43", null ],
+    [ "mat_transform", "group__math__matrices.html#ga7dd7afb39f276c916129158c97e82eb3", null ],
     [ "mat_transform_sq", "group__math__matrices.html#ga1796706c43ae14fd27e696968755aab3", null ],
     [ "mat_translate", "group__math__matrices.html#gab6e70233c699897261a1c7d758670583", null ]
 ];

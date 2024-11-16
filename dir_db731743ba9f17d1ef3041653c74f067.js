@@ -29,6 +29,7 @@ var dir_db731743ba9f17d1ef3041653c74f067 =
     [ "opts.h", "opts_8h.html", "opts_8h" ],
     [ "platform.h", "platform_8h.html", "platform_8h" ],
     [ "recursive_lock.h", "recursive__lock_8h.html", "recursive__lock_8h" ],
+    [ "regfield.h", "regfield_8h.html", "regfield_8h" ],
     [ "rwsem.h", "rwsem_8h.html", "rwsem_8h" ],
     [ "sem.h", "sem_8h.html", "sem_8h" ],
     [ "stdlib.h", "stdlib_8h.html", "stdlib_8h" ],

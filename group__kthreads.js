@@ -45,6 +45,7 @@ var group__kthreads =
       [ "label", "structkthread__t.html#a536277c2ece6b62ceee8a49c90df97e5", null ],
       [ "prio", "structkthread__t.html#a83313dc1ac814ea2ee625bc17d1a2398", null ],
       [ "pwd", "structkthread__t.html#aac3521e4b3523fbbee700d97a97440c3", null ],
+      [ "real_prio", "structkthread__t.html#af469ad26197341c798f37ae14bcb3bce", null ],
       [ "rv", "structkthread__t.html#a6f872304c92b4e69a8e8de782896465a", null ],
       [ "scheduled", "structkthread__t.html#a481e17d48d0af1dd7fda6377bab8c435", null ],
       [ "stack", "structkthread__t.html#a5f1682784a47040f9073751afb297481", null ],

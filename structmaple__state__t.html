@@ -124,15 +124,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a1663dd68a8c331e5418ce0be26eb52b4" id="r_a1663dd68a8c331e5418ce0be26eb52b4"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__state__t.html#a1663dd68a8c331e5418ce0be26eb52b4">dma_in_progress</a></td></tr>
 <tr class="memdesc:a1663dd68a8c331e5418ce0be26eb52b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is a DMA running now?  <br /></td></tr>
 <tr class="separator:a1663dd68a8c331e5418ce0be26eb52b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9b011b12c7ef3f01ea95c231ef46496" id="r_ad9b011b12c7ef3f01ea95c231ef46496"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__state__t.html#ad9b011b12c7ef3f01ea95c231ef46496">detect_port_next</a></td></tr>
-<tr class="memdesc:ad9b011b12c7ef3f01ea95c231ef46496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next port that will be auto-detected.  <br /></td></tr>
-<tr class="separator:ad9b011b12c7ef3f01ea95c231ef46496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f25faa7030221b57d49bd7297ced8d" id="r_a69f25faa7030221b57d49bd7297ced8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__state__t.html#a69f25faa7030221b57d49bd7297ced8d">detect_unit_next</a></td></tr>
-<tr class="memdesc:a69f25faa7030221b57d49bd7297ced8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next unit which will be auto-detected.  <br /></td></tr>
-<tr class="separator:a69f25faa7030221b57d49bd7297ced8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8aba4621c1df6e5eb8b2ff1347c5875" id="r_af8aba4621c1df6e5eb8b2ff1347c5875"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__state__t.html#af8aba4621c1df6e5eb8b2ff1347c5875">detect_wrapped</a></td></tr>
-<tr class="memdesc:af8aba4621c1df6e5eb8b2ff1347c5875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Did the detect wrap?  <br /></td></tr>
-<tr class="separator:af8aba4621c1df6e5eb8b2ff1347c5875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26625d9aea4e6edd8ddac292107fd18" id="r_ab26625d9aea4e6edd8ddac292107fd18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__state__t.html#ab26625d9aea4e6edd8ddac292107fd18">detect_port_next</a></td></tr>
+<tr class="memdesc:ab26625d9aea4e6edd8ddac292107fd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next port that will be auto-detected.  <br /></td></tr>
+<tr class="separator:ab26625d9aea4e6edd8ddac292107fd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6acb7f943ab14a40260178efa60d5b53" id="r_a6acb7f943ab14a40260178efa60d5b53"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__state__t.html#a6acb7f943ab14a40260178efa60d5b53">scan_ready_mask</a></td></tr>
+<tr class="memdesc:a6acb7f943ab14a40260178efa60d5b53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask of ports that completed the initial scan.  <br /></td></tr>
+<tr class="separator:a6acb7f943ab14a40260178efa60d5b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a37bcab4f0c4b28e90ec5716491755" id="r_a69a37bcab4f0c4b28e90ec5716491755"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__state__t.html#a69a37bcab4f0c4b28e90ec5716491755">vbl_handle</a></td></tr>
 <tr class="memdesc:a69a37bcab4f0c4b28e90ec5716491755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our vblank handler handle.  <br /></td></tr>
 <tr class="separator:a69a37bcab4f0c4b28e90ec5716491755"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,51 +147,19 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>Maple state structure. </p>
 <p>We put everything in here to keep from polluting the global namespace too much. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="ad9b011b12c7ef3f01ea95c231ef46496" name="ad9b011b12c7ef3f01ea95c231ef46496"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9b011b12c7ef3f01ea95c231ef46496">&#9670;&#160;</a></span>detect_port_next</h2>
+<a id="ab26625d9aea4e6edd8ddac292107fd18" name="ab26625d9aea4e6edd8ddac292107fd18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26625d9aea4e6edd8ddac292107fd18">&#9670;&#160;</a></span>detect_port_next</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int maple_state_t::detect_port_next</td>
+          <td class="memname"><a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a> maple_state_t::detect_port_next</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Next port that will be auto-detected. </p>
-
-</div>
-</div>
-<a id="a69f25faa7030221b57d49bd7297ced8d" name="a69f25faa7030221b57d49bd7297ced8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69f25faa7030221b57d49bd7297ced8d">&#9670;&#160;</a></span>detect_unit_next</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int maple_state_t::detect_unit_next</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Next unit which will be auto-detected. </p>
-
-</div>
-</div>
-<a id="af8aba4621c1df6e5eb8b2ff1347c5875" name="af8aba4621c1df6e5eb8b2ff1347c5875"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8aba4621c1df6e5eb8b2ff1347c5875">&#9670;&#160;</a></span>detect_wrapped</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int maple_state_t::detect_wrapped</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Did the detect wrap? </p>
 
 </div>
 </div>
@@ -341,6 +306,22 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Maple device info structure. </p>
+
+</div>
+</div>
+<a id="a6acb7f943ab14a40260178efa60d5b53" name="a6acb7f943ab14a40260178efa60d5b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6acb7f943ab14a40260178efa60d5b53">&#9670;&#160;</a></span>scan_ready_mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a> maple_state_t::scan_ready_mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mask of ports that completed the initial scan. </p>
 
 </div>
 </div>

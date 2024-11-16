@@ -94,7 +94,8 @@ $(document).ready(function(){initNavTree('group__arch.html',''); initResizable()
 <a href="#groups">Modules</a> &#124;
 <a href="#files">Files</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Architecture<div class="ingroups"><a class="el" href="group__system.html">System</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -146,9 +147,9 @@ Macros</h2></td></tr>
 <tr class="memitem:gaa8eeab49bd12e96b1d0f4b1c8d5fe284" id="r_gaa8eeab49bd12e96b1d0f4b1c8d5fe284"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#gaa8eeab49bd12e96b1d0f4b1c8d5fe284">page_phys_base</a>&#160;&#160;&#160;0x8c010000</td></tr>
 <tr class="memdesc:gaa8eeab49bd12e96b1d0f4b1c8d5fe284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base address of available physical pages.  <br /></td></tr>
 <tr class="separator:gaa8eeab49bd12e96b1d0f4b1c8d5fe284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8489802eaedf42fdb5f2ce1708eaffa2" id="r_ga8489802eaedf42fdb5f2ce1708eaffa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga8489802eaedf42fdb5f2ce1708eaffa2">HZ</a>&#160;&#160;&#160;100</td></tr>
-<tr class="memdesc:ga8489802eaedf42fdb5f2ce1708eaffa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler interrupt frequency.  <br /></td></tr>
-<tr class="separator:ga8489802eaedf42fdb5f2ce1708eaffa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf42cee43257eabd7a2df99ad00c7c6d9" id="r_gaf42cee43257eabd7a2df99ad00c7c6d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#gaf42cee43257eabd7a2df99ad00c7c6d9">THD_SCHED_HZ</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:gaf42cee43257eabd7a2df99ad00c7c6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scheduler interrupt frequency.  <br /></td></tr>
+<tr class="separator:gaf42cee43257eabd7a2df99ad00c7c6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga04b8faf75e7af18de8afb988815ffe8a" id="r_ga04b8faf75e7af18de8afb988815ffe8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga04b8faf75e7af18de8afb988815ffe8a">THD_STACK_SIZE</a>&#160;&#160;&#160;32768</td></tr>
 <tr class="memdesc:ga04b8faf75e7af18de8afb988815ffe8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default thread stack size.  <br /></td></tr>
 <tr class="separator:ga04b8faf75e7af18de8afb988815ffe8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,9 +198,15 @@ Macros</h2></td></tr>
 <tr class="memitem:ga9f4ceb692456160c38e8cbf16702c60e" id="r_ga9f4ceb692456160c38e8cbf16702c60e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga9f4ceb692456160c38e8cbf16702c60e">arch_valid_address</a>(ptr)&#160;&#160;&#160;((<a class="el" href="group__system__types.html#ga6c3e6bc5b006cba69f59a5c14cd2c8cd">ptr_t</a>)(ptr) &gt;= 0x8c010000 &amp;&amp; (<a class="el" href="group__system__types.html#ga6c3e6bc5b006cba69f59a5c14cd2c8cd">ptr_t</a>)(ptr) &lt; <a class="el" href="group__arch.html#ga77cc74c7207b1839793919978ac12b47">_arch_mem_top</a>)</td></tr>
 <tr class="memdesc:ga9f4ceb692456160c38e8cbf16702c60e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the passed address is likely to be valid.  <br /></td></tr>
 <tr class="separator:ga9f4ceb692456160c38e8cbf16702c60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac90dbe4c6359827226569942bf0e9397" id="r_gac90dbe4c6359827226569942bf0e9397"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#gac90dbe4c6359827226569942bf0e9397">arch_valid_text_address</a>(ptr)&#160;&#160;&#160;    ((uintptr_t)(ptr) &gt;= (uintptr_t)&amp;<a class="el" href="group__arch.html#ga5541094cb97b935cdbd4cc50461ab5eb">_executable_start</a> &amp;&amp; (uintptr_t)(ptr) &lt; (uintptr_t)&amp;<a class="el" href="group__arch.html#gae4ac23ee1563c1bbcb0921de93c24832">_etext</a>)</td></tr>
+<tr class="memdesc:gac90dbe4c6359827226569942bf0e9397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the passed address is in the text section of your program.  <br /></td></tr>
+<tr class="separator:gac90dbe4c6359827226569942bf0e9397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga8280ce4e9f78ff83a2e6e4afe36e8679" id="r_ga8280ce4e9f78ff83a2e6e4afe36e8679"><td class="memItemLeft" align="right" valign="top">static const unsigned HZ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga8280ce4e9f78ff83a2e6e4afe36e8679">__depr</a> (&quot;Please use the new <a class="el" href="group__arch.html#gaf42cee43257eabd7a2df99ad00c7c6d9">THD_SCHED_HZ</a> macro.&quot;)</td></tr>
+<tr class="memdesc:ga8280ce4e9f78ff83a2e6e4afe36e8679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy symbol for scheduler frequency.  <br /></td></tr>
+<tr class="separator:ga8280ce4e9f78ff83a2e6e4afe36e8679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae12ad4bb7caeac1aa648e0d21e7f5e0e" id="r_gae12ad4bb7caeac1aa648e0d21e7f5e0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#gae12ad4bb7caeac1aa648e0d21e7f5e0e">arch_panic</a> (const char *str) <a class="el" href="group__system__macros.html#ga5b6df4fe38493e14648842364a76075f">__noreturn</a></td></tr>
 <tr class="memdesc:gae12ad4bb7caeac1aa648e0d21e7f5e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Panic function.  <br /></td></tr>
 <tr class="separator:gae12ad4bb7caeac1aa648e0d21e7f5e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,6 +252,14 @@ Functions</h2></td></tr>
 <tr class="memitem:gafd8fcf4bf29661fe4a507a3868097d73" id="r_gafd8fcf4bf29661fe4a507a3868097d73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#gafd8fcf4bf29661fe4a507a3868097d73">hardware_sys_mode</a> (int *region)</td></tr>
 <tr class="memdesc:gafd8fcf4bf29661fe4a507a3868097d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the system mode of the console in use.  <br /></td></tr>
 <tr class="separator:gafd8fcf4bf29661fe4a507a3868097d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga5541094cb97b935cdbd4cc50461ab5eb" id="r_ga5541094cb97b935cdbd4cc50461ab5eb"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#ga5541094cb97b935cdbd4cc50461ab5eb">_executable_start</a></td></tr>
+<tr class="memdesc:ga5541094cb97b935cdbd4cc50461ab5eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start and End address for .text portion of program.  <br /></td></tr>
+<tr class="separator:ga5541094cb97b935cdbd4cc50461ab5eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4ac23ee1563c1bbcb0921de93c24832" id="r_gae4ac23ee1563c1bbcb0921de93c24832"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__arch.html#gae4ac23ee1563c1bbcb0921de93c24832">_etext</a></td></tr>
+<tr class="separator:gae4ac23ee1563c1bbcb0921de93c24832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Dreamcast Architecture-Specific Options and high-level API. </p>
@@ -419,6 +434,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gac90dbe4c6359827226569942bf0e9397" name="gac90dbe4c6359827226569942bf0e9397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac90dbe4c6359827226569942bf0e9397">&#9670;&#160;</a></span>arch_valid_text_address</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define arch_valid_text_address</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr</td><td>)</td>
+          <td>&#160;&#160;&#160;    ((uintptr_t)(ptr) &gt;= (uintptr_t)&amp;<a class="el" href="group__arch.html#ga5541094cb97b935cdbd4cc50461ab5eb">_executable_start</a> &amp;&amp; (uintptr_t)(ptr) &lt; (uintptr_t)&amp;<a class="el" href="group__arch.html#gae4ac23ee1563c1bbcb0921de93c24832">_etext</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the passed address is in the text section of your program. </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether the address is valid or not for text memory access. </dd></dl>
+
+</div>
+</div>
 <a id="ga4394a5304d7635437adcc7ed58262f2c" name="ga4394a5304d7635437adcc7ed58262f2c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4394a5304d7635437adcc7ed58262f2c">&#9670;&#160;</a></span>DBL_MEM</h2>
 
@@ -549,25 +585,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8489802eaedf42fdb5f2ce1708eaffa2" name="ga8489802eaedf42fdb5f2ce1708eaffa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8489802eaedf42fdb5f2ce1708eaffa2">&#9670;&#160;</a></span>HZ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HZ&#160;&#160;&#160;100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Scheduler interrupt frequency. </p>
-<p>Timer interrupt frequency for the KOS thread scheduler.</p>
-<dl class="section note"><dt>Note</dt><dd>This value is what KOS uses initially upon startup, but it can be reconfigured at run-time.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__kthreads.html#ga49f240a1e9fc3737dfccb4b61635de92" title="Fetch the scheduler&#39;s current frequency.">thd_get_hz()</a>, <a class="el" href="group__kthreads.html#ga12dad87642cf1a5c8190752b0573f812" title="Set the scheduler&#39;s frequency.">thd_set_hz()</a> </dd></dl>
-
-</div>
-</div>
 <a id="gae6df581be4922040d5cdef1865598dbb" name="gae6df581be4922040d5cdef1865598dbb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae6df581be4922040d5cdef1865598dbb">&#9670;&#160;</a></span>page_count</h2>
 
@@ -665,6 +682,25 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gaf42cee43257eabd7a2df99ad00c7c6d9" name="gaf42cee43257eabd7a2df99ad00c7c6d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf42cee43257eabd7a2df99ad00c7c6d9">&#9670;&#160;</a></span>THD_SCHED_HZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THD_SCHED_HZ&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scheduler interrupt frequency. </p>
+<p>Timer interrupt frequency for the KOS thread scheduler.</p>
+<dl class="section note"><dt>Note</dt><dd>This value is what KOS uses initially upon startup, but it can be reconfigured at run-time.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__kthreads.html#ga49f240a1e9fc3737dfccb4b61635de92" title="Fetch the scheduler&#39;s current frequency.">thd_get_hz()</a>, <a class="el" href="group__kthreads.html#ga12dad87642cf1a5c8190752b0573f812" title="Set the scheduler&#39;s frequency.">thd_set_hz()</a> </dd></dl>
+
+</div>
+</div>
 <a id="ga04b8faf75e7af18de8afb988815ffe8a" name="ga04b8faf75e7af18de8afb988815ffe8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga04b8faf75e7af18de8afb988815ffe8a">&#9670;&#160;</a></span>THD_STACK_SIZE</h2>
 
@@ -682,6 +718,36 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga8280ce4e9f78ff83a2e6e4afe36e8679" name="ga8280ce4e9f78ff83a2e6e4afe36e8679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8280ce4e9f78ff83a2e6e4afe36e8679">&#9670;&#160;</a></span>__depr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const unsigned HZ __depr </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Please use the new <a class="el" href="group__arch.html#gaf42cee43257eabd7a2df99ad00c7c6d9">THD_SCHED_HZ</a> macro.&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Legacy symbol for scheduler frequency. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__arch.html#gaf42cee43257eabd7a2df99ad00c7c6d9" title="Scheduler interrupt frequency.">THD_SCHED_HZ</a> </dd></dl>
+
+</div>
+</div>
 <a id="gab6c7f1b9825d2d653566fd6d58b8afb7" name="gab6c7f1b9825d2d653566fd6d58b8afb7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab6c7f1b9825d2d653566fd6d58b8afb7">&#9670;&#160;</a></span>arch_abort()</h2>
 
@@ -1040,6 +1106,53 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the memory. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function will panic if no memory is available. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gae4ac23ee1563c1bbcb0921de93c24832" name="gae4ac23ee1563c1bbcb0921de93c24832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4ac23ee1563c1bbcb0921de93c24832">&#9670;&#160;</a></span>_etext</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char _etext</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5541094cb97b935cdbd4cc50461ab5eb" name="ga5541094cb97b935cdbd4cc50461ab5eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5541094cb97b935cdbd4cc50461ab5eb">&#9670;&#160;</a></span>_executable_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char _executable_start</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start and End address for .text portion of program. </p>
 
 </div>
 </div>

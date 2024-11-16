@@ -24,6 +24,7 @@ var dir_39421b6c340728d4b73811bee3577133 =
     [ "matrix.h", "matrix_8h.html", "matrix_8h" ],
     [ "matrix3d.h", "matrix3d_8h.html", "matrix3d_8h" ],
     [ "minifont.h", "minifont_8h.html", "minifont_8h" ],
+    [ "perf_monitor.h", "perf__monitor_8h.html", "perf__monitor_8h" ],
     [ "perfctr.h", "perfctr_8h.html", "perfctr_8h" ],
     [ "pvr.h", "pvr_8h.html", "pvr_8h" ],
     [ "scif.h", "scif_8h.html", "scif_8h" ],

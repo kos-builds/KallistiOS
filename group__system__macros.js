@@ -18,5 +18,6 @@ var group__system__macros =
     [ "__unlikely", "group__system__macros.html#ga1b24be92eec1012a66303bb4f63779b2", null ],
     [ "__unused", "group__system__macros.html#ga2e3484535ee610c8e19e9859563abe48", null ],
     [ "__used", "group__system__macros.html#ga9314dbac96b8097be9506b69c32f5ae9", null ],
-    [ "__weak", "group__system__macros.html#ga5181eb756a197a06d1c4ed1f40a065bc", null ]
+    [ "__weak", "group__system__macros.html#ga5181eb756a197a06d1c4ed1f40a065bc", null ],
+    [ "inline", "group__system__macros.html#ga00d24c7231be28dbaf71f5408f30e44c", null ]
 ];

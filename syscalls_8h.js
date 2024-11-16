@@ -25,6 +25,7 @@ var syscalls_8h =
     [ "syscall_misc_setvector", "group__system__calls.html#ga324839a5eab228675948123ee5fe6274", null ],
     [ "syscall_sysinfo_icon", "group__system__calls.html#gad28870ca1fec3d4088a7f285abd6cc13", null ],
     [ "syscall_sysinfo_id", "group__system__calls.html#ga65d5cd07b5ea19b1769f059344409c25", null ],
+    [ "syscall_sysinfo_init", "group__system__calls.html#ga7a17bf4870aa07c6c67441aed7293454", null ],
     [ "syscall_system_bios_menu", "group__system__calls.html#ga62e89c269a13a54fec9fbd8ed2e83369", null ],
     [ "syscall_system_cd_menu", "group__system__calls.html#gaa3eccdde47980ca2b049ef0309190011", null ],
     [ "syscall_system_reset", "group__system__calls.html#gab1ac0b547efb2ad09c8cadb382f34386", null ]

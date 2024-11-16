@@ -11,7 +11,9 @@ var searchData=
   ['_5f_5fvalue_8',['__value',['../struct__mbstate__t.html#a07d0375c641cdef0a598ce3276205323',1,'_mbstate_t']]],
   ['_5f_5fwch_9',['__wch',['../struct__mbstate__t.html#a6222d75eeed0d11331f95cc31cc95d3b',1,'_mbstate_t']]],
   ['_5f_5fwchb_10',['__wchb',['../struct__mbstate__t.html#ab05d19af90b0b38c292da879b74d147e',1,'_mbstate_t']]],
-  ['_5fss_5falign_11',['_ss_align',['../structsockaddr__storage.html#a8dc961aae913f21436f3962858aec7fe',1,'sockaddr_storage']]],
-  ['_5fss_5fpad1_12',['_ss_pad1',['../structsockaddr__storage.html#ad74d428e2a4c0677663d304557cfb78e',1,'sockaddr_storage']]],
-  ['_5fss_5fpad2_13',['_ss_pad2',['../structsockaddr__storage.html#aa20d33c02d9a0469bf1d254d451794fb',1,'sockaddr_storage']]]
+  ['_5fetext_11',['_etext',['../group__arch.html#gae4ac23ee1563c1bbcb0921de93c24832',1,'arch.h']]],
+  ['_5fexecutable_5fstart_12',['_executable_start',['../group__arch.html#ga5541094cb97b935cdbd4cc50461ab5eb',1,'arch.h']]],
+  ['_5fss_5falign_13',['_ss_align',['../structsockaddr__storage.html#a8dc961aae913f21436f3962858aec7fe',1,'sockaddr_storage']]],
+  ['_5fss_5fpad1_14',['_ss_pad1',['../structsockaddr__storage.html#ad74d428e2a4c0677663d304557cfb78e',1,'sockaddr_storage']]],
+  ['_5fss_5fpad2_15',['_ss_pad2',['../structsockaddr__storage.html#aa20d33c02d9a0469bf1d254d451794fb',1,'sockaddr_storage']]]
 ];

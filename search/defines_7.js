@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jisx_5f0208_5frow_5fsize_0',['JISX_0208_ROW_SIZE',['../biosfont_8h.html#a99e731cbb1713abe2b82fad66c6e1fba',1,'biosfont.h']]]
+  ['ioctl_0',['ioctl',['../ioctl_8h.html#a283e8988aa6e03e93cdc45dbc65848c8',1,'ioctl.h']]]
 ];

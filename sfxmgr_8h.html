@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('sfxmgr_8h.html',''); initResizable(); 
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;sys/cdefs.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="types_8h_source.html">arch/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="fs_8h_source.html">kos/fs.h</a>&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div>
 <p><a href="sfxmgr_8h_source.html">Go to the source code of this file.</a></p>
@@ -123,6 +124,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gac5de88124b6cd04af8e4737b05c4b482" id="r_gac5de88124b6cd04af8e4737b05c4b482"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__audio__sfx.html#ga55343251375bf0ac822aaab24948922f">sfxhnd_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__sfx.html#gac5de88124b6cd04af8e4737b05c4b482">snd_sfx_load</a> (const char *fn)</td></tr>
 <tr class="memdesc:gac5de88124b6cd04af8e4737b05c4b482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a sound effect.  <br /></td></tr>
 <tr class="separator:gac5de88124b6cd04af8e4737b05c4b482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabeb15b22c58ef17e1677308aae1141ca" id="r_gabeb15b22c58ef17e1677308aae1141ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__audio__sfx.html#ga55343251375bf0ac822aaab24948922f">sfxhnd_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__sfx.html#gabeb15b22c58ef17e1677308aae1141ca">snd_sfx_load_ex</a> (const char *fn, uint32_t rate, uint16_t bitsize, uint16_t channels)</td></tr>
+<tr class="memdesc:gabeb15b22c58ef17e1677308aae1141ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a sound effect without wav header.  <br /></td></tr>
+<tr class="separator:gabeb15b22c58ef17e1677308aae1141ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25b621198f02cf572d01f3f070c1f506" id="r_ga25b621198f02cf572d01f3f070c1f506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__audio__sfx.html#ga55343251375bf0ac822aaab24948922f">sfxhnd_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__sfx.html#ga25b621198f02cf572d01f3f070c1f506">snd_sfx_load_fd</a> (<a class="el" href="group__vfs__generic.html#gacc1a13debc906d8d57e38e0ae5ad07b9">file_t</a> fd, size_t len, uint32_t rate, uint16_t bitsize, uint16_t channels)</td></tr>
+<tr class="memdesc:ga25b621198f02cf572d01f3f070c1f506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a sound effect without wav header by file handler.  <br /></td></tr>
+<tr class="separator:ga25b621198f02cf572d01f3f070c1f506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaaacbd4c0d4ae869f9a250f61417893" id="r_gafaaacbd4c0d4ae869f9a250f61417893"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__sfx.html#gafaaacbd4c0d4ae869f9a250f61417893">snd_sfx_unload</a> (<a class="el" href="group__audio__sfx.html#ga55343251375bf0ac822aaab24948922f">sfxhnd_t</a> idx)</td></tr>
 <tr class="memdesc:gafaaacbd4c0d4ae869f9a250f61417893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload a sound effect.  <br /></td></tr>
 <tr class="separator:gafaaacbd4c0d4ae869f9a250f61417893"><td class="memSeparator" colspan="2">&#160;</td></tr>

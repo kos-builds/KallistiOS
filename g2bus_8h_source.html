@@ -265,7 +265,7 @@ $(document).ready(function(){initNavTree('g2bus_8h_source.html',''); initResizab
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="group__system__g2bus.html#ga726597af42393c34a37614573786bb29">  162</a></span><span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_struct" href="structg2__ctx__t.html">g2_ctx_t</a> <a class="code hl_function" href="group__system__g2bus.html#ga726597af42393c34a37614573786bb29">g2_lock</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_struct" href="structg2__ctx__t.html">g2_ctx_t</a> ctx;</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    ctx.<a class="code hl_variable" href="structg2__ctx__t.html#ac267f55e228e317e8bd936bedb1b0281">irq_state</a> = <a class="code hl_function" href="group__irqs.html#gafb0c3c3a580a4319c69c2a46c71b5d15">irq_disable</a>();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    ctx.<a class="code hl_variable" href="structg2__ctx__t.html#ac267f55e228e317e8bd936bedb1b0281">irq_state</a> = <a class="code hl_function" href="group__irq__mask.html#gac8594a5bb7ec76a0d1a5f08c9b7aae27">irq_disable</a>();</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="comment">/* Suspend any G2 DMA */</span></div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    G2_DMA_SUSPEND_SPU = 1;</div>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('g2bus_8h_source.html',''); initResizab
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    G2_DMA_SUSPEND_BBA = 0;</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    G2_DMA_SUSPEND_CH2 = 0;</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <a class="code hl_function" href="group__irqs.html#ga1f7f5e00972155a86d4fc4ce2df1538d">irq_restore</a>(ctx.<a class="code hl_variable" href="structg2__ctx__t.html#ac267f55e228e317e8bd936bedb1b0281">irq_state</a>);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <a class="code hl_function" href="group__irq__mask.html#ga768b54fd6ed13cbc74921ff529c6c424">irq_restore</a>(ctx.<a class="code hl_variable" href="structg2__ctx__t.html#ac267f55e228e317e8bd936bedb1b0281">irq_state</a>);</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>}</div>
 </div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
@@ -457,8 +457,8 @@ $(document).ready(function(){initNavTree('g2bus_8h_source.html',''); initResizab
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="preprocessor">#endif  </span><span class="comment">/* __DC_G2BUS_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
 <div class="ttc" id="afifo_8h_html"><div class="ttname"><a href="fifo_8h.html">fifo.h</a></div><div class="ttdoc">Macros to assess FIFO status.</div></div>
-<div class="ttc" id="agroup__irqs_html_ga1f7f5e00972155a86d4fc4ce2df1538d"><div class="ttname"><a href="group__irqs.html#ga1f7f5e00972155a86d4fc4ce2df1538d">irq_restore</a></div><div class="ttdeci">void irq_restore(int v)</div><div class="ttdoc">Restore IRQ state.</div></div>
-<div class="ttc" id="agroup__irqs_html_gafb0c3c3a580a4319c69c2a46c71b5d15"><div class="ttname"><a href="group__irqs.html#gafb0c3c3a580a4319c69c2a46c71b5d15">irq_disable</a></div><div class="ttdeci">int irq_disable(void)</div><div class="ttdoc">Disable interrupts.</div></div>
+<div class="ttc" id="agroup__irq__mask_html_ga768b54fd6ed13cbc74921ff529c6c424"><div class="ttname"><a href="group__irq__mask.html#ga768b54fd6ed13cbc74921ff529c6c424">irq_restore</a></div><div class="ttdeci">void irq_restore(irq_mask_t v)</div><div class="ttdoc">Restore IRQ state.</div></div>
+<div class="ttc" id="agroup__irq__mask_html_gac8594a5bb7ec76a0d1a5f08c9b7aae27"><div class="ttname"><a href="group__irq__mask.html#gac8594a5bb7ec76a0d1a5f08c9b7aae27">irq_disable</a></div><div class="ttdeci">irq_mask_t irq_disable(void)</div><div class="ttdoc">Disable interrupts.</div></div>
 <div class="ttc" id="agroup__system__fifo_html_ga0311537c00d445bd49311fea60814562"><div class="ttname"><a href="group__system__fifo.html#ga0311537c00d445bd49311fea60814562">FIFO_G2</a></div><div class="ttdeci">#define FIFO_G2</div><div class="ttdef"><b>Definition</b> fifo.h:53</div></div>
 <div class="ttc" id="agroup__system__fifo_html_ga13f8a2ecc978716410a708e7a2c3c705"><div class="ttname"><a href="group__system__fifo.html#ga13f8a2ecc978716410a708e7a2c3c705">FIFO_SH4</a></div><div class="ttdeci">#define FIFO_SH4</div><div class="ttdef"><b>Definition</b> fifo.h:54</div></div>
 <div class="ttc" id="agroup__system__fifo_html_ga9e5c9878194f462bf7a46ca8a7b8f9d2"><div class="ttname"><a href="group__system__fifo.html#ga9e5c9878194f462bf7a46ca8a7b8f9d2">FIFO_STATUS</a></div><div class="ttdeci">#define FIFO_STATUS</div><div class="ttdoc">Address of the FIFO status register.</div><div class="ttdef"><b>Definition</b> fifo.h:35</div></div>

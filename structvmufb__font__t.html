@@ -92,32 +92,36 @@ $(document).ready(function(){initNavTree('structvmufb__font__t.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">vmufb_font_t Struct Reference</div></div>
+  <div class="headertitle"><div class="title">vmufb_font_t Struct Reference<div class="ingroups"><a class="el" href="group__peripherals.html">Peripherals</a> &raquo; <a class="el" href="group__vmu.html">Visual Memory Unit</a> &raquo; <a class="el" href="group__vmu__fb.html">Framebuffer</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>VMU framebuffer font meta-data.  
  <a href="structvmufb__font__t.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="vmu__fb_8h_source.html">dc/vmu_fb.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="vmu__fb_8h_source.html">vmu_fb.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:a34caa4d0554cd183aafbf7bcb58127bb" id="r_a34caa4d0554cd183aafbf7bcb58127bb"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvmufb__font__t.html#a34caa4d0554cd183aafbf7bcb58127bb">id</a></td></tr>
+<tr class="memdesc:a34caa4d0554cd183aafbf7bcb58127bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Font id.  <br /></td></tr>
+<tr class="separator:a34caa4d0554cd183aafbf7bcb58127bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add2be67ace89958b9b4b913dfacc0e8a" id="r_add2be67ace89958b9b4b913dfacc0e8a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvmufb__font__t.html#add2be67ace89958b9b4b913dfacc0e8a">w</a></td></tr>
 <tr class="memdesc:add2be67ace89958b9b4b913dfacc0e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character width in pixels.  <br /></td></tr>
 <tr class="separator:add2be67ace89958b9b4b913dfacc0e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d78646bab8c2daf27b9d67b7f083717" id="r_a1d78646bab8c2daf27b9d67b7f083717"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvmufb__font__t.html#a1d78646bab8c2daf27b9d67b7f083717">h</a></td></tr>
 <tr class="memdesc:a1d78646bab8c2daf27b9d67b7f083717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character height in pixels.  <br /></td></tr>
 <tr class="separator:a1d78646bab8c2daf27b9d67b7f083717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a616161c30e6e3969c40bc28ef63dd7f7" id="r_a616161c30e6e3969c40bc28ef63dd7f7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvmufb__font__t.html#a616161c30e6e3969c40bc28ef63dd7f7">stride</a></td></tr>
-<tr class="memdesc:a616161c30e6e3969c40bc28ef63dd7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of one character in bytes.  <br /></td></tr>
-<tr class="separator:a616161c30e6e3969c40bc28ef63dd7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bd2514b46cdeb54a64802f71cad7fd" id="r_aa5bd2514b46cdeb54a64802f71cad7fd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvmufb__font__t.html#aa5bd2514b46cdeb54a64802f71cad7fd">stride</a></td></tr>
+<tr class="memdesc:aa5bd2514b46cdeb54a64802f71cad7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of one character in bytes.  <br /></td></tr>
+<tr class="separator:aa5bd2514b46cdeb54a64802f71cad7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aeaad9a546e11f72eee69257103e420" id="r_a4aeaad9a546e11f72eee69257103e420"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvmufb__font__t.html#a4aeaad9a546e11f72eee69257103e420">fontdata</a></td></tr>
 <tr class="memdesc:a4aeaad9a546e11f72eee69257103e420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the font data.  <br /></td></tr>
 <tr class="separator:a4aeaad9a546e11f72eee69257103e420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>VMU framebuffer font meta-data. </p>
+<p>This structure describes a font, including character sizes, layout, and a pointer to the raw font data. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a4aeaad9a546e11f72eee69257103e420" name="a4aeaad9a546e11f72eee69257103e420"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4aeaad9a546e11f72eee69257103e420">&#9670;&#160;</a></span>fontdata</h2>
@@ -151,14 +155,30 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a616161c30e6e3969c40bc28ef63dd7f7" name="a616161c30e6e3969c40bc28ef63dd7f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a616161c30e6e3969c40bc28ef63dd7f7">&#9670;&#160;</a></span>stride</h2>
+<a id="a34caa4d0554cd183aafbf7bcb58127bb" name="a34caa4d0554cd183aafbf7bcb58127bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34caa4d0554cd183aafbf7bcb58127bb">&#9670;&#160;</a></span>id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int vmufb_font_t::stride</td>
+          <td class="memname">unsigned int vmufb_font_t::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Font id. </p>
+
+</div>
+</div>
+<a id="aa5bd2514b46cdeb54a64802f71cad7fd" name="aa5bd2514b46cdeb54a64802f71cad7fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5bd2514b46cdeb54a64802f71cad7fd">&#9670;&#160;</a></span>stride</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t vmufb_font_t::stride</td>
         </tr>
       </table>
 </div><div class="memdoc">

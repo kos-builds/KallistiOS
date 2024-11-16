@@ -19,6 +19,7 @@ var group__system =
     [ "SCIF", "group__system__scif.html", "group__system__scif" ],
     [ "Store Queues", "group__store__queues.html", "group__store__queues" ],
     [ "System Calls", "group__system__calls.html", "group__system__calls" ],
+    [ "Traps", "group__traps.html", "group__traps" ],
     [ "Types", "group__system__types.html", "group__system__types" ],
     [ "VBlank", "group__system__vblank.html", "group__system__vblank" ]
 ];

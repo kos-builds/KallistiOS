@@ -124,8 +124,11 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a1e683af33bafb9b13eb2d9caf02b14d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel thread id.  <br /></td></tr>
 <tr class="separator:a1e683af33bafb9b13eb2d9caf02b14d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83313dc1ac814ea2ee625bc17d1a2398" id="r_a83313dc1ac814ea2ee625bc17d1a2398"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__system__types.html#ga399ab71ffbe0a6db9d6981a7b4fbc44a">prio_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkthread__t.html#a83313dc1ac814ea2ee625bc17d1a2398">prio</a></td></tr>
-<tr class="memdesc:a83313dc1ac814ea2ee625bc17d1a2398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static priority: 0..PRIO_MAX (higher means lower priority).  <br /></td></tr>
+<tr class="memdesc:a83313dc1ac814ea2ee625bc17d1a2398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic priority.  <br /></td></tr>
 <tr class="separator:a83313dc1ac814ea2ee625bc17d1a2398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af469ad26197341c798f37ae14bcb3bce" id="r_af469ad26197341c798f37ae14bcb3bce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__system__types.html#ga399ab71ffbe0a6db9d6981a7b4fbc44a">prio_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkthread__t.html#af469ad26197341c798f37ae14bcb3bce">real_prio</a></td></tr>
+<tr class="memdesc:af469ad26197341c798f37ae14bcb3bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static priority: 0..PRIO_MAX (higher means lower priority).  <br /></td></tr>
+<tr class="separator:af469ad26197341c798f37ae14bcb3bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fbc7e7bcf3a697a71104b250e375315" id="r_a1fbc7e7bcf3a697a71104b250e375315"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__kthreads.html#gaa41caf9ffc4e969b9e6d1218b0f5b0a4">kthread_flags_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkthread__t.html#a1fbc7e7bcf3a697a71104b250e375315">flags</a></td></tr>
 <tr class="memdesc:a1fbc7e7bcf3a697a71104b250e375315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread flags.  <br /></td></tr>
 <tr class="separator:a1fbc7e7bcf3a697a71104b250e375315"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -390,7 +393,7 @@ Related Symbols</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Static priority: 0..PRIO_MAX (higher means lower priority). </p>
+<p>Dynamic priority. </p>
 
 </div>
 </div>
@@ -407,6 +410,22 @@ Related Symbols</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Current file system path. </p>
+
+</div>
+</div>
+<a id="af469ad26197341c798f37ae14bcb3bce" name="af469ad26197341c798f37ae14bcb3bce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af469ad26197341c798f37ae14bcb3bce">&#9670;&#160;</a></span>real_prio</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__system__types.html#ga399ab71ffbe0a6db9d6981a7b4fbc44a">prio_t</a> kthread_t::real_prio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Static priority: 0..PRIO_MAX (higher means lower priority). </p>
 
 </div>
 </div>

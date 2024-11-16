@@ -93,21 +93,24 @@ $(document).ready(function(){initNavTree('vmu__fb_8h.html',''); initResizable();
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">vmu_fb.h File Reference<div class="ingroups"><a class="el" href="group__peripherals.html">Peripherals</a> &raquo; <a class="el" href="group__vmu.html">Visual Memory Unit</a></div></div></div>
+  <div class="headertitle"><div class="title">vmu_fb.h File Reference<div class="ingroups"><a class="el" href="group__peripherals.html">Peripherals</a> &raquo; <a class="el" href="group__vmu.html">Visual Memory Unit</a> &raquo; <a class="el" href="group__vmu__fb.html">Framebuffer</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>VMU framebuffer.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="maple_8h_source.html">dc/maple.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;sys/cdefs.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="maple_8h_source.html">dc/maple.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="vmu_8h_source.html">dc/maple/vmu.h</a>&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
 </div>
 <p><a href="vmu__fb_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvmufb__t.html">vmufb_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">VMU framebuffer.  <a href="structvmufb__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual framebuffer for the VMU.  <a href="structvmufb__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvmufb__font__t.html">vmufb_font_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">VMU framebuffer font meta-data.  <a href="structvmufb__font__t.html#details">More...</a><br /></td></tr>
@@ -115,397 +118,39 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a645de173434978730b95725d91b72f47" id="r_a645de173434978730b95725d91b72f47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmu__fb_8h.html#a645de173434978730b95725d91b72f47">vmufb_paint_area</a> (<a class="el" href="structvmufb__t.html">vmufb_t</a> *fb, unsigned int x, unsigned int y, unsigned int w, unsigned int h, const char *data)</td></tr>
-<tr class="memdesc:a645de173434978730b95725d91b72f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render into the VMU framebuffer.  <br /></td></tr>
-<tr class="separator:a645de173434978730b95725d91b72f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38fbea904fd455eef6d3c3c6ce2836a0" id="r_a38fbea904fd455eef6d3c3c6ce2836a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmu__fb_8h.html#a38fbea904fd455eef6d3c3c6ce2836a0">vmufb_clear_area</a> (<a class="el" href="structvmufb__t.html">vmufb_t</a> *fb, unsigned int x, unsigned int y, unsigned int w, unsigned int h)</td></tr>
-<tr class="memdesc:a38fbea904fd455eef6d3c3c6ce2836a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a specific area of the VMU framebuffer.  <br /></td></tr>
-<tr class="separator:a38fbea904fd455eef6d3c3c6ce2836a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0815aff12e764934e058a462fa275da" id="r_ad0815aff12e764934e058a462fa275da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmu__fb_8h.html#ad0815aff12e764934e058a462fa275da">vmufb_clear</a> (<a class="el" href="structvmufb__t.html">vmufb_t</a> *fb)</td></tr>
-<tr class="memdesc:ad0815aff12e764934e058a462fa275da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the VMU framebuffer.  <br /></td></tr>
-<tr class="separator:ad0815aff12e764934e058a462fa275da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05187ebee71ea8a2c2b507572fa333bb" id="r_a05187ebee71ea8a2c2b507572fa333bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmu__fb_8h.html#a05187ebee71ea8a2c2b507572fa333bb">vmufb_present</a> (const <a class="el" href="structvmufb__t.html">vmufb_t</a> *fb, <a class="el" href="structmaple__device__t.html">maple_device_t</a> *dev)</td></tr>
-<tr class="memdesc:a05187ebee71ea8a2c2b507572fa333bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present the VMU framebuffer to a VMU.  <br /></td></tr>
-<tr class="separator:a05187ebee71ea8a2c2b507572fa333bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba255a7eee077a832701c5e8c4b8603" id="r_a2ba255a7eee077a832701c5e8c4b8603"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmu__fb_8h.html#a2ba255a7eee077a832701c5e8c4b8603">vmufb_print_string_into</a> (<a class="el" href="structvmufb__t.html">vmufb_t</a> *fb, const <a class="el" href="structvmufb__font__t.html">vmufb_font_t</a> *font, unsigned int x, unsigned int y, unsigned int w, unsigned int h, unsigned int line_spacing, const char *str)</td></tr>
-<tr class="memdesc:a2ba255a7eee077a832701c5e8c4b8603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a string into the VMU framebuffer.  <br /></td></tr>
-<tr class="separator:a2ba255a7eee077a832701c5e8c4b8603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a26c9c683b41ce59c3e1c886b3a9a7" id="r_a89a26c9c683b41ce59c3e1c886b3a9a7"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmu__fb_8h.html#a89a26c9c683b41ce59c3e1c886b3a9a7">vmufb_print_string</a> (<a class="el" href="structvmufb__t.html">vmufb_t</a> *fb, const <a class="el" href="structvmufb__font__t.html">vmufb_font_t</a> *font, const char *str)</td></tr>
-<tr class="memdesc:a89a26c9c683b41ce59c3e1c886b3a9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a string into the VMU framebuffer.  <br /></td></tr>
-<tr class="separator:a89a26c9c683b41ce59c3e1c886b3a9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98c0626cd06489632030f645be799978" id="r_a98c0626cd06489632030f645be799978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmu__fb_8h.html#a98c0626cd06489632030f645be799978">vmu_printf</a> (const char *fmt,...)</td></tr>
-<tr class="memdesc:a98c0626cd06489632030f645be799978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a string to attached VMUs using the built-in font.  <br /></td></tr>
-<tr class="separator:a98c0626cd06489632030f645be799978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga645de173434978730b95725d91b72f47" id="r_ga645de173434978730b95725d91b72f47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vmu__fb.html#ga645de173434978730b95725d91b72f47">vmufb_paint_area</a> (<a class="el" href="structvmufb__t.html">vmufb_t</a> *fb, unsigned int x, unsigned int y, unsigned int w, unsigned int h, const char *data)</td></tr>
+<tr class="memdesc:ga645de173434978730b95725d91b72f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render into the VMU framebuffer.  <br /></td></tr>
+<tr class="separator:ga645de173434978730b95725d91b72f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38fbea904fd455eef6d3c3c6ce2836a0" id="r_ga38fbea904fd455eef6d3c3c6ce2836a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vmu__fb.html#ga38fbea904fd455eef6d3c3c6ce2836a0">vmufb_clear_area</a> (<a class="el" href="structvmufb__t.html">vmufb_t</a> *fb, unsigned int x, unsigned int y, unsigned int w, unsigned int h)</td></tr>
+<tr class="memdesc:ga38fbea904fd455eef6d3c3c6ce2836a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a specific area of the VMU framebuffer.  <br /></td></tr>
+<tr class="separator:ga38fbea904fd455eef6d3c3c6ce2836a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0815aff12e764934e058a462fa275da" id="r_gad0815aff12e764934e058a462fa275da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vmu__fb.html#gad0815aff12e764934e058a462fa275da">vmufb_clear</a> (<a class="el" href="structvmufb__t.html">vmufb_t</a> *fb)</td></tr>
+<tr class="memdesc:gad0815aff12e764934e058a462fa275da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the VMU framebuffer.  <br /></td></tr>
+<tr class="separator:gad0815aff12e764934e058a462fa275da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05187ebee71ea8a2c2b507572fa333bb" id="r_ga05187ebee71ea8a2c2b507572fa333bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vmu__fb.html#ga05187ebee71ea8a2c2b507572fa333bb">vmufb_present</a> (const <a class="el" href="structvmufb__t.html">vmufb_t</a> *fb, <a class="el" href="structmaple__device__t.html">maple_device_t</a> *dev)</td></tr>
+<tr class="memdesc:ga05187ebee71ea8a2c2b507572fa333bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Present the VMU framebuffer to a VMU.  <br /></td></tr>
+<tr class="separator:ga05187ebee71ea8a2c2b507572fa333bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ba255a7eee077a832701c5e8c4b8603" id="r_ga2ba255a7eee077a832701c5e8c4b8603"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vmu__fb.html#ga2ba255a7eee077a832701c5e8c4b8603">vmufb_print_string_into</a> (<a class="el" href="structvmufb__t.html">vmufb_t</a> *fb, const <a class="el" href="structvmufb__font__t.html">vmufb_font_t</a> *font, unsigned int x, unsigned int y, unsigned int w, unsigned int h, unsigned int line_spacing, const char *str)</td></tr>
+<tr class="memdesc:ga2ba255a7eee077a832701c5e8c4b8603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a string into the VMU framebuffer.  <br /></td></tr>
+<tr class="separator:ga2ba255a7eee077a832701c5e8c4b8603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89a26c9c683b41ce59c3e1c886b3a9a7" id="r_ga89a26c9c683b41ce59c3e1c886b3a9a7"><td class="memItemLeft" align="right" valign="top">static __inline__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vmu__fb.html#ga89a26c9c683b41ce59c3e1c886b3a9a7">vmufb_print_string</a> (<a class="el" href="structvmufb__t.html">vmufb_t</a> *fb, const <a class="el" href="structvmufb__font__t.html">vmufb_font_t</a> *font, const char *str)</td></tr>
+<tr class="memdesc:ga89a26c9c683b41ce59c3e1c886b3a9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a string into the VMU framebuffer.  <br /></td></tr>
+<tr class="separator:ga89a26c9c683b41ce59c3e1c886b3a9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad057d6fafb7ed81c62ff51ee8f540e35" id="r_gad057d6fafb7ed81c62ff51ee8f540e35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vmu__fb.html#gad057d6fafb7ed81c62ff51ee8f540e35">vmu_printf</a> (const char *fmt,...) <a class="el" href="group__system__macros.html#gab302334d9a77a6925be4e5b45397e4a3">__printflike</a>(1</td></tr>
+<tr class="memdesc:gad057d6fafb7ed81c62ff51ee8f540e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a string to attached VMUs using the built-in font.  <br /></td></tr>
+<tr class="separator:gad057d6fafb7ed81c62ff51ee8f540e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad46717e2e35313e1836a66b5b159817a" id="r_gad46717e2e35313e1836a66b5b159817a"><td class="memItemLeft" align="right" valign="top">void const <a class="el" href="structvmufb__font__t.html">vmufb_font_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vmu__fb.html#gad46717e2e35313e1836a66b5b159817a">vmu_set_font</a> (const <a class="el" href="structvmufb__font__t.html">vmufb_font_t</a> *font)</td></tr>
+<tr class="memdesc:gad46717e2e35313e1836a66b5b159817a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the default font for drawing text to the VMU.  <br /></td></tr>
+<tr class="separator:gad46717e2e35313e1836a66b5b159817a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0caa31fe6a2a42b9a46f7851ba4d10a" id="r_gaf0caa31fe6a2a42b9a46f7851ba4d10a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structvmufb__font__t.html">vmufb_font_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vmu__fb.html#gaf0caa31fe6a2a42b9a46f7851ba4d10a">vmu_get_font</a> (void)</td></tr>
+<tr class="memdesc:gaf0caa31fe6a2a42b9a46f7851ba4d10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default font used to draw text to the VMU.  <br /></td></tr>
+<tr class="separator:gaf0caa31fe6a2a42b9a46f7851ba4d10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>VMU framebuffer. </p>
-<p>This file provides an API that can be used to compose a 48x32 image that can then be displayed on the VMUs connected to the system. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a98c0626cd06489632030f645be799978" name="a98c0626cd06489632030f645be799978"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98c0626cd06489632030f645be799978">&#9670;&#160;</a></span>vmu_printf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vmu_printf </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>fmt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Render a string to attached VMUs using the built-in font. </p>
-<p>Uses the built-in VMU font to render a string to all VMUs connected to the system.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fmt</td><td>The format string, optionally followed by extra arguments. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ad0815aff12e764934e058a462fa275da" name="ad0815aff12e764934e058a462fa275da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0815aff12e764934e058a462fa275da">&#9670;&#160;</a></span>vmufb_clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vmufb_clear </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvmufb__t.html">vmufb_t</a> *&#160;</td>
-          <td class="paramname"><em>fb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clear the VMU framebuffer. </p>
-<p>This function clears the whole VMU framebuffer.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fb</td><td>A pointer to the <a class="el" href="structvmufb__t.html" title="VMU framebuffer.">vmufb_t</a> to paint to. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a38fbea904fd455eef6d3c3c6ce2836a0" name="a38fbea904fd455eef6d3c3c6ce2836a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38fbea904fd455eef6d3c3c6ce2836a0">&#9670;&#160;</a></span>vmufb_clear_area()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vmufb_clear_area </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvmufb__t.html">vmufb_t</a> *&#160;</td>
-          <td class="paramname"><em>fb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>h</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clear a specific area of the VMU framebuffer. </p>
-<p>This function clears the area of the VMU framebuffer designated by the x, y, w and h values.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fb</td><td>A pointer to the <a class="el" href="structvmufb__t.html" title="VMU framebuffer.">vmufb_t</a> to paint to. </td></tr>
-    <tr><td class="paramname">x</td><td>The horizontal position of the top-left corner of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">y</td><td>The vertical position of the top-left corner of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">w</td><td>The width of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the drawing area, in pixels </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a645de173434978730b95725d91b72f47" name="a645de173434978730b95725d91b72f47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a645de173434978730b95725d91b72f47">&#9670;&#160;</a></span>vmufb_paint_area()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vmufb_paint_area </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvmufb__t.html">vmufb_t</a> *&#160;</td>
-          <td class="paramname"><em>fb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Render into the VMU framebuffer. </p>
-<p>This function will paint the provided pixel data into the VMU framebuffer, into the rectangle provided by the x, y, w and h values.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fb</td><td>A pointer to the <a class="el" href="structvmufb__t.html" title="VMU framebuffer.">vmufb_t</a> to paint to. </td></tr>
-    <tr><td class="paramname">x</td><td>The horizontal position of the top-left corner of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">y</td><td>The vertical position of the top-left corner of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">w</td><td>The width of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">data</td><td>A pointer to the pixel data that will be painted into the drawing area. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a05187ebee71ea8a2c2b507572fa333bb" name="a05187ebee71ea8a2c2b507572fa333bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05187ebee71ea8a2c2b507572fa333bb">&#9670;&#160;</a></span>vmufb_present()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vmufb_present </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structvmufb__t.html">vmufb_t</a> *&#160;</td>
-          <td class="paramname"><em>fb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmaple__device__t.html">maple_device_t</a> *&#160;</td>
-          <td class="paramname"><em>dev</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Present the VMU framebuffer to a VMU. </p>
-<p>This function presents the previously rendered VMU framebuffer to the VMU identified by the dev argument.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fb</td><td>A pointer to the <a class="el" href="structvmufb__t.html" title="VMU framebuffer.">vmufb_t</a> to paint to. </td></tr>
-    <tr><td class="paramname">dev</td><td>The maple device of the VMU to present to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a89a26c9c683b41ce59c3e1c886b3a9a7" name="a89a26c9c683b41ce59c3e1c886b3a9a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89a26c9c683b41ce59c3e1c886b3a9a7">&#9670;&#160;</a></span>vmufb_print_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static __inline__ void vmufb_print_string </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvmufb__t.html">vmufb_t</a> *&#160;</td>
-          <td class="paramname"><em>fb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structvmufb__font__t.html">vmufb_font_t</a> *&#160;</td>
-          <td class="paramname"><em>font</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Render a string into the VMU framebuffer. </p>
-<p>Simplified version of <a class="el" href="vmu__fb_8h.html#a2ba255a7eee077a832701c5e8c4b8603" title="Render a string into the VMU framebuffer.">vmufb_print_string_into()</a>. This is the same as calling vmufb_print_string_into with x=0, y=0, w=48, h=32, line_spacing=0.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fb</td><td>A pointer to the <a class="el" href="structvmufb__t.html" title="VMU framebuffer.">vmufb_t</a> to paint to. </td></tr>
-    <tr><td class="paramname">font</td><td>A pointer to the <a class="el" href="structvmufb__font__t.html" title="VMU framebuffer font meta-data.">vmufb_font_t</a> that will be used for painting the text </td></tr>
-    <tr><td class="paramname">str</td><td>The text to render </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">References <a class="el" href="vmu__fb_8h.html#a2ba255a7eee077a832701c5e8c4b8603">vmufb_print_string_into()</a>.</p>
-
-</div>
-</div>
-<a id="a2ba255a7eee077a832701c5e8c4b8603" name="a2ba255a7eee077a832701c5e8c4b8603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ba255a7eee077a832701c5e8c4b8603">&#9670;&#160;</a></span>vmufb_print_string_into()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vmufb_print_string_into </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structvmufb__t.html">vmufb_t</a> *&#160;</td>
-          <td class="paramname"><em>fb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structvmufb__font__t.html">vmufb_font_t</a> *&#160;</td>
-          <td class="paramname"><em>font</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>line_spacing</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Render a string into the VMU framebuffer. </p>
-<p>This function uses the provided font to render text into the VMU framebuffer.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fb</td><td>A pointer to the <a class="el" href="structvmufb__t.html" title="VMU framebuffer.">vmufb_t</a> to paint to. </td></tr>
-    <tr><td class="paramname">font</td><td>A pointer to the <a class="el" href="structvmufb__font__t.html" title="VMU framebuffer font meta-data.">vmufb_font_t</a> that will be used for painting the text </td></tr>
-    <tr><td class="paramname">x</td><td>The horizontal position of the top-left corner of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">y</td><td>The vertical position of the top-left corner of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">w</td><td>The width of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">h</td><td>The height of the drawing area, in pixels </td></tr>
-    <tr><td class="paramname">line_spacing</td><td>Specify the number of empty lines that should separate two lines of text </td></tr>
-    <tr><td class="paramname">str</td><td>The text to render </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">Referenced by <a class="el" href="vmu__fb_8h.html#a89a26c9c683b41ce59c3e1c886b3a9a7">vmufb_print_string()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>This file provides an API that can be used to compose a 48x32 image that can then be displayed on the VMUs connected to the system.</p>
+<dl class="section author"><dt>Author</dt><dd>Paul Cercueil </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

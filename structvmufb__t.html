@@ -92,35 +92,38 @@ $(document).ready(function(){initNavTree('structvmufb__t.html',''); initResizabl
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">vmufb_t Struct Reference</div></div>
+  <div class="headertitle"><div class="title">vmufb_t Struct Reference<div class="ingroups"><a class="el" href="group__peripherals.html">Peripherals</a> &raquo; <a class="el" href="group__vmu.html">Visual Memory Unit</a> &raquo; <a class="el" href="group__vmu__fb.html">Framebuffer</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>VMU framebuffer.  
+<p>Virtual framebuffer for the VMU.  
  <a href="structvmufb__t.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="vmu__fb_8h_source.html">dc/vmu_fb.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="vmu__fb_8h_source.html">vmu_fb.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a470e07d876e1d3fb8703fdfe63defc20" id="r_a470e07d876e1d3fb8703fdfe63defc20"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvmufb__t.html#a470e07d876e1d3fb8703fdfe63defc20">data</a> [48]</td></tr>
-<tr class="separator:a470e07d876e1d3fb8703fdfe63defc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294dfd1a76206540d0551c2e7bc9bbbe" id="r_a294dfd1a76206540d0551c2e7bc9bbbe"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvmufb__t.html#a294dfd1a76206540d0551c2e7bc9bbbe">data</a> [<a class="el" href="group__maple__lcd.html#ga397e320b539bdf2b7dc519fc87d8ca59">VMU_SCREEN_WIDTH</a>]</td></tr>
+<tr class="memdesc:a294dfd1a76206540d0551c2e7bc9bbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private framebuffer pixel data.  <br /></td></tr>
+<tr class="separator:a294dfd1a76206540d0551c2e7bc9bbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>VMU framebuffer. </p>
-<p>This object contains a 48x32 monochrome framebuffer. It can be painted to, or displayed one the VMUs connected to the system, using the API below. </p>
+<div class="textblock"><p>Virtual framebuffer for the VMU. </p>
+<p>This object contains a 48x32 monochrome framebuffer. It can be painted to, or displayed on one the VMUs connected to the system, using the API below. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a470e07d876e1d3fb8703fdfe63defc20" name="a470e07d876e1d3fb8703fdfe63defc20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a470e07d876e1d3fb8703fdfe63defc20">&#9670;&#160;</a></span>data</h2>
+<a id="a294dfd1a76206540d0551c2e7bc9bbbe" name="a294dfd1a76206540d0551c2e7bc9bbbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a294dfd1a76206540d0551c2e7bc9bbbe">&#9670;&#160;</a></span>data</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t vmufb_t::data[48]</td>
+          <td class="memname">uint32_t vmufb_t::data[<a class="el" href="group__maple__lcd.html#ga397e320b539bdf2b7dc519fc87d8ca59">VMU_SCREEN_WIDTH</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Private framebuffer pixel data. </p>
 
 </div>
 </div>

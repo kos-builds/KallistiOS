@@ -158,6 +158,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a1c41f9dcbcc863c483d1ffe526a584fe" id="r_a1c41f9dcbcc863c483d1ffe526a584fe"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfs__socket__proto__t.html#a1c41f9dcbcc863c483d1ffe526a584fe">getsockname</a> )(<a class="el" href="structnet__socket__t.html">net_socket_t</a> *s, struct <a class="el" href="structsockaddr.html">sockaddr</a> *name, <a class="el" href="group__networking__sockets.html#ga6e552de056211b018389ac6122675fb0">socklen_t</a> *name_len)</td></tr>
 <tr class="memdesc:a1c41f9dcbcc863c483d1ffe526a584fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get socket name.  <br /></td></tr>
 <tr class="separator:a1c41f9dcbcc863c483d1ffe526a584fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482eb61a23529bed459c1d1cb33580f2" id="r_a482eb61a23529bed459c1d1cb33580f2"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfs__socket__proto__t.html#a482eb61a23529bed459c1d1cb33580f2">getpeername</a> )(<a class="el" href="structnet__socket__t.html">net_socket_t</a> *s, struct <a class="el" href="structsockaddr.html">sockaddr</a> *name, <a class="el" href="group__networking__sockets.html#ga6e552de056211b018389ac6122675fb0">socklen_t</a> *name_len)</td></tr>
+<tr class="memdesc:a482eb61a23529bed459c1d1cb33580f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the peer connected to a socket created with the protocol.  <br /></td></tr>
+<tr class="separator:a482eb61a23529bed459c1d1cb33580f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a9db3106998f76dc34736a887df85a" id="r_ac7a9db3106998f76dc34736a887df85a"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfs__socket__proto__t.html#ac7a9db3106998f76dc34736a887df85a">fcntl</a> )(<a class="el" href="structnet__socket__t.html">net_socket_t</a> *s, int cmd, va_list ap)</td></tr>
 <tr class="memdesc:ac7a9db3106998f76dc34736a887df85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manipulate file options.  <br /></td></tr>
 <tr class="separator:ac7a9db3106998f76dc34736a887df85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,6 +356,38 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a482eb61a23529bed459c1d1cb33580f2" name="a482eb61a23529bed459c1d1cb33580f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482eb61a23529bed459c1d1cb33580f2">&#9670;&#160;</a></span>getpeername</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* fs_socket_proto_t::getpeername) (<a class="el" href="structnet__socket__t.html">net_socket_t</a> *s, struct <a class="el" href="structsockaddr.html">sockaddr</a> *name, <a class="el" href="group__networking__sockets.html#ga6e552de056211b018389ac6122675fb0">socklen_t</a> *name_len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the name of the peer connected to a socket created with the protocol. </p>
+<p>This function should implement the <a class="el" href="structfs__socket__proto__t.html#a482eb61a23529bed459c1d1cb33580f2" title="Get the name of the peer connected to a socket created with the protocol.">getpeername()</a> system call for the protocol. The semantics are exactly as expected for that function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The socket from which to get the peer address. </td></tr>
+    <tr><td class="paramname">name</td><td>Pointer to a sockaddr structure which will hold the resulting address information. </td></tr>
+    <tr><td class="paramname">name_len</td><td>The amount of space pointed to by name, in bytes. On return, this is set to the actual size of the returned address information. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-1</td><td>On error (with errno set appropriately). </td></tr>
+    <tr><td class="paramname">0</td><td>On success. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1c41f9dcbcc863c483d1ffe526a584fe" name="a1c41f9dcbcc863c483d1ffe526a584fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c41f9dcbcc863c483d1ffe526a584fe">&#9670;&#160;</a></span>getsockname</h2>
 
@@ -378,7 +413,7 @@ Data Fields</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">-1</td><td>On error (set errno appropriately). </td></tr>
+    <tr><td class="paramname">-1</td><td>On error (with errno set appropriately). </td></tr>
     <tr><td class="paramname">0</td><td>On success. </td></tr>
   </table>
   </dd>

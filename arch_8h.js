@@ -10,6 +10,7 @@ var arch_8h =
     [ "arch_get_ret_addr", "group__arch.html#ga918cbb6c3977d897b3c205407dda1891", null ],
     [ "arch_sleep", "group__arch.html#ga8d9b1b29f325cb276f6c62dde830d702", null ],
     [ "arch_valid_address", "group__arch.html#ga9f4ceb692456160c38e8cbf16702c60e", null ],
+    [ "arch_valid_text_address", "group__arch.html#gac90dbe4c6359827226569942bf0e9397", null ],
     [ "DBL_MEM", "group__arch.html#ga4394a5304d7635437adcc7ed58262f2c", null ],
     [ "DEFAULT_PIXEL_MODE", "group__arch.html#ga94dcee097aaa5a33b1fc211b01611fbb", null ],
     [ "DEFAULT_SERIAL_BAUD", "group__arch.html#gaffcf2e02a44b0d07afa8f3e9524867d9", null ],
@@ -26,14 +27,15 @@ var arch_8h =
     [ "HW_REGION_US", "group__hw__regions.html#ga7740e53c945a731058228b5a29e692f2", null ],
     [ "HW_TYPE_RETAIL", "group__hw__consoles.html#gad69aa103f456d4686978c9347a1ffbd9", null ],
     [ "HW_TYPE_SET5", "group__hw__consoles.html#ga6eede3ad2a18e9498c5db9d076b9a317", null ],
-    [ "HZ", "group__arch.html#ga8489802eaedf42fdb5f2ce1708eaffa2", null ],
     [ "page_count", "group__arch.html#gae6df581be4922040d5cdef1865598dbb", null ],
     [ "page_phys_base", "group__arch.html#gaa8eeab49bd12e96b1d0f4b1c8d5fe284", null ],
     [ "PAGEMASK", "group__arch.html#ga7ea47f1d83b44f13a2c9aa7077c400cb", null ],
     [ "PAGESIZE", "group__arch.html#ga519adc2af3ba06a8f0548b6690050a89", null ],
     [ "PAGESIZE_BITS", "group__arch.html#ga9f861df6c16db501f43f1a29e25a9b14", null ],
     [ "THD_KERNEL_STACK_SIZE", "group__arch.html#ga802c5e7836d9e9305506ba75b1047770", null ],
+    [ "THD_SCHED_HZ", "group__arch.html#gaf42cee43257eabd7a2df99ad00c7c6d9", null ],
     [ "THD_STACK_SIZE", "group__arch.html#ga04b8faf75e7af18de8afb988815ffe8a", null ],
+    [ "__depr", "group__arch.html#ga8280ce4e9f78ff83a2e6e4afe36e8679", null ],
     [ "arch_abort", "group__arch.html#gab6c7f1b9825d2d653566fd6d58b8afb7", null ],
     [ "arch_exit", "group__arch.html#gaa4e8f4af02fd811075795d898d12575e", null ],
     [ "arch_main", "group__arch.html#ga605eef4d548a1210672f7a10440c255d", null ],
@@ -51,5 +53,7 @@ var arch_8h =
     [ "kos_get_banner", "group__attribution.html#ga6dfafb1c615315737c5310f025a2a1fe", null ],
     [ "kos_get_license", "group__attribution.html#ga39d9efdea6d5c4689d85b7e2e3fc84de", null ],
     [ "mm_init", "group__arch.html#ga59f9a3cd68e7a6e61c379ef6c0dd818a", null ],
-    [ "mm_sbrk", "group__arch.html#ga73b779d8bd88a8f1d7a2077b88dff369", null ]
+    [ "mm_sbrk", "group__arch.html#ga73b779d8bd88a8f1d7a2077b88dff369", null ],
+    [ "_etext", "group__arch.html#gae4ac23ee1563c1bbcb0921de93c24832", null ],
+    [ "_executable_start", "group__arch.html#ga5541094cb97b935cdbd4cc50461ab5eb", null ]
 ];

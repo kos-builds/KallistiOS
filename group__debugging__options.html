@@ -120,7 +120,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga157276a1a268eea44866cac97ff96bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of ramdisk files that can be open at a time.  <br /></td></tr>
 <tr class="separator:ga157276a1a268eea44866cac97ff96bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga86c5dbf5a99358e288f573d6a1e0873f" id="r_ga86c5dbf5a99358e288f573d6a1e0873f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debugging__options.html#ga86c5dbf5a99358e288f573d6a1e0873f">FD_SETSIZE</a>&#160;&#160;&#160;1024</td></tr>
-<tr class="memdesc:ga86c5dbf5a99358e288f573d6a1e0873f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of distinct file descriptors that can be in use at a time.  <br /></td></tr>
+<tr class="memdesc:ga86c5dbf5a99358e288f573d6a1e0873f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of distinct file descriptors, including files and network sockets, that can be in use at a time.  <br /></td></tr>
 <tr class="separator:ga86c5dbf5a99358e288f573d6a1e0873f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -139,8 +139,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of distinct file descriptors that can be in use at a time. </p>
-<p>This value can be overwritten in environ.sh </p>
+<p>The number of distinct file descriptors, including files and network sockets, that can be in use at a time. </p>
+<p>Decreasing this value can reduce memory usage. <br  />
+ </p>
 
 </div>
 </div>

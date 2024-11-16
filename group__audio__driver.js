@@ -30,6 +30,7 @@ var group__audio__driver =
     [ "spu_init", "group__audio__driver.html#gae128afcd4a862d9ed88615de5bd56dab", null ],
     [ "spu_master_mixer", "group__audio__driver.html#ga00a8e12d741ef7d91459f094365e3842", null ],
     [ "spu_memload", "group__audio__driver.html#gad101e4324d48a53a29df0aa49ba542c7", null ],
+    [ "spu_memload_dma", "group__audio__driver.html#ga68d58c50041eb9178ec000b7fdc98e57", null ],
     [ "spu_memload_sq", "group__audio__driver.html#gaa78486207457bdc67781bccfb87b7fb5", null ],
     [ "spu_memread", "group__audio__driver.html#ga72dcb5fc49be0acaf92e35aed1865ed9", null ],
     [ "spu_memset", "group__audio__driver.html#gaa37171068a10e220a78816309161a338", null ],

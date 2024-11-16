@@ -124,6 +124,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeaf4592b858fa7a9a1034cb220db5d49" id="r_gaeaf4592b858fa7a9a1034cb220db5d49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pvr__direct.html#gaeaf4592b858fa7a9a1034cb220db5d49">pvr_dr_finish</a> (void)</td></tr>
 <tr class="memdesc:gaeaf4592b858fa7a9a1034cb220db5d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish work with Direct Rendering.  <br /></td></tr>
 <tr class="separator:gaeaf4592b858fa7a9a1034cb220db5d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2246fd7059ea362dc9e8b354a7de1bda" id="r_ga2246fd7059ea362dc9e8b354a7de1bda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pvr__direct.html#ga2246fd7059ea362dc9e8b354a7de1bda">pvr_send_to_ta</a> (void *data)</td></tr>
+<tr class="memdesc:ga2246fd7059ea362dc9e8b354a7de1bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upload a 32-byte payload to the Tile Accelerator.  <br /></td></tr>
+<tr class="separator:ga2246fd7059ea362dc9e8b354a7de1bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API for using direct rendering with the PVR. </p>
@@ -173,7 +176,7 @@ Functions</h2></td></tr>
 <div class="line">        (<a class="code hl_struct" href="structpvr__vertex__t.html">pvr_vertex_t</a> *)(<a class="code hl_define" href="group__p4mem.html#gac9490e36164a490e0024572e9c4688c5">MEM_AREA_SQ_BASE</a> | (vtx_buf_ptr)); \</div>
 <div class="line">    })</div>
 <div class="ttc" id="agroup__p4mem_html_gac9490e36164a490e0024572e9c4688c5"><div class="ttname"><a href="group__p4mem.html#gac9490e36164a490e0024572e9c4688c5">MEM_AREA_SQ_BASE</a></div><div class="ttdeci">#define MEM_AREA_SQ_BASE</div><div class="ttdoc">Store Queue (SQ) memory base.</div><div class="ttdef"><b>Definition</b> memory.h:119</div></div>
-<div class="ttc" id="astructpvr__vertex__t_html"><div class="ttname"><a href="structpvr__vertex__t.html">pvr_vertex_t</a></div><div class="ttdoc">Generic PVR vertex type.</div><div class="ttdef"><b>Definition</b> pvr.h:832</div></div>
+<div class="ttc" id="astructpvr__vertex__t_html"><div class="ttname"><a href="structpvr__vertex__t.html">pvr_vertex_t</a></div><div class="ttdoc">Generic PVR vertex type.</div><div class="ttdef"><b>Definition</b> pvr.h:833</div></div>
 </div><!-- fragment -->
 <p>Obtain the target address for Direct Rendering. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -246,6 +249,33 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vtx_buf_ptr</td><td>A variable of type pvr_dr_state_t to init. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2246fd7059ea362dc9e8b354a7de1bda" name="ga2246fd7059ea362dc9e8b354a7de1bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2246fd7059ea362dc9e8b354a7de1bda">&#9670;&#160;</a></span>pvr_send_to_ta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pvr_send_to_ta </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Upload a 32-byte payload to the Tile Accelerator. </p>
+<p>Upload the given payload to the Tile Accelerator. The difference with the Direct Rendering approach above is that the Store Queues are not used, and therefore can be used for anything else.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>A pointer to the 32-byte payload. The pointer must be aligned to 8 bytes. </td></tr>
   </table>
   </dd>
 </dl>

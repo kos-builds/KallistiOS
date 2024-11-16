@@ -39,19 +39,19 @@ var group__maple =
       [ "src_addr", "structmaple__response__t.html#ae48d4908a3d78661b8b68dc4177d2cb6", null ]
     ] ],
     [ "maple_device_t", "structmaple__device__t.html", [
-      [ "dev_mask", "structmaple__device__t.html#a538e19055399e8c612439a0d0658c826", null ],
+      [ "dev_mask", "structmaple__device__t.html#a37d1dd937a01fe1d79cdaf5c00bf5dee", null ],
       [ "drv", "structmaple__device__t.html#afaabc3d676fa9a953c80cce04013f361", null ],
       [ "frame", "structmaple__device__t.html#a71b29537b1d038eea1174df1bee862a9", null ],
       [ "info", "structmaple__device__t.html#a55023347d805267dce8cfef9003fb182", null ],
       [ "port", "structmaple__device__t.html#abc39087c3626495f01169165605bfeac", null ],
-      [ "status", "structmaple__device__t.html#a877acb3420e14026d1825cac3eb8f731", null ],
-      [ "status_valid", "structmaple__device__t.html#a4dacf4b69c7daa9b8a6f1a3e9aa8741c", null ],
-      [ "unit", "structmaple__device__t.html#a4f2b57e1bc8b43db61ab628e53e16549", null ],
-      [ "valid", "structmaple__device__t.html#abe41d6a715a82882e39f21358e1c39c7", null ]
+      [ "probe_mask", "structmaple__device__t.html#ae56c7b82fbee2854a3f76383e356c7c9", null ],
+      [ "status", "structmaple__device__t.html#aa8e4e8ab66813acca1247e66987af70c", null ],
+      [ "status_valid", "structmaple__device__t.html#a18ec305afdf61564e9ea639993049bfd", null ],
+      [ "unit", "structmaple__device__t.html#a4f2b57e1bc8b43db61ab628e53e16549", null ]
     ] ],
     [ "maple_port_t", "structmaple__port__t.html", [
       [ "port", "structmaple__port__t.html#a348c14cb424207d462611ac927fa5308", null ],
-      [ "units", "structmaple__port__t.html#a9548749e9c5880442818e84f70a4f05b", null ]
+      [ "units", "structmaple__port__t.html#a32b53a4af7fc4a1ce5067544483becaf", null ]
     ] ],
     [ "maple_driver_t", "structmaple__driver__t.html", [
       [ "LIST_ENTRY", "structmaple__driver__t.html#a5b2ee12cdbb7135594353e2f403eb666", null ],
@@ -59,12 +59,11 @@ var group__maple =
       [ "detach", "structmaple__driver__t.html#a0c8d8184a0e2fe222e33616112da0b11", null ],
       [ "functions", "structmaple__driver__t.html#ac251f760065a4f2394508bdcb8bcd40e", null ],
       [ "name", "structmaple__driver__t.html#aadd388f32cfe77173c59dd602181bc98", null ],
-      [ "periodic", "structmaple__driver__t.html#a7889152841952a6e86e2e01beccbe6e2", null ]
+      [ "periodic", "structmaple__driver__t.html#a7889152841952a6e86e2e01beccbe6e2", null ],
+      [ "status_size", "structmaple__driver__t.html#acd418526e47c85a477fb459c6ac6e8e3", null ]
     ] ],
     [ "maple_state_t", "structmaple__state__t.html", [
-      [ "detect_port_next", "structmaple__state__t.html#ad9b011b12c7ef3f01ea95c231ef46496", null ],
-      [ "detect_unit_next", "structmaple__state__t.html#a69f25faa7030221b57d49bd7297ced8d", null ],
-      [ "detect_wrapped", "structmaple__state__t.html#af8aba4621c1df6e5eb8b2ff1347c5875", null ],
+      [ "detect_port_next", "structmaple__state__t.html#ab26625d9aea4e6edd8ddac292107fd18", null ],
       [ "dma_buffer", "structmaple__state__t.html#a037cc8f59969e300aa31fdf99d34f5e9", null ],
       [ "dma_cntr", "structmaple__state__t.html#a77bfb2bfaad19420c740c538324edc1a", null ],
       [ "dma_in_progress", "structmaple__state__t.html#a1663dd68a8c331e5418ce0be26eb52b4", null ],
@@ -74,6 +73,7 @@ var group__maple =
       [ "gun_x", "structmaple__state__t.html#a9351aa5f50617a7b7d9be03e8bbf98ad", null ],
       [ "gun_y", "structmaple__state__t.html#adb2a9f9a61798d62b600c15d821259e3", null ],
       [ "ports", "structmaple__state__t.html#a428e13db323ae40caae9e6c6fb3c5945", null ],
+      [ "scan_ready_mask", "structmaple__state__t.html#a6acb7f943ab14a40260178efa60d5b53", null ],
       [ "vbl_cntr", "structmaple__state__t.html#a7d6394bc6566d3a9a9ceb0c4bbf87c1a", null ],
       [ "vbl_handle", "structmaple__state__t.html#a69a37bcab4f0c4b28e90ec5716491755", null ]
     ] ],

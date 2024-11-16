@@ -26,13 +26,8 @@ var NAVTREE =
 [
   [ "KallistiOS", "index.html", [
     [ "Overview", "index.html#autotoc_md4", null ],
-    [ "Features", "index.html#autotoc_md5", [
-      [ "Core Functionality", "index.html#autotoc_md6", null ],
-      [ "Dreamcast Hardware Support", "index.html#autotoc_md7", null ],
-      [ "Peripherals and Accessory Support", "index.html#autotoc_md8", null ],
-      [ "Hardware Modification Support", "index.html#autotoc_md9", null ]
-    ] ],
-    [ "Getting Started", "index.html#autotoc_md10", null ],
+    [ "Getting Started", "index.html#autotoc_md9", null ],
+    [ "Licensing", "index.html#autotoc_md10", null ],
     [ "Examples", "index.html#autotoc_md11", null ],
     [ "Resources", "index.html#autotoc_md12", null ],
     [ "Source Code", "^https://github.com/KallistiOS/KallistiOS", null ],
@@ -56,7 +51,7 @@ var NAVTREE =
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
+        [ "Enumerator", "globals_eval.html", "globals_eval" ],
         [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
@@ -66,24 +61,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "__pthread_8h.html",
-"group__addrinfo__errors.html#ga7a0f2f10f8778fe201a68932d18434e5",
-"group__bba__config1bits.html#gaa7583c4e706b6734dc4d00f60eaa2689",
-"group__cd__cmd__response.html#gad9f6cff569b8aaff581efed5a643f26a",
-"group__fr__errs.html#gac59c2c41a0002a8970f9bbf8ac1b1c12",
-"group__kbd__keys.html#ga28677d0dbbb29e91ee9fa5b2895366a8",
-"group__maple.html#ga1cc41b4e5dcf5eb978f1973ba41fd0fe",
-"group__modem.html#ggaeeb6947da48494fe16f673882566b65ea534cef95767454aa3558ce5191d46017",
-"group__networking__sockets.html#ga3f5da0b5be27fe31ec7cc11bfa8d1a25",
-"group__pvr__bitmasks.html#gae34b3aa0c0cd54e96316f2400f26af8f",
-"group__pvr__regs.html#gac578d8ce91052f9498855095d480d454",
-"group__system__dmac.html#ga4c11d8c48e5a974a8559d297f624bdcb",
-"group__tmu__direct.html#ga9398f1776d6ffe82e9cbf4b27bc708d4",
-"group__vid__ctype.html#ga2fb61c8f45ffeef9dffb4fb4cbc85060",
-"ide_8h.html#a0df38ba5c5cb3b360476afbe9571adb4",
-"structelf__rel__t.html#aa4d80f7e9917b293af4f9e94844ec93b",
-"structmaple__devinfo__t.html#a07334397f07563e193e9d8441c6a104e",
-"structpvr__poly__cxt__t.html#a54a3310eee4c329f0f0481399bf1049d",
-"structvector__t.html#a94cbfff1323348ea33d70842dc42b268"
+"globals_v.html",
+"group__audio__streaming.html#ga6c03ea438593bac1ec9987e2571a94a8",
+"group__bfont__indicies.html#gga378ee090caa5326a4670400b3740d9f7a3d64144d263671fc103d4708a9420da2",
+"group__controller__input__masks.html#ga83cd73ca0a6b1604c0f77c521cee742b",
+"group__herrno__vals.html#gaefda3c41e567de5717e579212109a355",
+"group__kbd__regions.html#gae7b1f6a309c7b7c7dd85e19e1a5af8ff",
+"group__maple__memcard.html#ga4b9d47631a7523d62be965f835ef8917",
+"group__netcfg__srcs.html#ga3ea4f0be1eaf5b1115a53abbbb286bdb",
+"group__perf__counters.html#gga31675ab20e99e7e50db03368a3c390c1afa12e341c2d6c8984428a3620dbd1fe6",
+"group__pvr__fog.html#gae3612bd64b24d2d996dcb494e9cf7142",
+"group__sh4__mmu__regs.html",
+"group__system__scif.html#ga5a846def85db8a7c40d8a8dd5163877f",
+"group__vfs__ext2.html#ga33dec8476d9acee46d7a789c964d5011",
+"group__vmu__settings.html#ga7d63873f3b7739ab1753fa9ab7eebc83",
+"structdreameye__state__t.html#a403ccb19b0ce77df4d1bcc00e91e9eda",
+"structkthread__tls__kv__t.html#a57f6bcfa55e2998d3e5e556467979799",
+"structpvr__modifier__vol__t.html#a1eed046a91d0e679674e90413fd21faf",
+"structtermios.html#a85b6c86d2a3db45a3829488190e357e4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

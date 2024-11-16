@@ -236,7 +236,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pop a key off the global keyboard queue. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd></dd></dl>
 <p>This function pops the front off of the keyboard queue, and returns the value to the caller. The value returned will be the ASCII value of the key pressed (accounting for the shift keys being pressed).</p>
 <p>If a key does not have an ASCII value associated with it, the raw key code will be returned, shifted up by 8 bits.</p>
 <dl class="section return"><dt>Returns</dt><dd>The value at the front of the queue, or -1 if there are no keys in the queue or queueing is off. </dd></dl>
@@ -303,7 +303,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Activate or deactivate global key queueing. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd></dd></dl>
 <p>This function will turn the internal keyboard queueing on or off. Note that there is only one queue for the whole system, no matter how many keyboards are attached, and the queue is of fairly limited length. Turning queueing off is useful (for instance) in a game where individual keypresses don't mean as much as having the keys up or down does.</p>
 <p>You can clear the queue (without popping all the keys off) by setting the active value to a different value than it was.</p>
 <p>The queue is by default on, unless you turn it off.</p>

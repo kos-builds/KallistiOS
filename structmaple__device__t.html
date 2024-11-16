@@ -103,9 +103,6 @@ $(document).ready(function(){initNavTree('structmaple__device__t.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:abe41d6a715a82882e39f21358e1c39c7" id="r_abe41d6a715a82882e39f21358e1c39c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#abe41d6a715a82882e39f21358e1c39c7">valid</a></td></tr>
-<tr class="memdesc:abe41d6a715a82882e39f21358e1c39c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this a valid device?  <br /></td></tr>
-<tr class="separator:abe41d6a715a82882e39f21358e1c39c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc39087c3626495f01169165605bfeac" id="r_abc39087c3626495f01169165605bfeac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#abc39087c3626495f01169165605bfeac">port</a></td></tr>
 <tr class="memdesc:abc39087c3626495f01169165605bfeac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maple bus port connected to.  <br /></td></tr>
 <tr class="separator:abc39087c3626495f01169165605bfeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,34 +112,37 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a55023347d805267dce8cfef9003fb182" id="r_a55023347d805267dce8cfef9003fb182"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmaple__devinfo__t.html">maple_devinfo_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#a55023347d805267dce8cfef9003fb182">info</a></td></tr>
 <tr class="memdesc:a55023347d805267dce8cfef9003fb182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device info struct.  <br /></td></tr>
 <tr class="separator:a55023347d805267dce8cfef9003fb182"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a538e19055399e8c612439a0d0658c826" id="r_a538e19055399e8c612439a0d0658c826"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#a538e19055399e8c612439a0d0658c826">dev_mask</a></td></tr>
-<tr class="memdesc:a538e19055399e8c612439a0d0658c826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device-present mask for unit 0's.  <br /></td></tr>
-<tr class="separator:a538e19055399e8c612439a0d0658c826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71b29537b1d038eea1174df1bee862a9" id="r_a71b29537b1d038eea1174df1bee862a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmaple__frame__t.html">maple_frame_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#a71b29537b1d038eea1174df1bee862a9">frame</a></td></tr>
 <tr class="memdesc:a71b29537b1d038eea1174df1bee862a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">One rx/tx frame.  <br /></td></tr>
 <tr class="separator:a71b29537b1d038eea1174df1bee862a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaabc3d676fa9a953c80cce04013f361" id="r_afaabc3d676fa9a953c80cce04013f361"><td class="memItemLeft" align="right" valign="top">struct maple_driver *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#afaabc3d676fa9a953c80cce04013f361">drv</a></td></tr>
 <tr class="memdesc:afaabc3d676fa9a953c80cce04013f361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver which handles this device.  <br /></td></tr>
 <tr class="separator:afaabc3d676fa9a953c80cce04013f361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dacf4b69c7daa9b8a6f1a3e9aa8741c" id="r_a4dacf4b69c7daa9b8a6f1a3e9aa8741c"><td class="memItemLeft" align="right" valign="top">volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#a4dacf4b69c7daa9b8a6f1a3e9aa8741c">status_valid</a></td></tr>
-<tr class="memdesc:a4dacf4b69c7daa9b8a6f1a3e9aa8741c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Have we got our first status update?  <br /></td></tr>
-<tr class="separator:a4dacf4b69c7daa9b8a6f1a3e9aa8741c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a877acb3420e14026d1825cac3eb8f731" id="r_a877acb3420e14026d1825cac3eb8f731"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#a877acb3420e14026d1825cac3eb8f731">status</a> [1024]</td></tr>
-<tr class="memdesc:a877acb3420e14026d1825cac3eb8f731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status buffer (for pollable devices)  <br /></td></tr>
-<tr class="separator:a877acb3420e14026d1825cac3eb8f731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56c7b82fbee2854a3f76383e356c7c9" id="r_ae56c7b82fbee2854a3f76383e356c7c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#ae56c7b82fbee2854a3f76383e356c7c9">probe_mask</a></td></tr>
+<tr class="memdesc:ae56c7b82fbee2854a3f76383e356c7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask of sub-devices left to probe.  <br /></td></tr>
+<tr class="separator:ae56c7b82fbee2854a3f76383e356c7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d1dd937a01fe1d79cdaf5c00bf5dee" id="r_a37d1dd937a01fe1d79cdaf5c00bf5dee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#a37d1dd937a01fe1d79cdaf5c00bf5dee">dev_mask</a></td></tr>
+<tr class="memdesc:a37d1dd937a01fe1d79cdaf5c00bf5dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device-present mask for unit 0's.  <br /></td></tr>
+<tr class="separator:a37d1dd937a01fe1d79cdaf5c00bf5dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ec305afdf61564e9ea639993049bfd" id="r_a18ec305afdf61564e9ea639993049bfd"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#a18ec305afdf61564e9ea639993049bfd">status_valid</a></td></tr>
+<tr class="memdesc:a18ec305afdf61564e9ea639993049bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Have we got our first status update?  <br /></td></tr>
+<tr class="separator:a18ec305afdf61564e9ea639993049bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e4e8ab66813acca1247e66987af70c" id="r_aa8e4e8ab66813acca1247e66987af70c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__system__types.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmaple__device__t.html#aa8e4e8ab66813acca1247e66987af70c">status</a> []</td></tr>
+<tr class="memdesc:aa8e4e8ab66813acca1247e66987af70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status buffer (for pollable devices)  <br /></td></tr>
+<tr class="separator:aa8e4e8ab66813acca1247e66987af70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>One maple device. </p>
 <p>Note that we duplicate the port/unit info which is normally somewhat implicit so that we can pass around a pointer to a particular device struct. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a538e19055399e8c612439a0d0658c826" name="a538e19055399e8c612439a0d0658c826"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a538e19055399e8c612439a0d0658c826">&#9670;&#160;</a></span>dev_mask</h2>
+<a id="a37d1dd937a01fe1d79cdaf5c00bf5dee" name="a37d1dd937a01fe1d79cdaf5c00bf5dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d1dd937a01fe1d79cdaf5c00bf5dee">&#9670;&#160;</a></span>dev_mask</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int maple_device_t::dev_mask</td>
+          <td class="memname"><a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a> maple_device_t::dev_mask</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -215,14 +215,30 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a877acb3420e14026d1825cac3eb8f731" name="a877acb3420e14026d1825cac3eb8f731"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a877acb3420e14026d1825cac3eb8f731">&#9670;&#160;</a></span>status</h2>
+<a id="ae56c7b82fbee2854a3f76383e356c7c9" name="ae56c7b82fbee2854a3f76383e356c7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56c7b82fbee2854a3f76383e356c7c9">&#9670;&#160;</a></span>probe_mask</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a> maple_device_t::status[1024]</td>
+          <td class="memname"><a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a> maple_device_t::probe_mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mask of sub-devices left to probe. </p>
+
+</div>
+</div>
+<a id="aa8e4e8ab66813acca1247e66987af70c" name="aa8e4e8ab66813acca1247e66987af70c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e4e8ab66813acca1247e66987af70c">&#9670;&#160;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__system__types.html#ga4b435a49c74bb91f284f075e63416cb6">uint32</a> maple_device_t::status[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,14 +247,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a4dacf4b69c7daa9b8a6f1a3e9aa8741c" name="a4dacf4b69c7daa9b8a6f1a3e9aa8741c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dacf4b69c7daa9b8a6f1a3e9aa8741c">&#9670;&#160;</a></span>status_valid</h2>
+<a id="a18ec305afdf61564e9ea639993049bfd" name="a18ec305afdf61564e9ea639993049bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ec305afdf61564e9ea639993049bfd">&#9670;&#160;</a></span>status_valid</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile int maple_device_t::status_valid</td>
+          <td class="memname">volatile <a class="el" href="group__system__types.html#gadde6aaee8457bee49c2a92621fe22b79">uint8</a> maple_device_t::status_valid</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -260,22 +276,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unit number, off of the port. </p>
-
-</div>
-</div>
-<a id="abe41d6a715a82882e39f21358e1c39c7" name="abe41d6a715a82882e39f21358e1c39c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe41d6a715a82882e39f21358e1c39c7">&#9670;&#160;</a></span>valid</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int maple_device_t::valid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Is this a valid device? </p>
 
 </div>
 </div>

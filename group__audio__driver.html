@@ -186,8 +186,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:gad101e4324d48a53a29df0aa49ba542c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a block of data to sound RAM.  <br /></td></tr>
 <tr class="separator:gad101e4324d48a53a29df0aa49ba542c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa78486207457bdc67781bccfb87b7fb5" id="r_gaa78486207457bdc67781bccfb87b7fb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__driver.html#gaa78486207457bdc67781bccfb87b7fb5">spu_memload_sq</a> (uintptr_t to, void *from, size_t length)</td></tr>
-<tr class="memdesc:gaa78486207457bdc67781bccfb87b7fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a block of data to sound RAM.  <br /></td></tr>
+<tr class="memdesc:gaa78486207457bdc67781bccfb87b7fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a block of data to sound RAM by using the Store Queues.  <br /></td></tr>
 <tr class="separator:gaa78486207457bdc67781bccfb87b7fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68d58c50041eb9178ec000b7fdc98e57" id="r_ga68d58c50041eb9178ec000b7fdc98e57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__driver.html#ga68d58c50041eb9178ec000b7fdc98e57">spu_memload_dma</a> (uintptr_t to, void *from, size_t length)</td></tr>
+<tr class="memdesc:ga68d58c50041eb9178ec000b7fdc98e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a block of data to sound RAM by using DMA (or SQ on fails).  <br /></td></tr>
+<tr class="separator:ga68d58c50041eb9178ec000b7fdc98e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga72dcb5fc49be0acaf92e35aed1865ed9" id="r_ga72dcb5fc49be0acaf92e35aed1865ed9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__audio__driver.html#ga72dcb5fc49be0acaf92e35aed1865ed9">spu_memread</a> (void *to, uintptr_t from, size_t length)</td></tr>
 <tr class="memdesc:ga72dcb5fc49be0acaf92e35aed1865ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a block of data from sound RAM.  <br /></td></tr>
 <tr class="separator:ga72dcb5fc49be0acaf92e35aed1865ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1109,6 +1112,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga68d58c50041eb9178ec000b7fdc98e57" name="ga68d58c50041eb9178ec000b7fdc98e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68d58c50041eb9178ec000b7fdc98e57">&#9670;&#160;</a></span>spu_memload_dma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spu_memload_dma </td>
+          <td>(</td>
+          <td class="paramtype">uintptr_t&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a block of data to sound RAM by using DMA (or SQ on fails). </p>
+<p>This function acts much like memcpy() but copies to the sound RAM area by using the DMA. If DMA fails, then will be used the Store Queues.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to</td><td>The offset in sound RAM to copy to. Do not include the 0xA0800000 part, it is implied. </td></tr>
+    <tr><td class="paramname">from</td><td>A pointer to copy from. </td></tr>
+    <tr><td class="paramname">length</td><td>The number of bytes to copy. Must be a multiple of 32. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gaa78486207457bdc67781bccfb87b7fb5" name="gaa78486207457bdc67781bccfb87b7fb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa78486207457bdc67781bccfb87b7fb5">&#9670;&#160;</a></span>spu_memload_sq()</h2>
 
@@ -1141,7 +1189,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Copy a block of data to sound RAM. </p>
+<p>Copy a block of data to sound RAM by using the Store Queues. </p>
 <p>This function acts much like memcpy() but copies to the sound RAM area by using the Store Queues.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

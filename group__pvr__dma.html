@@ -103,8 +103,8 @@ $(document).ready(function(){initNavTree('group__pvr__dma.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__pvr__dma__modes" id="r_group__pvr__dma__modes"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pvr__dma__modes.html">Transfer Modes</a></td></tr>
-<tr class="memdesc:group__pvr__dma__modes"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer modes with TA/PVR DMA and Store Queues. <br /></td></tr>
+<tr class="memitem:group__pvr__dma__type" id="r_group__pvr__dma__type"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pvr__dma__type.html">Transfer Modes</a></td></tr>
+<tr class="memdesc:group__pvr__dma__type"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer modes with TA/PVR DMA and Store Queues. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -115,9 +115,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga178dd9df2c954eac1e9e1b51f1741006" id="r_ga178dd9df2c954eac1e9e1b51f1741006"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pvr__dma.html#ga178dd9df2c954eac1e9e1b51f1741006">pvr_dma_transfer</a> (void *src, uintptr_t dest, size_t count, int type, int block, <a class="el" href="group__pvr__dma.html#ga1c983e6877a569204c25ec9e5ad48d63">pvr_dma_callback_t</a> callback, void *cbdata)</td></tr>
-<tr class="memdesc:ga178dd9df2c954eac1e9e1b51f1741006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a DMA transfer to the PVR RAM over 64-bit TA bus.  <br /></td></tr>
-<tr class="separator:ga178dd9df2c954eac1e9e1b51f1741006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fd109c8d1930041963827008256b361" id="r_ga4fd109c8d1930041963827008256b361"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pvr__dma.html#ga4fd109c8d1930041963827008256b361">pvr_dma_transfer</a> (const void *src, uintptr_t dest, size_t count, <a class="el" href="group__pvr__dma__type.html#ga7d772c6dfeec1493c31bb6a200cd3744">pvr_dma_type_t</a> type, int block, <a class="el" href="group__pvr__dma.html#ga1c983e6877a569204c25ec9e5ad48d63">pvr_dma_callback_t</a> callback, void *cbdata)</td></tr>
+<tr class="memdesc:ga4fd109c8d1930041963827008256b361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a DMA transfer to the PVR RAM over 64-bit TA bus.  <br /></td></tr>
+<tr class="separator:ga4fd109c8d1930041963827008256b361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5bad85de93cb10e825270aa4f1c37d7d" id="r_ga5bad85de93cb10e825270aa4f1c37d7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pvr__dma.html#ga5bad85de93cb10e825270aa4f1c37d7d">pvr_txr_load_dma</a> (void *src, <a class="el" href="group__pvr__vram.html#ga621fa8a260d17a31b12d4155426d0fa4">pvr_ptr_t</a> dest, size_t count, int block, <a class="el" href="group__pvr__dma.html#ga1c983e6877a569204c25ec9e5ad48d63">pvr_dma_callback_t</a> callback, void *cbdata)</td></tr>
 <tr class="memdesc:ga5bad85de93cb10e825270aa4f1c37d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a texture using TA DMA.  <br /></td></tr>
 <tr class="separator:ga5bad85de93cb10e825270aa4f1c37d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,7 +156,7 @@ Functions</h2></td></tr>
 <p>Functions that act as callbacks when DMA completes should be of this type. These functions will be called inside an interrupt context, so don't try to use anything that might stall.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>User data passed in to the <a class="el" href="group__pvr__dma.html#ga178dd9df2c954eac1e9e1b51f1741006" title="Perform a DMA transfer to the PVR RAM over 64-bit TA bus.">pvr_dma_transfer()</a> function. </td></tr>
+    <tr><td class="paramname">data</td><td>User data passed in to the <a class="el" href="group__pvr__dma.html#ga4fd109c8d1930041963827008256b361" title="Perform a DMA transfer to the PVR RAM over 64-bit TA bus.">pvr_dma_transfer()</a> function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Load vertex data to the TA using TA DMA. </p>
-<p>This is essentially a convenience wrapper for <a class="el" href="group__pvr__dma.html#ga178dd9df2c954eac1e9e1b51f1741006" title="Perform a DMA transfer to the PVR RAM over 64-bit TA bus.">pvr_dma_transfer()</a>, so all notes that apply to it also apply here.</p>
+<p>This is essentially a convenience wrapper for <a class="el" href="group__pvr__dma.html#ga4fd109c8d1930041963827008256b361" title="Perform a DMA transfer to the PVR RAM over 64-bit TA bus.">pvr_dma_transfer()</a>, so all notes that apply to it also apply here.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>Where to copy from. Must be 32-byte aligned. </td></tr>
@@ -294,8 +294,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga178dd9df2c954eac1e9e1b51f1741006" name="ga178dd9df2c954eac1e9e1b51f1741006"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga178dd9df2c954eac1e9e1b51f1741006">&#9670;&#160;</a></span>pvr_dma_transfer()</h2>
+<a id="ga4fd109c8d1930041963827008256b361" name="ga4fd109c8d1930041963827008256b361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4fd109c8d1930041963827008256b361">&#9670;&#160;</a></span>pvr_dma_transfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +303,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int pvr_dma_transfer </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -321,7 +321,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pvr__dma__type.html#ga7d772c6dfeec1493c31bb6a200cd3744">pvr_dma_type_t</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -375,7 +375,7 @@ Functions</h2></td></tr>
 <dl class="section user"><dt>Error Conditions:</dt><dd><em>EINPROGRESS</em> - DMA already in progress <br  />
 <em>EFAULT</em> - dest is not 32-byte aligned <br  />
 <em>EIO</em> - I/O error</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__pvr__dma__modes.html" title="Transfer modes with TA/PVR DMA and Store Queues.">Transfer Modes</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__pvr__dma__type.html#ga7d772c6dfeec1493c31bb6a200cd3744">pvr_dma_type_t</a> </dd></dl>
 
 </div>
 </div>
@@ -424,7 +424,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Load yuv data to the YUV converter using TA DMA. </p>
-<p>This is essentially a convenience wrapper for <a class="el" href="group__pvr__dma.html#ga178dd9df2c954eac1e9e1b51f1741006" title="Perform a DMA transfer to the PVR RAM over 64-bit TA bus.">pvr_dma_transfer()</a>, so all notes that apply to it also apply here.</p>
+<p>This is essentially a convenience wrapper for <a class="el" href="group__pvr__dma.html#ga4fd109c8d1930041963827008256b361" title="Perform a DMA transfer to the PVR RAM over 64-bit TA bus.">pvr_dma_transfer()</a>, so all notes that apply to it also apply here.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>Where to copy from. Must be 32-byte aligned. </td></tr>
@@ -499,7 +499,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Load a texture using TA DMA. </p>
-<p>This is essentially a convenience wrapper for <a class="el" href="group__pvr__dma.html#ga178dd9df2c954eac1e9e1b51f1741006" title="Perform a DMA transfer to the PVR RAM over 64-bit TA bus.">pvr_dma_transfer()</a>, so all notes that apply to it also apply here.</p>
+<p>This is essentially a convenience wrapper for <a class="el" href="group__pvr__dma.html#ga4fd109c8d1930041963827008256b361" title="Perform a DMA transfer to the PVR RAM over 64-bit TA bus.">pvr_dma_transfer()</a>, so all notes that apply to it also apply here.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>Where to copy from. Must be 32-byte aligned. </td></tr>

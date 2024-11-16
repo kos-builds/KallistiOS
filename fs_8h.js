@@ -37,6 +37,7 @@ var fs_8h =
     [ "fs_load", "group__vfs__generic.html#ga57533e491faa1d8d30118ae71e16217b", null ],
     [ "fs_mkdir", "group__vfs__generic.html#gaded8ecdc49d187af1a52377dfc170a8e", null ],
     [ "fs_mmap", "group__vfs__generic.html#ga57f9fb39d6b4f8ebe60dd37239bfe18a", null ],
+    [ "fs_normalize_path", "group__vfs__generic.html#gaf6c09d3fc34bb0c1ee758c149df2ffdb", null ],
     [ "fs_open", "group__vfs__generic.html#ga25d7fb53c97b19b22645e482803bd7d3", null ],
     [ "fs_open_handle", "group__vfs__generic.html#ga1632eb58c70cded35d6884b967ea8aa8", null ],
     [ "fs_path_append", "group__vfs__generic.html#gad933cf39befb0d1209124b666ee54fc2", null ],

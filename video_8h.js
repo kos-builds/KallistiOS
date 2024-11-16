@@ -50,6 +50,7 @@ var video_8h =
     [ "vid_get_start", "group__video__fb.html#ga921309b4dc670cf6a7d6420cf68b8240", null ],
     [ "vid_init", "group__video__init.html#ga87896ed7578475ead0fa224c0f5a34d3", null ],
     [ "vid_screen_shot", "group__video__fb.html#ga1dc58c2c16a8d3518d370a81bfb01c60", null ],
+    [ "vid_screen_shot_data", "group__video__fb.html#ga6174320872dfd48140006a713beda2a9", null ],
     [ "vid_set_enabled", "group__video__display.html#gad19fe783a28b123472f7e1ffed165b58", null ],
     [ "vid_set_fb", "group__video__fb.html#ga331e8d0e06a0d9b467b5085538b90cd2", null ],
     [ "vid_set_mode", "group__video__modes.html#ga389554e729db6f3d14c8180ddf8e4acd", null ],

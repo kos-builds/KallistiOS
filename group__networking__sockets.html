@@ -229,6 +229,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6c1fb9f8643c70bc0a61d85ce26be101" id="r_ga6c1fb9f8643c70bc0a61d85ce26be101"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__networking__sockets.html#ga6c1fb9f8643c70bc0a61d85ce26be101">getsockname</a> (int <a class="el" href="group__networking__sockets.html#gaf4e0711877c45a41168ac677b0670ccd">socket</a>, struct <a class="el" href="structsockaddr.html">sockaddr</a> *name, <a class="el" href="group__networking__sockets.html#ga6e552de056211b018389ac6122675fb0">socklen_t</a> *name_len)</td></tr>
 <tr class="memdesc:ga6c1fb9f8643c70bc0a61d85ce26be101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get socket name.  <br /></td></tr>
 <tr class="separator:ga6c1fb9f8643c70bc0a61d85ce26be101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd8def2c9b8ddd24ec918a829a2089c7" id="r_gafd8def2c9b8ddd24ec918a829a2089c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__networking__sockets.html#gafd8def2c9b8ddd24ec918a829a2089c7">getpeername</a> (int <a class="el" href="group__networking__sockets.html#gaf4e0711877c45a41168ac677b0670ccd">socket</a>, struct <a class="el" href="structsockaddr.html">sockaddr</a> *<a class="el" href="group__system__macros.html#ga378ac21329d33f561f90265eef89f564">__RESTRICT</a> name, <a class="el" href="group__networking__sockets.html#ga6e552de056211b018389ac6122675fb0">socklen_t</a> *<a class="el" href="group__system__macros.html#ga378ac21329d33f561f90265eef89f564">__RESTRICT</a> name_len)</td></tr>
+<tr class="memdesc:gafd8def2c9b8ddd24ec918a829a2089c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the connected peer socket.  <br /></td></tr>
+<tr class="separator:gafd8def2c9b8ddd24ec918a829a2089c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9198cc406a9153792eef1fcb0fa78b06" id="r_ga9198cc406a9153792eef1fcb0fa78b06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__networking__sockets.html#ga9198cc406a9153792eef1fcb0fa78b06">getsockopt</a> (int <a class="el" href="group__networking__sockets.html#gaf4e0711877c45a41168ac677b0670ccd">socket</a>, int level, int option_name, void *option_value, <a class="el" href="group__networking__sockets.html#ga6e552de056211b018389ac6122675fb0">socklen_t</a> *option_len)</td></tr>
 <tr class="memdesc:ga9198cc406a9153792eef1fcb0fa78b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get socket options.  <br /></td></tr>
 <tr class="separator:ga9198cc406a9153792eef1fcb0fa78b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -699,6 +702,66 @@ Functions</h2></td></tr>
   <table class="retval">
     <tr><td class="paramname">0</td><td>On success. </td></tr>
     <tr><td class="paramname">-1</td><td>On error, sets errno as appropriate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gafd8def2c9b8ddd24ec918a829a2089c7" name="gafd8def2c9b8ddd24ec918a829a2089c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafd8def2c9b8ddd24ec918a829a2089c7">&#9670;&#160;</a></span>getpeername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getpeername </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structsockaddr.html">sockaddr</a> *<a class="el" href="group__system__macros.html#ga378ac21329d33f561f90265eef89f564">__RESTRICT</a>&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__networking__sockets.html#ga6e552de056211b018389ac6122675fb0">socklen_t</a> *<a class="el" href="group__system__macros.html#ga378ac21329d33f561f90265eef89f564">__RESTRICT</a>&#160;</td>
+          <td class="paramname"><em>name_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the name of the connected peer socket. </p>
+<p>This function retrieves the address of the peer connected to the socket specified by the socket descriptor. The address is returned in the buffer pointed to by the name parameter, and the actual length of the address is returned in the name_len parameter.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>A socket that is already connected to a peer. </td></tr>
+    <tr><td class="paramname">name</td><td>A pointer to a sockaddr structure where the peer address will be stored. </td></tr>
+    <tr><td class="paramname">name_len</td><td>A pointer to a socklen_t variable that specifies the length of the address structure. On return, it will contain the actual size of the address returned.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>On success. </td></tr>
+    <tr><td class="paramname">-1</td><td>On error, sets errno as appropriate, such as:<ul>
+<li>EBADF: The socket argument is not a valid file descriptor.</li>
+<li>EFAULT: The addr argument points to memory not in a valid part of the process address space.</li>
+<li>ENOBUFS: Insufficient resources were available in the system to perform the operation.</li>
+<li>ENOTCONN: The socket is not connected.</li>
+<li>ENOTSOCK: The socket argument does not refer to a socket.</li>
+<li>EOPNOTSUPP: The socket does not support getpeername. </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>

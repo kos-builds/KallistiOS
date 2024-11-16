@@ -1,9 +1,23 @@
 var searchData=
 [
-  ['modem_5fevent_5fconnected_0',['MODEM_EVENT_CONNECTED',['../group__modem.html#ggaeeb6947da48494fe16f673882566b65eafb35198b0f236e8da9102adb2fb0762c',1,'modem.h']]],
-  ['modem_5fevent_5fconnection_5ffailed_1',['MODEM_EVENT_CONNECTION_FAILED',['../group__modem.html#ggaeeb6947da48494fe16f673882566b65ea4a4f92b9ff8316897dc103c31f145770',1,'modem.h']]],
-  ['modem_5fevent_5fdisconnected_2',['MODEM_EVENT_DISCONNECTED',['../group__modem.html#ggaeeb6947da48494fe16f673882566b65ea3d9880d5f625a74b411d127e2342a317',1,'modem.h']]],
-  ['modem_5fevent_5foverflow_3',['MODEM_EVENT_OVERFLOW',['../group__modem.html#ggaeeb6947da48494fe16f673882566b65ea8d5890764fc2f3879b5284e7d16e6a30',1,'modem.h']]],
-  ['modem_5fevent_5frx_5fnot_5fempty_4',['MODEM_EVENT_RX_NOT_EMPTY',['../group__modem.html#ggaeeb6947da48494fe16f673882566b65ea534cef95767454aa3558ce5191d46017',1,'modem.h']]],
-  ['modem_5fevent_5ftx_5fempty_5',['MODEM_EVENT_TX_EMPTY',['../group__modem.html#ggaeeb6947da48494fe16f673882566b65eaf750569ef37a693c3c021b52483cfda7',1,'modem.h']]]
+  ['dm_5f256x256_0',['DM_256x256',['../group__video__modes__display.html#gga255fc832348678e84891b7a8e0843817af45be1aaed71ed93e30903c013ae4ec1',1,'video.h']]],
+  ['dm_5f256x256_5fpal_5fil_1',['DM_256x256_PAL_IL',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a37517ef466882b1967fc61823b5d9a9d',1,'video.h']]],
+  ['dm_5f320x240_2',['DM_320x240',['../group__video__modes__display.html#gga255fc832348678e84891b7a8e0843817a8415fb0ac2d98f9650a0ab0653841cc1',1,'video.h']]],
+  ['dm_5f320x240_5fntsc_3',['DM_320x240_NTSC',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a370a31e6bf7b0af94ec2c62c37dba17c',1,'video.h']]],
+  ['dm_5f320x240_5fpal_4',['DM_320x240_PAL',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a44d2a5707f826e1eae01a5d9b8ad8cde',1,'video.h']]],
+  ['dm_5f320x240_5fvga_5',['DM_320x240_VGA',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21afaed40ea390823b3162b8880ef45f381',1,'video.h']]],
+  ['dm_5f640x480_6',['DM_640x480',['../group__video__modes__display.html#gga255fc832348678e84891b7a8e0843817a432742054165350684f7366e2c4d6281',1,'video.h']]],
+  ['dm_5f640x480_5fntsc_5fil_7',['DM_640x480_NTSC_IL',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a1be1d95ae8a1468a88b1b40353e2ed13',1,'video.h']]],
+  ['dm_5f640x480_5fpal_5fil_8',['DM_640x480_PAL_IL',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a6eebf0036865f83d30d04c40599d995a',1,'video.h']]],
+  ['dm_5f640x480_5fvga_9',['DM_640x480_VGA',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a35f1a5e59218462f29a67809f7a32024',1,'video.h']]],
+  ['dm_5f768x480_10',['DM_768x480',['../group__video__modes__display.html#gga255fc832348678e84891b7a8e0843817ae13f36d182499f8aa13a6cf63a2677cd',1,'video.h']]],
+  ['dm_5f768x480_5fntsc_5fil_11',['DM_768x480_NTSC_IL',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a8308fdac8483fd801c282730fe54555b',1,'video.h']]],
+  ['dm_5f768x480_5fpal_5fil_12',['DM_768x480_PAL_IL',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a55087db4e9fe1d53e70ecbbde055e303',1,'video.h']]],
+  ['dm_5f768x576_13',['DM_768x576',['../group__video__modes__display.html#gga255fc832348678e84891b7a8e0843817a50cb0d344f756e776985ae1a58ee8fa2',1,'video.h']]],
+  ['dm_5f768x576_5fpal_5fil_14',['DM_768x576_PAL_IL',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a3e91ed1173c24203bfb46487599950f6',1,'video.h']]],
+  ['dm_5fgeneric_5ffirst_15',['DM_GENERIC_FIRST',['../group__video__modes__display.html#gga255fc832348678e84891b7a8e0843817a369904eee8e943923f76dbfcf331a7c2',1,'video.h']]],
+  ['dm_5fgeneric_5flast_16',['DM_GENERIC_LAST',['../group__video__modes__display.html#gga255fc832348678e84891b7a8e0843817a328495a129c1a866a9cac001aa126840',1,'video.h']]],
+  ['dm_5finvalid_17',['DM_INVALID',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a7c1fcc9b345992c358e393ddc2a582a8',1,'video.h']]],
+  ['dm_5fmode_5fcount_18',['DM_MODE_COUNT',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a7c72cc440fb99006928c08ada8ab5d0d',1,'video.h']]],
+  ['dm_5fsentinel_19',['DM_SENTINEL',['../group__video__modes__display.html#ggaf5486e79753fec13f4469d634a937a21a26ba2e2e2bc382e3a65e2ac890cedad7',1,'video.h']]]
 ];

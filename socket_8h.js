@@ -46,6 +46,7 @@ var socket_8h =
     [ "accept", "group__networking__sockets.html#ga29c331fb36d757d993032ef83371c4e9", null ],
     [ "bind", "group__networking__sockets.html#ga55b3c1572b4e86ca0702ecdeb7e43997", null ],
     [ "connect", "group__networking__sockets.html#gaeedaa5cac80a95d50232c1d130615a1a", null ],
+    [ "getpeername", "group__networking__sockets.html#gafd8def2c9b8ddd24ec918a829a2089c7", null ],
     [ "getsockname", "group__networking__sockets.html#ga6c1fb9f8643c70bc0a61d85ce26be101", null ],
     [ "getsockopt", "group__networking__sockets.html#ga9198cc406a9153792eef1fcb0fa78b06", null ],
     [ "listen", "group__networking__sockets.html#gab0df490f17896fb1fa5f65a4468d6096", null ],

@@ -5,6 +5,8 @@ var sfxmgr_8h =
     [ "snd_sfx_chn_alloc", "group__audio__sfx.html#ga923aa9942bd2ebb55a1a12f1e6dadc0f", null ],
     [ "snd_sfx_chn_free", "group__audio__sfx.html#ga1a74f046849fd4a1ce3aff68399ad2c2", null ],
     [ "snd_sfx_load", "group__audio__sfx.html#gac5de88124b6cd04af8e4737b05c4b482", null ],
+    [ "snd_sfx_load_ex", "group__audio__sfx.html#gabeb15b22c58ef17e1677308aae1141ca", null ],
+    [ "snd_sfx_load_fd", "group__audio__sfx.html#ga25b621198f02cf572d01f3f070c1f506", null ],
     [ "snd_sfx_play", "group__audio__sfx.html#ga4fb2bd23ff153c8bd1493a6417ff718f", null ],
     [ "snd_sfx_play_chn", "group__audio__sfx.html#ga43534fc7fa4676be555482dbe7926f54", null ],
     [ "snd_sfx_stop", "group__audio__sfx.html#ga26d2c1e14131496e2ba920c5967750c7", null ],

@@ -55,7 +55,7 @@ var searchData=
   ['uio_5fmaxiov_52',['UIO_MAXIOV',['../group__vfs__posix.html#gaf428253f56fea992bff30fc52883257e',1,'uio.h']]],
   ['uname_53',['uname',['../group__system__posix.html#ga492f9a7647523d769d747b20419fc7cc',1,'utsname.h']]],
   ['unit_54',['unit',['../group__timers.html',1,'Timer Unit'],['../structmaple__device__t.html#a4f2b57e1bc8b43db61ab628e53e16549',1,'maple_device_t::unit'],['../group__vmu.html',1,'Visual Memory Unit']]],
-  ['units_55',['units',['../structmaple__port__t.html#a9548749e9c5880442818e84f70a4f05b',1,'maple_port_t']]],
+  ['units_55',['units',['../structmaple__port__t.html#a32b53a4af7fc4a1ce5067544483becaf',1,'maple_port_t']]],
   ['unk1_56',['unk1',['../structvmu__root__t.html#a39787789df7f862569c227679db74cf5',1,'vmu_root_t']]],
   ['unk2_57',['unk2',['../structvmu__root__t.html#a75b58bae5569dbf66763917f3923540d',1,'vmu_root_t']]],
   ['unlink_58',['unlink',['../structvfs__handler__t.html#a8881a0c804ce35d9a06dd5eb4367c809',1,'vfs_handler_t']]],

@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('group__version__utils.html',''); initR
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Version Encoding</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>Utilities for encoding a version from its components. </p>
 </td></tr>
-<tr class="memitem:ga047c23dfe69709cd7e57cfeb2814aa5f" id="r_ga047c23dfe69709cd7e57cfeb2814aa5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#ga047c23dfe69709cd7e57cfeb2814aa5f">KOS_VERSION_MAKE</a>(major,  minor,  patch)&#160;&#160;&#160;    ((<a class="el" href="group__version__runtime.html#ga3b43000362ac354e96654ad44ebe8209">kos_version_t</a>)((major) &lt;&lt; 16) | ((minor) &lt;&lt; 8) | (patch))</td></tr>
+<tr class="memitem:ga047c23dfe69709cd7e57cfeb2814aa5f" id="r_ga047c23dfe69709cd7e57cfeb2814aa5f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#ga047c23dfe69709cd7e57cfeb2814aa5f">KOS_VERSION_MAKE</a>(major,  minor,  patch)&#160;&#160;&#160;    (((major) &lt;&lt; 16) | ((minor) &lt;&lt; 8) | (patch))</td></tr>
 <tr class="memdesc:ga047c23dfe69709cd7e57cfeb2814aa5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a version identifier from its constituents.  <br /></td></tr>
 <tr class="separator:ga047c23dfe69709cd7e57cfeb2814aa5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b808e169a71401d37928a12fe271bf3" id="r_ga4b808e169a71401d37928a12fe271bf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#ga4b808e169a71401d37928a12fe271bf3">KOS_VERSION_MAKE_STRING</a>(major,  minor,  patch)</td></tr>
@@ -113,19 +113,19 @@ $(document).ready(function(){initNavTree('group__version__utils.html',''); initR
 <tr class="memitem:ga2b5009aaaa0d3a57dc147dd485b53df1" id="r_ga2b5009aaaa0d3a57dc147dd485b53df1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major,  minor,  patch,  op,  version)&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga047c23dfe69709cd7e57cfeb2814aa5f">KOS_VERSION_MAKE</a>(major, minor, patch) op (version &amp; 0xffffff))</td></tr>
 <tr class="memdesc:ga2b5009aaaa0d3a57dc147dd485b53df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a generic check against a given version.  <br /></td></tr>
 <tr class="separator:ga2b5009aaaa0d3a57dc147dd485b53df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31dff13c104bc845e52d48da30842003" id="r_ga31dff13c104bc845e52d48da30842003"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#ga31dff13c104bc845e52d48da30842003">KOS_VERSION_MAKE_ABOVE</a>(major,  minor,  patch,  version)&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &gt;, version))</td></tr>
+<tr class="memitem:ga31dff13c104bc845e52d48da30842003" id="r_ga31dff13c104bc845e52d48da30842003"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#ga31dff13c104bc845e52d48da30842003">KOS_VERSION_MAKE_ABOVE</a>(major,  minor,  patch,  version)&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &lt;, version))</td></tr>
 <tr class="memdesc:ga31dff13c104bc845e52d48da30842003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a check for being above a given version.  <br /></td></tr>
 <tr class="separator:ga31dff13c104bc845e52d48da30842003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64d35595cbaccb561f8c3bdc34df32c6" id="r_ga64d35595cbaccb561f8c3bdc34df32c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#ga64d35595cbaccb561f8c3bdc34df32c6">KOS_VERSION_MAKE_MIN</a>(major,  minor,  patch,  version)&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &gt;=, version))</td></tr>
+<tr class="memitem:ga64d35595cbaccb561f8c3bdc34df32c6" id="r_ga64d35595cbaccb561f8c3bdc34df32c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#ga64d35595cbaccb561f8c3bdc34df32c6">KOS_VERSION_MAKE_MIN</a>(major,  minor,  patch,  version)&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &lt;=, version))</td></tr>
 <tr class="memdesc:ga64d35595cbaccb561f8c3bdc34df32c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a minimum version check.  <br /></td></tr>
 <tr class="separator:ga64d35595cbaccb561f8c3bdc34df32c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaddabbed71499963619fe59da680a3b26" id="r_gaddabbed71499963619fe59da680a3b26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#gaddabbed71499963619fe59da680a3b26">KOS_VERSION_MAKE_IS</a>(major,  minor,  patch,  version)&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, ==, version))</td></tr>
 <tr class="memdesc:gaddabbed71499963619fe59da680a3b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an exact version check.  <br /></td></tr>
 <tr class="separator:gaddabbed71499963619fe59da680a3b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb2807d5902bb0353a43066f5e2ef3fe" id="r_gafb2807d5902bb0353a43066f5e2ef3fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#gafb2807d5902bb0353a43066f5e2ef3fe">KOS_VERSION_MAKE_MAX</a>(major,  minor,  patch,  version)&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &lt;=, version))</td></tr>
+<tr class="memitem:gafb2807d5902bb0353a43066f5e2ef3fe" id="r_gafb2807d5902bb0353a43066f5e2ef3fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#gafb2807d5902bb0353a43066f5e2ef3fe">KOS_VERSION_MAKE_MAX</a>(major,  minor,  patch,  version)&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &gt;=, version))</td></tr>
 <tr class="memdesc:gafb2807d5902bb0353a43066f5e2ef3fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a maximum version check.  <br /></td></tr>
 <tr class="separator:gafb2807d5902bb0353a43066f5e2ef3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga283c1cae16f7b3a9a3f6db6365a22a8e" id="r_ga283c1cae16f7b3a9a3f6db6365a22a8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#ga283c1cae16f7b3a9a3f6db6365a22a8e">KOS_VERSION_MAKE_BELOW</a>(major,  minor,  patch,  version)&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &lt;, version))</td></tr>
+<tr class="memitem:ga283c1cae16f7b3a9a3f6db6365a22a8e" id="r_ga283c1cae16f7b3a9a3f6db6365a22a8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__version__utils.html#ga283c1cae16f7b3a9a3f6db6365a22a8e">KOS_VERSION_MAKE_BELOW</a>(major,  minor,  patch,  version)&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &gt;, version))</td></tr>
 <tr class="memdesc:ga283c1cae16f7b3a9a3f6db6365a22a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a check for being below a given version.  <br /></td></tr>
 <tr class="separator:ga283c1cae16f7b3a9a3f6db6365a22a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('group__version__utils.html',''); initR
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    ((<a class="el" href="group__version__runtime.html#ga3b43000362ac354e96654ad44ebe8209">kos_version_t</a>)((major) &lt;&lt; 16) | ((minor) &lt;&lt; 8) | (patch))</td>
+          <td></td><td>&#160;&#160;&#160;    (((major) &lt;&lt; 16) | ((minor) &lt;&lt; 8) | (patch))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('group__version__utils.html',''); initR
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &gt;, version))</td>
+          <td></td><td>&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &lt;, version))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('group__version__utils.html',''); initR
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &lt;, version))</td>
+          <td></td><td>&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &gt;, version))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -463,7 +463,7 @@ $(document).ready(function(){initNavTree('group__version__utils.html',''); initR
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &lt;=, version))</td>
+          <td></td><td>&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &gt;=, version))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -523,7 +523,7 @@ $(document).ready(function(){initNavTree('group__version__utils.html',''); initR
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &gt;=, version))</td>
+          <td></td><td>&#160;&#160;&#160;    (<a class="el" href="group__version__utils.html#ga2b5009aaaa0d3a57dc147dd485b53df1">KOS_VERSION_MAKE_COMPARISON</a>(major, minor, patch, &lt;=, version))</td>
         </tr>
       </table>
 </div><div class="memdoc">

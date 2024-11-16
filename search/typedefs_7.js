@@ -6,6 +6,6 @@ var searchData=
   ['int32_3',['int32',['../group__system__types.html#ga4ca2d97e571b049be6f4cdcfaa1ab946',1,'types.h']]],
   ['int64_4',['int64',['../group__system__types.html#gaecfc3c54bd29ad5964e1c1c3ccbf89df',1,'types.h']]],
   ['int8_5',['int8',['../group__system__types.html#gae47c588f3ab8c61121c1c7ab7edc47cd',1,'types.h']]],
-  ['irq_5fhandler_6',['irq_handler',['../group__irqs.html#gac5a954e129fd887a4b1604d3a0e538b2',1,'irq.h']]],
-  ['irq_5ft_7',['irq_t',['../group__irqs.html#ga87d1391c13f4591cd7e029510bc444d8',1,'irq.h']]]
+  ['irq_5fhandler_6',['irq_handler',['../group__irq__handlers.html#ga3ea6c10e0d2493ea00afe960dc070c86',1,'irq.h']]],
+  ['irq_5fmask_5ft_7',['irq_mask_t',['../group__irq__mask.html#gac86eb9bc95ad073837dfe8e4e9453295',1,'irq.h']]]
 ];

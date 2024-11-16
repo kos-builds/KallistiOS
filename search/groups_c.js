@@ -11,6 +11,7 @@ var searchData=
   ['generic_20flags_8',['Generic Flags',['../group__kos__initflags.html',1,'']]],
   ['geometry_9',['Geometry',['../group__pvr__geometry.html',1,'']]],
   ['getaddrinfo_20error_20values_10',['getaddrinfo() Error Values',['../group__addrinfo__errors.html',1,'']]],
-  ['global_20state_11',['Global State',['../group__pvr__global.html',1,'']]],
-  ['groups_12',['Capability Groups',['../group__controller__caps__groups.html',1,'']]]
+  ['global_11',['Global',['../group__irq__handlers__global.html',1,'']]],
+  ['global_20state_12',['Global State',['../group__pvr__global.html',1,'']]],
+  ['groups_13',['Capability Groups',['../group__controller__caps__groups.html',1,'']]]
 ];

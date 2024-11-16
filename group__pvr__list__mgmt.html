@@ -300,6 +300,7 @@ Functions</h2></td></tr>
 
 <p>Submit a primitive of the current list type. </p>
 <p>Note that any values submitted in this fashion will go directly to the hardware without any sort of buffering, and submitting a primitive of the wrong type will quite likely ruin your scene. Note that this also will not work if you haven't begun any list types (i.e., all data is queued). If DMA is enabled, the primitive will be appended to the end of the currently selected list's buffer.</p>
+<dl class="section warning"><dt>Warning</dt><dd><code>data</code> must be 32-byte aligned!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>The primitive to submit. </td></tr>

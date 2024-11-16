@@ -11,7 +11,7 @@ var searchData=
   ['addrinfo_20ai_5fflags_8',['addrinfo ai_flags',['../group__addrinfo__flags.html',1,'']]],
   ['ai_5fflags_9',['addrinfo ai_flags',['../group__addrinfo__flags.html',1,'']]],
   ['aica_10',['aica',['../group__asic__events__spu.html',1,'AICA'],['../group__audio__aica.html',1,'AICA']]],
-  ['allocator_11',['allocator',['../group__pvr__mem__mgmt.html',1,'Allocator'],['../group__system__allocator.html',1,'Allocator']]],
+  ['allocator_11',['allocator',['../group__system__allocator.html',1,'Allocator'],['../group__pvr__mem__mgmt.html',1,'Allocator']]],
   ['alpha_20toggle_12',['alpha toggle',['../group__pvr__txralpha__switch.html',1,'Alpha Toggle'],['../group__pvr__alpha__switch.html',1,'Alpha Toggle']]],
   ['and_20constants_13',['Addresses and Constants',['../group__pvr__addresses.html',1,'']]],
   ['and_20masks_14',['Constants and Masks',['../group__pvr__bitmasks.html',1,'']]],

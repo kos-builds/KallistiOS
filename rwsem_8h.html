@@ -135,12 +135,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ab48bf4e07df12b3d6a0b05a2c0b9b1a0" id="r_ab48bf4e07df12b3d6a0b05a2c0b9b1a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rwsem_8h.html#ab48bf4e07df12b3d6a0b05a2c0b9b1a0">rwsem_read_lock</a> (<a class="el" href="structrw__semaphore__t.html">rw_semaphore_t</a> *s)</td></tr>
 <tr class="memdesc:ab48bf4e07df12b3d6a0b05a2c0b9b1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a reader/writer semaphore for reading.  <br /></td></tr>
 <tr class="separator:ab48bf4e07df12b3d6a0b05a2c0b9b1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8beca1c47e1aa1e4cce9076e858bec16" id="r_a8beca1c47e1aa1e4cce9076e858bec16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rwsem_8h.html#a8beca1c47e1aa1e4cce9076e858bec16">rwsem_read_lock_irqsafe</a> (<a class="el" href="structrw__semaphore__t.html">rw_semaphore_t</a> *s)</td></tr>
+<tr class="memdesc:a8beca1c47e1aa1e4cce9076e858bec16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a reader/writer semaphore for reading.  <br /></td></tr>
+<tr class="separator:a8beca1c47e1aa1e4cce9076e858bec16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde4aa5703ca5e7678d1f3bbe9a5191e" id="r_adde4aa5703ca5e7678d1f3bbe9a5191e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rwsem_8h.html#adde4aa5703ca5e7678d1f3bbe9a5191e">rwsem_write_lock_timed</a> (<a class="el" href="structrw__semaphore__t.html">rw_semaphore_t</a> *s, int timeout)</td></tr>
 <tr class="memdesc:adde4aa5703ca5e7678d1f3bbe9a5191e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a reader/writer semaphore for writing (with a timeout).  <br /></td></tr>
 <tr class="separator:adde4aa5703ca5e7678d1f3bbe9a5191e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02022ecde855c95828d9762209a3d4e6" id="r_a02022ecde855c95828d9762209a3d4e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rwsem_8h.html#a02022ecde855c95828d9762209a3d4e6">rwsem_write_lock</a> (<a class="el" href="structrw__semaphore__t.html">rw_semaphore_t</a> *s)</td></tr>
 <tr class="memdesc:a02022ecde855c95828d9762209a3d4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a reader/writer semaphore for writing.  <br /></td></tr>
 <tr class="separator:a02022ecde855c95828d9762209a3d4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25b108d00f89912fb935e2038d755a1" id="r_ac25b108d00f89912fb935e2038d755a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rwsem_8h.html#ac25b108d00f89912fb935e2038d755a1">rwsem_write_lock_irqsafe</a> (<a class="el" href="structrw__semaphore__t.html">rw_semaphore_t</a> *s)</td></tr>
+<tr class="memdesc:ac25b108d00f89912fb935e2038d755a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock a reader/writer semaphore for writing.  <br /></td></tr>
+<tr class="separator:ac25b108d00f89912fb935e2038d755a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc3788ca89e8d60336adfe919116e7cf" id="r_acc3788ca89e8d60336adfe919116e7cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rwsem_8h.html#acc3788ca89e8d60336adfe919116e7cf">rwsem_read_unlock</a> (<a class="el" href="structrw__semaphore__t.html">rw_semaphore_t</a> *s)</td></tr>
 <tr class="memdesc:acc3788ca89e8d60336adfe919116e7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock a reader/writer semaphore from a read lock.  <br /></td></tr>
 <tr class="separator:acc3788ca89e8d60336adfe919116e7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,7 +218,7 @@ Functions</h2></td></tr>
 
 <p>Allocate a reader/writer semaphore. </p>
 <p>This function allocates a new reader/writer lock that is initially not locked either for reading or writing.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>This function is formally deprecated, and should not be used in newly written code. Instead, please use <a class="el" href="rwsem_8h.html#aecabee230a8ad6b3b7b5877e6ab5c564" title="Initialize a reader/writer semaphore.">rwsem_init()</a>.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>This function is formally deprecated, and should not be used in newly written code. Instead, please use <a class="el" href="rwsem_8h.html#aecabee230a8ad6b3b7b5877e6ab5c564" title="Initialize a reader/writer semaphore.">rwsem_init()</a>.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The created semaphore, or NULL on failure (errno will be set as appropriate).</dd></dl>
 <dl class="section user"><dt>Error Conditions:</dt><dd><em>ENOMEM</em> - out of memory </dd></dl>
 
@@ -325,7 +331,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Lock a reader/writer semaphore for reading. </p>
-<p>This function attempts to lock the r/w semaphore for reading. If the semaphore is locked for writing, this function will block until it is possible to obtain the lock for reading. This function is <b>NOT</b> safe to call inside of an interrupt.</p>
+<p>This function attempts to lock the r/w semaphore for reading. If the semaphore is locked for writing, this function will block until it is possible to obtain the lock for reading. This function is <b>NOT</b> safe to call inside of an interrupt; use rwsem_read_lock_irqsafe instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The r/w semaphore to lock. </td></tr>
@@ -341,6 +347,42 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section user"><dt>Error Conditions:</dt><dd><em>EPERM</em> - called inside an interrupt <br  />
 <em>EINVAL</em> - the semaphore is not initialized </dd></dl>
+
+</div>
+</div>
+<a id="a8beca1c47e1aa1e4cce9076e858bec16" name="a8beca1c47e1aa1e4cce9076e858bec16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8beca1c47e1aa1e4cce9076e858bec16">&#9670;&#160;</a></span>rwsem_read_lock_irqsafe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rwsem_read_lock_irqsafe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrw__semaphore__t.html">rw_semaphore_t</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lock a reader/writer semaphore for reading. </p>
+<p>This function attempts to lock the r/w semaphore for reading. If the semaphore is locked for writing, this function will block until it is possible to obtain the lock for reading. If called within an interrupt context, and the semaphore is already locked, this function will return an error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The r/w semaphore to lock. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>On success </td></tr>
+    <tr><td class="paramname">-1</td><td>On error, errno will be set as appropriate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Error Conditions:</dt><dd><em>EINVAL</em> - the semaphore is not initialized <br  />
+<em>EWOULDBLOCK</em> - called inside an interrupt and the semaphore was already locked </dd></dl>
 
 </div>
 </div>
@@ -645,7 +687,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Lock a reader/writer semaphore for writing. </p>
-<p>This function attempts to lock the r/w semaphore for writing. If the semaphore is locked for reading or writing, this function will block until it is possible to obtain the lock for writing. This function is <b>NOT</b> safe to call inside of an interrupt.</p>
+<p>This function attempts to lock the r/w semaphore for writing. If the semaphore is locked for reading or writing, this function will block until it is possible to obtain the lock for writing. This function is <b>NOT</b> safe to call inside of an interrupt; use rwsem_write_lock_irqsafe instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The r/w semaphore to lock. </td></tr>
@@ -661,6 +703,42 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section user"><dt>Error conditions:</dt><dd><em>EPERM</em> - called inside an interrupt <br  />
 <em>EINVAL</em> - the semaphore is not initialized </dd></dl>
+
+</div>
+</div>
+<a id="ac25b108d00f89912fb935e2038d755a1" name="ac25b108d00f89912fb935e2038d755a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac25b108d00f89912fb935e2038d755a1">&#9670;&#160;</a></span>rwsem_write_lock_irqsafe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rwsem_write_lock_irqsafe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrw__semaphore__t.html">rw_semaphore_t</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lock a reader/writer semaphore for writing. </p>
+<p>This function attempts to lock the r/w semaphore for writing. If the semaphore is locked for reading or writing, this function will block until it is possible to obtain the lock for writing. If called within an interrupt context, and the semaphore is already locked, this function will return an error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The r/w semaphore to lock. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>On success. </td></tr>
+    <tr><td class="paramname">-1</td><td>On error, errno will be set as appropriate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Error conditions:</dt><dd><em>EINVAL</em> - the semaphore is not initialized <br  />
+<em>EWOULDBLOCK</em> - called inside an interrupt and the semaphore was already locked </dd></dl>
 
 </div>
 </div>

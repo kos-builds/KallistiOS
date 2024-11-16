@@ -15,6 +15,7 @@ var group__vfs__sockets =
       [ "connect", "structfs__socket__proto__t.html#a63c1029cc3cc19b22c9586aa3c7cefb6", null ],
       [ "domain", "structfs__socket__proto__t.html#a9d4a04c90c376a04e9cdb6e98e1d780c", null ],
       [ "fcntl", "structfs__socket__proto__t.html#ac7a9db3106998f76dc34736a887df85a", null ],
+      [ "getpeername", "structfs__socket__proto__t.html#a482eb61a23529bed459c1d1cb33580f2", null ],
       [ "getsockname", "structfs__socket__proto__t.html#a1c41f9dcbcc863c483d1ffe526a584fe", null ],
       [ "getsockopt", "structfs__socket__proto__t.html#a1c94550ad6d816d0e59a6b61cb2da174", null ],
       [ "input", "structfs__socket__proto__t.html#af788d1f922e3275de70329c3eb3140d7", null ],

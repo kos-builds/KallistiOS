@@ -126,6 +126,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1dc58c2c16a8d3518d370a81bfb01c60" id="r_ga1dc58c2c16a8d3518d370a81bfb01c60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__video__fb.html#ga1dc58c2c16a8d3518d370a81bfb01c60">vid_screen_shot</a> (const char *destfn)</td></tr>
 <tr class="memdesc:ga1dc58c2c16a8d3518d370a81bfb01c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take a screenshot.  <br /></td></tr>
 <tr class="separator:ga1dc58c2c16a8d3518d370a81bfb01c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6174320872dfd48140006a713beda2a9" id="r_ga6174320872dfd48140006a713beda2a9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__video__fb.html#ga6174320872dfd48140006a713beda2a9">vid_screen_shot_data</a> (uint8_t **buffer)</td></tr>
+<tr class="memdesc:ga6174320872dfd48140006a713beda2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create image data from the current framebuffer.  <br /></td></tr>
+<tr class="separator:ga6174320872dfd48140006a713beda2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -285,6 +288,34 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt;0 on failure. </dd></dl>
+
+</div>
+</div>
+<a id="ga6174320872dfd48140006a713beda2a9" name="ga6174320872dfd48140006a713beda2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6174320872dfd48140006a713beda2a9">&#9670;&#160;</a></span>vid_screen_shot_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t vid_screen_shot_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t **&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create image data from the current framebuffer. </p>
+<p>This function takes the current framebuffer (/vram_l) and converts it into 24bpp image data. The function allocates memory for the image data, which the caller is responsible for freeing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>A pointer to a uint8_t* that will be allocated and filled with the image data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the created image data in bytes, or 0 on failure. </dd></dl>
 
 </div>
 </div>

@@ -532,7 +532,7 @@ Functions</h2></td></tr>
 <p>This function makes the following g2_read_*()/g2_write_*() functions atomic by disabling IRQs and G2 DMA and storing their states. Pass the context created by this function to <a class="el" href="group__system__g2bus.html#ga28175a37be80794b04aaac5cd1a1eb13" title="Enable IRQs and G2 DMA.">g2_unlock()</a> to re-enable IRQs and G2 DMA.</p>
 <dl class="section return"><dt>Returns</dt><dd>The context containing the IRQ and G2 DMA states. </dd></dl>
 
-<p class="reference">References <a class="el" href="group__system__fifo.html#ga0311537c00d445bd49311fea60814562">FIFO_G2</a>, <a class="el" href="group__system__fifo.html#ga13f8a2ecc978716410a708e7a2c3c705">FIFO_SH4</a>, <a class="el" href="group__system__fifo.html#ga9e5c9878194f462bf7a46ca8a7b8f9d2">FIFO_STATUS</a>, <a class="el" href="group__irqs.html#gafb0c3c3a580a4319c69c2a46c71b5d15">irq_disable()</a>, and <a class="el" href="structg2__ctx__t.html#ac267f55e228e317e8bd936bedb1b0281">g2_ctx_t::irq_state</a>.</p>
+<p class="reference">References <a class="el" href="group__system__fifo.html#ga0311537c00d445bd49311fea60814562">FIFO_G2</a>, <a class="el" href="group__system__fifo.html#ga13f8a2ecc978716410a708e7a2c3c705">FIFO_SH4</a>, <a class="el" href="group__system__fifo.html#ga9e5c9878194f462bf7a46ca8a7b8f9d2">FIFO_STATUS</a>, <a class="el" href="group__irq__mask.html#gac8594a5bb7ec76a0d1a5f08c9b7aae27">irq_disable()</a>, and <a class="el" href="structg2__ctx__t.html#ac267f55e228e317e8bd936bedb1b0281">g2_ctx_t::irq_state</a>.</p>
 
 </div>
 </div>
@@ -833,7 +833,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="group__irqs.html#ga1f7f5e00972155a86d4fc4ce2df1538d">irq_restore()</a>, and <a class="el" href="structg2__ctx__t.html#ac267f55e228e317e8bd936bedb1b0281">g2_ctx_t::irq_state</a>.</p>
+<p class="reference">References <a class="el" href="group__irq__mask.html#ga768b54fd6ed13cbc74921ff529c6c424">irq_restore()</a>, and <a class="el" href="structg2__ctx__t.html#ac267f55e228e317e8bd936bedb1b0281">g2_ctx_t::irq_state</a>.</p>
 
 </div>
 </div>

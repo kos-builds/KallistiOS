@@ -10,15 +10,16 @@ var searchData=
   ['dev_20null_7',['/dev/null',['../group__vfs__null.html',1,'']]],
   ['device_20definitions_8',['Device Definitions',['../group__ata__devices.html',1,'']]],
   ['devices_9',['Block Devices',['../group__vfs__blockdev.html',1,'']]],
-  ['dimensions_20of_20the_20bios_20font_10',['Dimensions of the Bios Font',['../group__bfont__size.html',1,'']]],
+  ['dimensions_10',['Dimensions',['../group__bfont__size.html',1,'']]],
   ['direct_20access_11',['Direct-Access',['../group__tmu__direct.html',1,'']]],
   ['direct_20rendering_12',['Direct Rendering',['../group__pvr__direct.html',1,'']]],
   ['disc_20types_13',['Drive Disc Types',['../group__cd__disc__types.html',1,'']]],
   ['display_14',['Display',['../group__video__display.html',1,'']]],
-  ['dma_15',['dma',['../group__pvr__dma.html',1,'DMA'],['../group__system__dmac.html',1,'DMA'],['../group__asic__events__g2dma.html',1,'G2 Bus DMA'],['../group__pvr__vertex__dma.html',1,'Vertex DMA']]],
-  ['dreamcast_20specific_20flags_16',['Dreamcast-Specific Flags',['../group__kos__init__flags__dc.html',1,'']]],
-  ['drive_17',['GD-ROM Drive',['../group__asic__events__gd.html',1,'']]],
-  ['drive_20disc_20types_18',['Drive Disc Types',['../group__cd__disc__types.html',1,'']]],
-  ['driver_19',['Driver',['../group__audio__driver.html',1,'']]],
-  ['drivers_20',['drivers',['../group__networking__drivers.html',1,'Drivers'],['../group__vfs__drivers.html',1,'Drivers']]]
+  ['dma_15',['dma',['../group__system__dmac.html',1,'DMA'],['../group__pvr__dma.html',1,'DMA'],['../group__asic__events__g2dma.html',1,'G2 Bus DMA'],['../group__pvr__vertex__dma.html',1,'Vertex DMA']]],
+  ['dreamcast_20specific_16',['Dreamcast-Specific',['../group__bfont__dc__indices.html',1,'']]],
+  ['dreamcast_20specific_20flags_17',['Dreamcast-Specific Flags',['../group__kos__init__flags__dc.html',1,'']]],
+  ['drive_18',['GD-ROM Drive',['../group__asic__events__gd.html',1,'']]],
+  ['drive_20disc_20types_19',['Drive Disc Types',['../group__cd__disc__types.html',1,'']]],
+  ['driver_20',['Driver',['../group__audio__driver.html',1,'']]],
+  ['drivers_21',['drivers',['../group__vfs__drivers.html',1,'Drivers'],['../group__networking__drivers.html',1,'Drivers']]]
 ];
